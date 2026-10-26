@@ -1,0 +1,215 @@
+{
+  "date": "2026-10-26",
+  "build_variant": "project86-cassfar-v1",
+  "build": {
+    "report_sha256": "6bf50497141e1baae27f9e36e8c8ebb7ed81ef36cc38228783225961b1dfeab9",
+    "guest_disk_sha256": "990fb3a2f48456076aa1a218b18b81c67cd348e2f95a52485086edbe2716d310",
+    "outputs_archive_sha256": "9b763ae283b76782b03e04b4d54a7673ee3c1ecef6eeb994dfcee77cd3a25e76",
+    "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+    "build_variant": "project86-cassfar-v1",
+    "source_patches": [
+      "SETENV.BAT: BAKROOT d: to c:",
+      "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+      "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)",
+      "Remove original INC/COMSUBS.LIB; compile and archive Project86 COMSUBS.C and DBCSTAB.ASM before NMAKE",
+      "Remove original SELECT/CASSFAR.LIB; compile Project86 CASSFAR.C/CBRIDGE.ASM with layout offsets from pinned SELECT declarations"
+    ],
+    "binary_library_boundary": "COMSUBS and CASSFAR use Project86 source. Original compiler tools, SLIBCE.LIB and MEM.LIB remain binary dependencies. This is not a rebuild of every linked library.",
+    "seed": {
+      "kind": "rebuilt-dos",
+      "image_sha256": "727134003a48282f826274128d2345ac50504d1c519b26d70b714d52c2d09172",
+      "receipt_sha256": "abc8f28b424e75ff763dd18428ac9c24741ff1ed47dff68b150250d5ef40ee14",
+      "build": {
+        "report_sha256": "50867ec5f19f27f097c0b713ddf61b3b07904669eaf8373f77ec966a680d6006",
+        "guest_disk_sha256": "b118205fb9f5018c67724b0aff0a3207b2c06d47cd6b58d8656a2beee77f8e29",
+        "outputs_archive_sha256": "873cd07e920191504823552eaed718062a7a52ac7406e815efe7713176036ae9",
+        "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+        "build_variant": "project86-comsubs-v1",
+        "source_patches": [
+          "SETENV.BAT: BAKROOT d: to c:",
+          "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+          "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)",
+          "Remove original INC/COMSUBS.LIB; compile and archive Project86 COMSUBS.C and DBCSTAB.ASM before NMAKE"
+        ],
+        "binary_library_boundary": "COMSUBS is built from Project86 source. Original compiler tools and CASSFAR.LIB, SLIBCE.LIB and MEM.LIB remain binary dependencies. This is not a rebuild of every linked library.",
+        "seed": {
+          "kind": "rebuilt-dos",
+          "image_sha256": "bd13775e9e09fee63eaed521031610839644aeffb5634938d4496a0ba3f29f0f",
+          "receipt_sha256": "0df0e585c0eac62291dafc498fe1d53faf2b623682e3d7e7647fcd0febc9e416",
+          "build": {
+            "report_sha256": "8d67abd17a0411ef621fdf7ef6e746ac51d0648e05c4cdffaf91a882860662cf",
+            "guest_disk_sha256": "30ae8504e326b0186811518d8b1605cf9adada8064a4e0f814db2146648182c3",
+            "outputs_archive_sha256": "02f941ee19010f7307ee8fdb3d56c3e5e289fce3675ff9cbec95cc1866c21a44",
+            "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+            "build_variant": "project86-ver-v1",
+            "source_patches": [
+              "SETENV.BAT: BAKROOT d: to c:",
+              "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+              "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)"
+            ],
+            "binary_library_boundary": "Original compiler runtime and support libraries retained. COMSUBS.LIB and CASSFAR.LIB are linked by DOS utility targets but have no corresponding source in this archive. This is not a rebuild of every linked library.",
+            "seed": {
+              "kind": "rebuilt-dos",
+              "image_sha256": "bd13775e9e09fee63eaed521031610839644aeffb5634938d4496a0ba3f29f0f",
+              "receipt_sha256": "0b9c9a1130e1c44101ea435036bb01c2b8d9644320ca7d5492dd51a1f326449f",
+              "build": {
+                "report_sha256": "723adbb9255d2513c7564afbc4da17b20c788389724534fe2e01d976cf9b6d13",
+                "guest_disk_sha256": "eb57d824a46784ae8a810e0f391f8fb38b5657dba159dc4fa3b6352b5465877c",
+                "outputs_archive_sha256": "02f941ee19010f7307ee8fdb3d56c3e5e289fce3675ff9cbec95cc1866c21a44",
+                "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+                "build_variant": "project86-ver-v1",
+                "source_patches": [
+                  "SETENV.BAT: BAKROOT d: to c:",
+                  "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+                  "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)"
+                ],
+                "binary_library_boundary": "Original compiler runtime and support libraries retained. COMSUBS.LIB and CASSFAR.LIB are linked by DOS utility targets but have no corresponding source in this archive. This is not a rebuild of every linked library."
+              }
+            },
+            "compiler_boot_image_sha256": "e0f500b6db37809606f5c0047e4d9cc5b123d7b9def8db00aee58153463000e4"
+          }
+        },
+        "compiler_boot_image_sha256": "e0f500b6db37809606f5c0047e4d9cc5b123d7b9def8db00aee58153463000e4",
+        "rebuilt_libraries": {
+          "SRC/INC/COMSUBS.LIB": {
+            "sha256": "289fa53f8c4cee0848c2ee4f743a9306cfd70c207200a89a6300be98f5e7f974",
+            "bytes": 2071,
+            "original_sha256": "3a2dd4aa684508037cf552692690943e9b0f8acf44e6ddb3ef43b631940789b1",
+            "source_files": {
+              "COMSUBS.C": "43fa98e73226c1bd73b6cbaa2e4d84f8e77cb54f8002df80b0218f69395de8b9",
+              "DBCSTAB.ASM": "5a590cfe2a3bad6e99f0aec4bb3d7617f1ea1486a0ceda6d55f51565b26390c7",
+              "COMSUBS.LBR": "07cc9d59476533854197f7f84310c8896231740a398e5c01d40d1cc71b5b3003"
+            },
+            "source_archive_sha256": "a63b9e84d3c66089947bb7bb51cb877d44e0dc7cb984f37a55f65f6b1d2e882c"
+          }
+        }
+      }
+    },
+    "compiler_boot_image_sha256": "278c3a14125860dedc0111e8dc3bdc60a289deae9465e861e8f4b043ccf636fe",
+    "rebuilt_libraries": {
+      "SRC/INC/COMSUBS.LIB": {
+        "sha256": "289fa53f8c4cee0848c2ee4f743a9306cfd70c207200a89a6300be98f5e7f974",
+        "bytes": 2071,
+        "original_sha256": "3a2dd4aa684508037cf552692690943e9b0f8acf44e6ddb3ef43b631940789b1",
+        "source_files": {
+          "COMSUBS.C": "43fa98e73226c1bd73b6cbaa2e4d84f8e77cb54f8002df80b0218f69395de8b9",
+          "DBCSTAB.ASM": "5a590cfe2a3bad6e99f0aec4bb3d7617f1ea1486a0ceda6d55f51565b26390c7",
+          "COMSUBS.LBR": "07cc9d59476533854197f7f84310c8896231740a398e5c01d40d1cc71b5b3003"
+        },
+        "source_archive_sha256": "a63b9e84d3c66089947bb7bb51cb877d44e0dc7cb984f37a55f65f6b1d2e882c"
+      },
+      "SRC/SELECT/CASSFAR.LIB": {
+        "sha256": "7164f8d418d55a04e5ae81af3fb4a98f41809519848b202f0de98fb29cb1e396",
+        "bytes": 13337,
+        "original_sha256": "39bbbb38f58483c3bacd366a899a90b7b8764b6431032ac7f7367212d6409f3e",
+        "source_files": {
+          "CASSFAR.C": "71e66144bd4fb3b1d2f1a132d8489797c324e4edb9747de0ee60d7f0cc87983c",
+          "CBRIDGE.ASM": "baf8414e20f09b1b3446bc02a0e2877aa399b7bb8f95e8b39f0c8c2b8f91b3fb",
+          "LAYOUT.H": "45371b1035a6bf2938ab679498ea95e3e749e384da158a96f0116e10696adef7",
+          "CASSFAR.LBR": "863f0b88f2fce31fb95d15af64809aac66a6dbcab69b1473ab19583dc6be770f"
+        },
+        "source_archive_sha256": "5c2cf94df56b4c0b271f15fa4ed0dd70b7ab709da02b36e68bacd26922ecc105",
+        "layout_generator_sha256": "2f04f25a89ca54b50958be9a8e8f67decaa6a44a9932fcdc3a295ee60811c04c"
+      }
+    }
+  },
+  "select_sha256": "38ea3503698e318a340635615b7d96c85801c81a9ce5c0e7d6a0742bb47d848b",
+  "select_bytes": 77171,
+  "baseline_select_sha256": "f61c9640004b6417f3667240b98851a1e6d470369416abf23972cc353365c8d0",
+  "baseline_select_bytes": 95107,
+  "cassfar_sha256": "7164f8d418d55a04e5ae81af3fb4a98f41809519848b202f0de98fb29cb1e396",
+  "cassfar_bytes": 13337,
+  "app_floppy_sha256": "96e79ed40671a7a7ae60d2cc5794098cf4a47ab7b93cceabab9af3b7517113bd",
+  "changed_distribution_files": [
+    "SELECT.EXE"
+  ],
+  "unchanged_distribution_files": 61,
+  "assembled_boot_sector_identical": true,
+  "original_cassfar_excluded_from_guest_build_inputs": true,
+  "link_steps_audited": 61,
+  "select_uses_only_our_cassfar_objects": true,
+  "remaining_supplied_libraries": [
+    "SLIBCE.LIB",
+    "MEM.LIB"
+  ],
+  "key_search_cases": 345,
+  "help_topics": 57,
+  "exact_navigation_screen_comparisons": 13,
+  "exact_parameter_review_screen_comparisons": 3,
+  "exact_missing_help_error_comparisons": 1,
+  "screen_comparison_unit": "4000 character/attribute bytes per 80x25 screen",
+  "real_installations_completed": 2,
+  "installed_file_comparison": {
+    "changed_files": [
+      "P86TEST/SELECT.EXE"
+    ],
+    "identical_files": 68,
+    "installed_select_matches_each_build": true
+  },
+  "typed_directory_and_invalid_character_rejection": true,
+  "unrelated_target_file_preserved": true,
+  "installed_command_runs_after_restart": true,
+  "packaging_provenance_tests": {
+    "passed": 32,
+    "failed": 0,
+    "skipped": 0
+  },
+  "core_and_device_regressions_passed": true,
+  "comsubs_guest_regressions_passed": true,
+  "mac_build_succeeded": true,
+  "mac_script_sandbox_enabled": true,
+  "mac_bundle_verified": true,
+  "bios_changes": [
+    "INT 10h AH=15h: no Convertible display table; input pointer preserved",
+    "INT 10h AH=FEh: no TopView manager; physical screen pointer preserved",
+    "INT 16h AH=92h: AH=80h reports implemented enhanced keyboard services"
+  ],
+  "baseline_build_seed_and_original_downloads_verified_unchanged": true,
+  "managed_disks_modified_or_switched": false,
+  "app_relaunched": false,
+  "compiler_guest_instructions": 8982464575,
+  "unsupported_io_accesses": 11,
+  "last_unsupported_io_port": "06F7h",
+  "logs": {
+    ".build/cassfar-full-build-final.log": {
+      "sha256": "b12543a5d9bbb2837c1f3d18fe10ce11d8933b43db071c97b52db0cf269b8c90",
+      "bytes": 172
+    },
+    ".build/dos-cassfar/BUILD.LOG": {
+      "sha256": "06eeab0925e9caf72687da5e9793b8481ce55b6f3f5969a97acf29eed1b9ae40",
+      "bytes": 170221
+    },
+    ".build/dos-cassfar/progress.log": {
+      "sha256": "1816cfb3e95f91682c4d6279c4638bb90523d593ce999a3e3b74e61d062ecfc4",
+      "bytes": 1235
+    },
+    ".build/cassfar-validation-final.log": {
+      "sha256": "2c3f6a01440d9162c85ea306ec3282c0995f1385d6ff5b9e8d7df1c9f7ed8de8",
+      "bytes": 67
+    },
+    ".build/cassfar-packaging-tests.log": {
+      "sha256": "f0b008c73b973d6c5f1a971b21080278ed2e39e1231e32dd5a7cb3df6d9f106b",
+      "bytes": 4199
+    },
+    ".build/cassfar-core-tests.log": {
+      "sha256": "de01f92ef7955b402c974c49e46c4d440465ec33189ba7d412567fee87952a8e",
+      "bytes": 720
+    },
+    ".build/cassfar-mac-build.log": {
+      "sha256": "bb786d77acc5eeb736f146dcd16420d43ea1d81f3cf26e1b1d4a78b9e5f18481",
+      "bytes": 72237
+    },
+    ".build/comsubs-after-cassfar.log": {
+      "sha256": "c913d016a0897bec4b320bcf23233f88721cbff1bbcf2f9a645cb840f1d7debe",
+      "bytes": 51
+    }
+  },
+  "limitations": [
+    "Ten SELECT text-mode interfaces are implemented, not every historical CAS API or graphics caller.",
+    "GVIDO has documented, intentional metadata differences from speculative legacy adapter detection.",
+    "Minimum-DOS installation was tested without optional DOS Shell media; all printer/localization combinations were not tested.",
+    "Hard-disk BIOS boot, native-window interaction, physical-PC/iPad operation and sound fidelity remain unverified.",
+    "Original compiler tools, SLIBCE and MEM remain binary dependencies.",
+    "CPU semantics did not change; hardware fixtures were not rerun."
+  ]
+}

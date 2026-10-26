@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-26",
+  "implemented": true,
+  "reported_symptom": "CPU-speed submenu closes rapidly when hovered",
+  "finding": "The control view observed the same ObservableObject that published frames at 60 Hz",
+  "change": "Move frame publishing to MachineDisplayState; observe it only in screen, status and diagnostics leaf views",
+  "state_regression": {
+    "display_updates": 120,
+    "control_updates_from_frames": 0,
+    "control_updates_from_control_changes": 2,
+    "passed": true
+  },
+  "native_mac_build_passed": true,
+  "ios_simulator_build_passed": true,
+  "bundled_resources_verified": true,
+  "actual_native_hover_retested": false,
+  "managed_user_disks_changed": false,
+  "app_relaunched": false,
+  "app": ".build/apple-menu-fix/Build/Products/Release/Project86.app",
+  "app_executable_sha256": "33f6d658e00b4b79082fe8f80998d973145ac5a693a02427593544c37bc04986",
+  "image_sha256": "273a9ac86fc1e9a1f9ff4d16062fea4b95aa53e128b225fcaa5a94d4f33f6e3c",
+  "limitations": [
+    "Observation isolation and builds are verified; actual native menu tracking still requires user confirmation"
+  ],
+  "log_sha256": {
+    ".build/cpu-menu-state-tests.log": "4ab6c9880f18536db45fea2876bb8f0eae339349478789a22c84551cef84a992",
+    ".build/cpu-menu-mac-build.log": "6912335c334df0b8b1b72502b49eb0487f7b075a42e517407be3dc43222c9021",
+    ".build/cpu-menu-ios-build.log": "7066d07299bf416bbfc9160144bbf7c9220385275824a09605116ae3f01d4ae3"
+  }
+}

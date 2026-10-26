@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-26",
+  "passed": true,
+  "host": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "cpu": "Apple M5"
+  },
+  "method": "Same user-supplied Wolf3D v1.4 inputs, private fresh DOS/game disks, identical setup at 1x; selected rate applied for five six-second benchmark phases. VGA page switches sampled at ~1 ms are a render-rate proxy, not native-window FPS.",
+  "results": {
+    "idle": {
+      "baseline_render_proxy_hz": 8.162453804643361,
+      "speed4_render_proxy_hz": 33.163177374538925,
+      "speed8_render_proxy_hz": 65.4937654103164,
+      "speed8_audio_host_ms_per_20ms": {
+        "median": 3.33677,
+        "p95": 3.444209,
+        "max": 3.619082
+      }
+    },
+    "arrow-turn": {
+      "baseline_render_proxy_hz": 8.495435201089776,
+      "speed4_render_proxy_hz": 34.49648245445208,
+      "speed8_render_proxy_hz": 68.49383142473779,
+      "speed8_audio_host_ms_per_20ms": {
+        "median": 3.380644,
+        "p95": 3.510252,
+        "max": 3.559586
+      }
+    },
+    "walk": {
+      "baseline_render_proxy_hz": 9.828432565589182,
+      "speed4_render_proxy_hz": 37.993573177001025,
+      "speed8_render_proxy_hz": 69.82154457688107,
+      "speed8_audio_host_ms_per_20ms": {
+        "median": 3.1430844999999996,
+        "p95": 3.378501,
+        "max": 3.606206
+      }
+    },
+    "mouse-turn": {
+      "baseline_render_proxy_hz": 10.161618214211607,
+      "speed4_render_proxy_hz": 42.495479830697654,
+      "speed8_render_proxy_hz": 70.16057093900677,
+      "speed8_audio_host_ms_per_20ms": {
+        "median": 3.5312285,
+        "p95": 3.700376,
+        "max": 3.783959
+      }
+    },
+    "interaction": {
+      "baseline_render_proxy_hz": 10.161646233526824,
+      "speed4_render_proxy_hz": 41.828456136091056,
+      "speed8_render_proxy_hz": 69.99337129544665,
+      "speed8_audio_host_ms_per_20ms": {
+        "median": 3.55581,
+        "p95": 3.989251,
+        "max": 4.604626
+      }
+    }
+  },
+  "compatibility_instruction_counts_page_switches_and_frame_hashes_identical": true,
+  "native_defaults": {
+    "configuration": "Release",
+    "cpp_optimization": "O2",
+    "swift_optimization": "O / wholemodule",
+    "cpu_multiplier": 8,
+    "display_updates_hz": 60,
+    "audio_frames_per_update": 800
+  },
+  "cpu_clock_checks": "1x/4x/8x/16x preserve one virtual second, 18 BIOS timer ticks and 48000 samples; DMA rate also verified at 1x/8x/16x while muted",
+  "mouse_input_checks": "Native Swift unit tests cover fractional deltas, coalescing, button order, bounds and reset; pause handling was source-reviewed and compiled, not native-event tested.",
+  "native_window_interaction_measured": false,
+  "physical_ipad_tested": false,
+  "gameplay_checked": {
+    "version": "Wolfenstein 3D DOS shareware v1.4 (verify input hashes)",
+    "cpu_speed": 8,
+    "execution": "Project86 headless native ARM interpreter; no reference emulator",
+    "actions": [
+      "new Episode 1 game",
+      "walk",
+      "fire",
+      "save p86",
+      "destroy machine",
+      "boot DOS again",
+      "load p86",
+      "turn",
+      "serial mouse movement"
+    ],
+    "save_bytes": 19273,
+    "save_sha256": "07242f058e12fc161b9810f0c085bd2e9a9991757c3237877fbd23a075f8c04e",
+    "audio_samples": 48000,
+    "audio_peak": 0.21969546377658844,
+    "saved_numeric_hud_restored": true,
+    "saved_world_view_restored": true,
+    "visual_review": "Review title, gameplay and load-menu captures; image change alone is not a compatibility oracle.",
+    "limitations": [
+      "No physical iPad test",
+      "No end-to-end macOS UI automation",
+      "Approximate timing and FM synthesis",
+      "Short gameplay sample only"
+    ]
+  },
+  "mouse_startup_cases": 12,
+  "command_tests_at_speed8": true,
+  "packaging_tests_passed": 37,
+  "mac_build_passed": true,
+  "mac_bundle_verified": true,
+  "app_path": ".build/apple-performance/Build/Products/Release/Project86.app",
+  "image_sha256": "273a9ac86fc1e9a1f9ff4d16062fea4b95aa53e128b225fcaa5a94d4f33f6e3c",
+  "core_library_sha256": "beb8c30a783a2cf9c7b826a99a7ab4cd47f915854a2ef5dd0474d6826795e9fb",
+  "app_executable_sha256": "c08349e7f40963f2d59a9ecac29fc2be7aa1fabe1aeab4d9e6a0502747f7cde7",
+  "gameplay_capture_sha256": {
+    "loaded.png": "c1584ff5f1151ccb0d236d14b1c2c0a36ab970a3d1096a39794efb4dd49995b4",
+    "loaded-mouse.png": "d673c83e1af663e80a14bed709c97f96ea96a56d15d2fa5284d7141b5d2d2fa9",
+    "title.png": "72b52c380ac964e1f1512334de0671dc1ff18b285cae7abb93b099c0243dcc82",
+    "fire.png": "c1584ff5f1151ccb0d236d14b1c2c0a36ab970a3d1096a39794efb4dd49995b4",
+    "loaded-turn.png": "f2280336b2615ec37b3d44ec006b0ad337d544afd31290265bc2b786f2aefb1f",
+    "load-menu.png": "bf1e0da3f8aa6dc401a87b938f04f6b316325be536332e8da2386288cafc31bd",
+    "walk.png": "5bc9b907c15aaeee679b5371e992e20b26ba727ab37e3533add0e2f9aeec75e7",
+    "new-game.png": "c602946da4daea0a3defc8d6eb08429f4cce6c90c12b35ad771100e1c883172c",
+    "save-menu.png": "7b08f392f58a8f19eb7c205a020a777db81c3698c9388de1e2d2bd3cf94bdb7f"
+  },
+  "managed_user_disks_changed": false,
+  "app_relaunched": false,
+  "no_jit": true,
+  "limitations": [
+    "Headless render-rate proxy is not a measurement of SwiftUI/Metal window FPS or end-to-end latency",
+    "Host timing excludes native UI and Python observer overhead; it varies with system load",
+    "Classic 1x is retained for CPU-speed-sensitive programs",
+    "No complete game playthrough or audio-fidelity certification",
+    "CPU instruction semantics unchanged; physical-8086 fixtures were not rerun"
+  ],
+  "log_sha256": {
+    ".build/performance-core-release-tests.log": "bf7404c02919a8c837e7dc566d7f72a15c645bb7baf2a744fc5759fae7548bff",
+    ".build/performance-release-packaging-tests.log": "b99a9a7758c749219c5d123cd5accef1dd4c7488b726c203a76621f55ddd87a1",
+    ".build/performance-release-mac-build.log": "03843c4a62dbd0e743e5a0c7ea70d9b34d6c880a24a043804df2698db8c74408",
+    ".build/performance-release-ios-build.log": "8d71a48516c1b863e83c528f203cf3ac59e6661c19c0bc759c4c18d574f32608"
+  },
+  "ios_simulator_build_passed": true,
+  "bus_timing": "Boosted modes use eight device cycles for port-I/O transfers; 1x preserves original timing. Guest-style AdLib timer detection passes at 1x/4x/8x/16x.",
+  "sound_probe_source": {
+    "url": "https://github.com/id-Software/wolf3d/blob/master/WOLFSRC/ID_SD.C",
+    "blob_sha": "946b2580842bec9da35864e7f418535357d5677b",
+    "scope": "Published game sound manager inspected for timed port-polling probes; no game/emulator code imported."
+  },
+  "actual_game_probe_trace": {
+    "classic_opl_final_status": "C0",
+    "fast_opl_final_status": "C0",
+    "classic_and_fast_dsp_reset_reply": "AA",
+    "logs_sha256": {
+      ".build/performance-sound-trace/ports.log": "4ed11fb31f04048e6715390bb087775863def80af31f42e61772eb58b307f41b",
+      ".build/performance-sound-trace/sb.log": "18e0d58bfdfded1c5a858161eb113c00426b31b6ac2fa79cc9fa8643a5014ed6"
+    },
+    "method": "Private copy of our core with stderr-only port tracing; no guest return values changed."
+  }
+}

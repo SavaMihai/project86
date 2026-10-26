@@ -1,0 +1,1246 @@
+{
+  "schema": 1,
+  "baseline": {
+    "report_sha256": "50867ec5f19f27f097c0b713ddf61b3b07904669eaf8373f77ec966a680d6006",
+    "guest_disk_sha256": "b118205fb9f5018c67724b0aff0a3207b2c06d47cd6b58d8656a2beee77f8e29",
+    "outputs_archive_sha256": "873cd07e920191504823552eaed718062a7a52ac7406e815efe7713176036ae9",
+    "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+    "build_variant": "project86-comsubs-v1",
+    "source_patches": [
+      "SETENV.BAT: BAKROOT d: to c:",
+      "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+      "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)",
+      "Remove original INC/COMSUBS.LIB; compile and archive Project86 COMSUBS.C and DBCSTAB.ASM before NMAKE"
+    ],
+    "binary_library_boundary": "COMSUBS is built from Project86 source. Original compiler tools and CASSFAR.LIB, SLIBCE.LIB and MEM.LIB remain binary dependencies. This is not a rebuild of every linked library.",
+    "seed": {
+      "kind": "rebuilt-dos",
+      "image_sha256": "bd13775e9e09fee63eaed521031610839644aeffb5634938d4496a0ba3f29f0f",
+      "receipt_sha256": "0df0e585c0eac62291dafc498fe1d53faf2b623682e3d7e7647fcd0febc9e416",
+      "build": {
+        "report_sha256": "8d67abd17a0411ef621fdf7ef6e746ac51d0648e05c4cdffaf91a882860662cf",
+        "guest_disk_sha256": "30ae8504e326b0186811518d8b1605cf9adada8064a4e0f814db2146648182c3",
+        "outputs_archive_sha256": "02f941ee19010f7307ee8fdb3d56c3e5e289fce3675ff9cbec95cc1866c21a44",
+        "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+        "build_variant": "project86-ver-v1",
+        "source_patches": [
+          "SETENV.BAT: BAKROOT d: to c:",
+          "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+          "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)"
+        ],
+        "binary_library_boundary": "Original compiler runtime and support libraries retained. COMSUBS.LIB and CASSFAR.LIB are linked by DOS utility targets but have no corresponding source in this archive. This is not a rebuild of every linked library.",
+        "seed": {
+          "kind": "rebuilt-dos",
+          "image_sha256": "bd13775e9e09fee63eaed521031610839644aeffb5634938d4496a0ba3f29f0f",
+          "receipt_sha256": "0b9c9a1130e1c44101ea435036bb01c2b8d9644320ca7d5492dd51a1f326449f",
+          "build": {
+            "report_sha256": "723adbb9255d2513c7564afbc4da17b20c788389724534fe2e01d976cf9b6d13",
+            "guest_disk_sha256": "eb57d824a46784ae8a810e0f391f8fb38b5657dba159dc4fa3b6352b5465877c",
+            "outputs_archive_sha256": "02f941ee19010f7307ee8fdb3d56c3e5e289fce3675ff9cbec95cc1866c21a44",
+            "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+            "build_variant": "project86-ver-v1",
+            "source_patches": [
+              "SETENV.BAT: BAKROOT d: to c:",
+              "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+              "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)"
+            ],
+            "binary_library_boundary": "Original compiler runtime and support libraries retained. COMSUBS.LIB and CASSFAR.LIB are linked by DOS utility targets but have no corresponding source in this archive. This is not a rebuild of every linked library."
+          }
+        },
+        "compiler_boot_image_sha256": "e0f500b6db37809606f5c0047e4d9cc5b123d7b9def8db00aee58153463000e4"
+      }
+    },
+    "compiler_boot_image_sha256": "e0f500b6db37809606f5c0047e4d9cc5b123d7b9def8db00aee58153463000e4",
+    "rebuilt_libraries": {
+      "SRC/INC/COMSUBS.LIB": {
+        "sha256": "289fa53f8c4cee0848c2ee4f743a9306cfd70c207200a89a6300be98f5e7f974",
+        "bytes": 2071,
+        "original_sha256": "3a2dd4aa684508037cf552692690943e9b0f8acf44e6ddb3ef43b631940789b1",
+        "source_files": {
+          "COMSUBS.C": "43fa98e73226c1bd73b6cbaa2e4d84f8e77cb54f8002df80b0218f69395de8b9",
+          "DBCSTAB.ASM": "5a590cfe2a3bad6e99f0aec4bb3d7617f1ea1486a0ceda6d55f51565b26390c7",
+          "COMSUBS.LBR": "07cc9d59476533854197f7f84310c8896231740a398e5c01d40d1cc71b5b3003"
+        },
+        "source_archive_sha256": "a63b9e84d3c66089947bb7bb51cb877d44e0dc7cb984f37a55f65f6b1d2e882c"
+      }
+    }
+  },
+  "replacement": {
+    "report_sha256": "6bf50497141e1baae27f9e36e8c8ebb7ed81ef36cc38228783225961b1dfeab9",
+    "guest_disk_sha256": "990fb3a2f48456076aa1a218b18b81c67cd348e2f95a52485086edbe2716d310",
+    "outputs_archive_sha256": "9b763ae283b76782b03e04b4d54a7673ee3c1ecef6eeb994dfcee77cd3a25e76",
+    "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+    "build_variant": "project86-cassfar-v1",
+    "source_patches": [
+      "SETENV.BAT: BAKROOT d: to c:",
+      "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+      "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)",
+      "Remove original INC/COMSUBS.LIB; compile and archive Project86 COMSUBS.C and DBCSTAB.ASM before NMAKE",
+      "Remove original SELECT/CASSFAR.LIB; compile Project86 CASSFAR.C/CBRIDGE.ASM with layout offsets from pinned SELECT declarations"
+    ],
+    "binary_library_boundary": "COMSUBS and CASSFAR use Project86 source. Original compiler tools, SLIBCE.LIB and MEM.LIB remain binary dependencies. This is not a rebuild of every linked library.",
+    "seed": {
+      "kind": "rebuilt-dos",
+      "image_sha256": "727134003a48282f826274128d2345ac50504d1c519b26d70b714d52c2d09172",
+      "receipt_sha256": "abc8f28b424e75ff763dd18428ac9c24741ff1ed47dff68b150250d5ef40ee14",
+      "build": {
+        "report_sha256": "50867ec5f19f27f097c0b713ddf61b3b07904669eaf8373f77ec966a680d6006",
+        "guest_disk_sha256": "b118205fb9f5018c67724b0aff0a3207b2c06d47cd6b58d8656a2beee77f8e29",
+        "outputs_archive_sha256": "873cd07e920191504823552eaed718062a7a52ac7406e815efe7713176036ae9",
+        "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+        "build_variant": "project86-comsubs-v1",
+        "source_patches": [
+          "SETENV.BAT: BAKROOT d: to c:",
+          "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+          "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)",
+          "Remove original INC/COMSUBS.LIB; compile and archive Project86 COMSUBS.C and DBCSTAB.ASM before NMAKE"
+        ],
+        "binary_library_boundary": "COMSUBS is built from Project86 source. Original compiler tools and CASSFAR.LIB, SLIBCE.LIB and MEM.LIB remain binary dependencies. This is not a rebuild of every linked library.",
+        "seed": {
+          "kind": "rebuilt-dos",
+          "image_sha256": "bd13775e9e09fee63eaed521031610839644aeffb5634938d4496a0ba3f29f0f",
+          "receipt_sha256": "0df0e585c0eac62291dafc498fe1d53faf2b623682e3d7e7647fcd0febc9e416",
+          "build": {
+            "report_sha256": "8d67abd17a0411ef621fdf7ef6e746ac51d0648e05c4cdffaf91a882860662cf",
+            "guest_disk_sha256": "30ae8504e326b0186811518d8b1605cf9adada8064a4e0f814db2146648182c3",
+            "outputs_archive_sha256": "02f941ee19010f7307ee8fdb3d56c3e5e289fce3675ff9cbec95cc1866c21a44",
+            "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+            "build_variant": "project86-ver-v1",
+            "source_patches": [
+              "SETENV.BAT: BAKROOT d: to c:",
+              "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+              "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)"
+            ],
+            "binary_library_boundary": "Original compiler runtime and support libraries retained. COMSUBS.LIB and CASSFAR.LIB are linked by DOS utility targets but have no corresponding source in this archive. This is not a rebuild of every linked library.",
+            "seed": {
+              "kind": "rebuilt-dos",
+              "image_sha256": "bd13775e9e09fee63eaed521031610839644aeffb5634938d4496a0ba3f29f0f",
+              "receipt_sha256": "0b9c9a1130e1c44101ea435036bb01c2b8d9644320ca7d5492dd51a1f326449f",
+              "build": {
+                "report_sha256": "723adbb9255d2513c7564afbc4da17b20c788389724534fe2e01d976cf9b6d13",
+                "guest_disk_sha256": "eb57d824a46784ae8a810e0f391f8fb38b5657dba159dc4fa3b6352b5465877c",
+                "outputs_archive_sha256": "02f941ee19010f7307ee8fdb3d56c3e5e289fce3675ff9cbec95cc1866c21a44",
+                "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+                "build_variant": "project86-ver-v1",
+                "source_patches": [
+                  "SETENV.BAT: BAKROOT d: to c:",
+                  "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+                  "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)"
+                ],
+                "binary_library_boundary": "Original compiler runtime and support libraries retained. COMSUBS.LIB and CASSFAR.LIB are linked by DOS utility targets but have no corresponding source in this archive. This is not a rebuild of every linked library."
+              }
+            },
+            "compiler_boot_image_sha256": "e0f500b6db37809606f5c0047e4d9cc5b123d7b9def8db00aee58153463000e4"
+          }
+        },
+        "compiler_boot_image_sha256": "e0f500b6db37809606f5c0047e4d9cc5b123d7b9def8db00aee58153463000e4",
+        "rebuilt_libraries": {
+          "SRC/INC/COMSUBS.LIB": {
+            "sha256": "289fa53f8c4cee0848c2ee4f743a9306cfd70c207200a89a6300be98f5e7f974",
+            "bytes": 2071,
+            "original_sha256": "3a2dd4aa684508037cf552692690943e9b0f8acf44e6ddb3ef43b631940789b1",
+            "source_files": {
+              "COMSUBS.C": "43fa98e73226c1bd73b6cbaa2e4d84f8e77cb54f8002df80b0218f69395de8b9",
+              "DBCSTAB.ASM": "5a590cfe2a3bad6e99f0aec4bb3d7617f1ea1486a0ceda6d55f51565b26390c7",
+              "COMSUBS.LBR": "07cc9d59476533854197f7f84310c8896231740a398e5c01d40d1cc71b5b3003"
+            },
+            "source_archive_sha256": "a63b9e84d3c66089947bb7bb51cb877d44e0dc7cb984f37a55f65f6b1d2e882c"
+          }
+        }
+      }
+    },
+    "compiler_boot_image_sha256": "278c3a14125860dedc0111e8dc3bdc60a289deae9465e861e8f4b043ccf636fe",
+    "rebuilt_libraries": {
+      "SRC/INC/COMSUBS.LIB": {
+        "sha256": "289fa53f8c4cee0848c2ee4f743a9306cfd70c207200a89a6300be98f5e7f974",
+        "bytes": 2071,
+        "original_sha256": "3a2dd4aa684508037cf552692690943e9b0f8acf44e6ddb3ef43b631940789b1",
+        "source_files": {
+          "COMSUBS.C": "43fa98e73226c1bd73b6cbaa2e4d84f8e77cb54f8002df80b0218f69395de8b9",
+          "DBCSTAB.ASM": "5a590cfe2a3bad6e99f0aec4bb3d7617f1ea1486a0ceda6d55f51565b26390c7",
+          "COMSUBS.LBR": "07cc9d59476533854197f7f84310c8896231740a398e5c01d40d1cc71b5b3003"
+        },
+        "source_archive_sha256": "a63b9e84d3c66089947bb7bb51cb877d44e0dc7cb984f37a55f65f6b1d2e882c"
+      },
+      "SRC/SELECT/CASSFAR.LIB": {
+        "sha256": "7164f8d418d55a04e5ae81af3fb4a98f41809519848b202f0de98fb29cb1e396",
+        "bytes": 13337,
+        "original_sha256": "39bbbb38f58483c3bacd366a899a90b7b8764b6431032ac7f7367212d6409f3e",
+        "source_files": {
+          "CASSFAR.C": "71e66144bd4fb3b1d2f1a132d8489797c324e4edb9747de0ee60d7f0cc87983c",
+          "CBRIDGE.ASM": "baf8414e20f09b1b3446bc02a0e2877aa399b7bb8f95e8b39f0c8c2b8f91b3fb",
+          "LAYOUT.H": "45371b1035a6bf2938ab679498ea95e3e749e384da158a96f0116e10696adef7",
+          "CASSFAR.LBR": "863f0b88f2fce31fb95d15af64809aac66a6dbcab69b1473ab19583dc6be770f"
+        },
+        "source_archive_sha256": "5c2cf94df56b4c0b271f15fa4ed0dd70b7ab709da02b36e68bacd26922ecc105",
+        "layout_generator_sha256": "2f04f25a89ca54b50958be9a8e8f67decaa6a44a9932fcdc3a295ee60811c04c"
+      }
+    }
+  },
+  "passed": true,
+  "interfaces": {
+    "passed": true,
+    "key_search_cases": 345,
+    "help_topics": 57,
+    "all_help_text_and_wrapped_bytes_equal": true,
+    "help_records": [
+      {
+        "id": 1,
+        "source_text_sha256": "4b2ea8a42cbd06bcf582cc02bc2bcf38fae07350c27b04b5fd2c465a252d19a3",
+        "wrapped_sha256": "f8f2b74cb70885fcdee63755c5abb30ad36d30d7184cede802d7155da1aaffb3",
+        "lines": 23
+      },
+      {
+        "id": 2,
+        "source_text_sha256": "b22bdbf1947e11b01daa5ef8d976f2be61839ca38cacbaef397481869ba23443",
+        "wrapped_sha256": "2407abce77c859a4518f676fa5dac3af489aa9fd00641b6eefd4810339413df6",
+        "lines": 7
+      },
+      {
+        "id": 3,
+        "source_text_sha256": "5936b008fd40cdb6c88256a85fb00db0a80b2f062e794e277799421367de0fb2",
+        "wrapped_sha256": "ba0178f6881b8197bc7c92b57e3ff08ce215ee2830ade9e181df4a2bdcf2699f",
+        "lines": 8
+      },
+      {
+        "id": 4,
+        "source_text_sha256": "abba852e49720fc5fc2a064cf21803e048ee32b13f3b744e805ae3a9ea893f0a",
+        "wrapped_sha256": "eb6266c5326a1c39b07c6b13dca71a2baa86d3766c02d6dbf0b8e6ae831171cd",
+        "lines": 6
+      },
+      {
+        "id": 5,
+        "source_text_sha256": "b9747cfd03b967f273fbad214c7797abfbd576a99a322fff67bcb9302eb47f10",
+        "wrapped_sha256": "bacb152b71fd3d77088bf9aafd0fa592af04b540d250836d5b5d293b40f2c6ef",
+        "lines": 5
+      },
+      {
+        "id": 6,
+        "source_text_sha256": "fab702f5981e94026c59e77d074f3a8938a86d6c86af958783cc2fc1a5d4b715",
+        "wrapped_sha256": "6fb3e751bca16196616bab6f250148f9ce99644e0fe8ae182b02cca96b151a26",
+        "lines": 5
+      },
+      {
+        "id": 7,
+        "source_text_sha256": "d218c3ffaca64189a1afa7adbaa41b1bd966d7418c7db8b4603b2aef645bd6ce",
+        "wrapped_sha256": "aeae42b5257c8ce87e03e2925c315bd224632d49b83bb76d52b924e026269d58",
+        "lines": 3
+      },
+      {
+        "id": 8,
+        "source_text_sha256": "3222ffed70e81c94021e99bb1887b7d67979a6a277c5b88a176b5507144af717",
+        "wrapped_sha256": "94d95df66d7d67991073ad825f8d1620c70692c92be07423ee378a37cc284a2f",
+        "lines": 5
+      },
+      {
+        "id": 9,
+        "source_text_sha256": "614fba81674c9b8c1a77e444752015372beb8b4541608f35f38f28e0c8577d69",
+        "wrapped_sha256": "0284e932b36557c153e4ff62067e2dffcb32a541419550225858becb7bbac845",
+        "lines": 9
+      },
+      {
+        "id": 10,
+        "source_text_sha256": "d060163a75b0fbfd3e6c51a1a447dbc0cda077f74f410b1df8248c09d9508a99",
+        "wrapped_sha256": "ef8a45ac93c43987c446fe4f5a048edcd234903121c902085c7fd7191bab609a",
+        "lines": 5
+      },
+      {
+        "id": 11,
+        "source_text_sha256": "6ea9a7fcb24349d2b6517f2b780867032411405b8f57f661b65703e045b40cba",
+        "wrapped_sha256": "e8072d7ce9b35c08bb5a3b25e74a923ab91fe227726ac20fe590885c6cafb11e",
+        "lines": 10
+      },
+      {
+        "id": 12,
+        "source_text_sha256": "c04ea2a2a36c09ba11f05afab2e7db3cf03242dee153d3a624e9359351a735ba",
+        "wrapped_sha256": "83ce166351afceeab4cd2f948090cf64af46f13356e3e74a110433d8deb3f4de",
+        "lines": 23
+      },
+      {
+        "id": 13,
+        "source_text_sha256": "971e1392a5c89000ff5d41817e998a04e3a7a4e0cf8ce5162a9639ece44d86a5",
+        "wrapped_sha256": "2d5ba1cff7f6d1f9e750e39f1cb5e2dd1957a0ab2f41cd2c35aa8945e307b42c",
+        "lines": 3
+      },
+      {
+        "id": 14,
+        "source_text_sha256": "5938fcdf65b61cc17d4316938194841ca031a215af94a40b27327ab45fd7a27e",
+        "wrapped_sha256": "5e15dd00c386515108352f3dcb633a1adc1b05857602a3dd3e13db2d0c290cfc",
+        "lines": 9
+      },
+      {
+        "id": 15,
+        "source_text_sha256": "11ccd5d19c5a3e01374629d1d1a6900b6bcda600ca6467e973c9ab9789c56aa2",
+        "wrapped_sha256": "2066b734f38821b934576413a9f05e7e91fb32d2767df79e9407a1f9040f002b",
+        "lines": 9
+      },
+      {
+        "id": 16,
+        "source_text_sha256": "ca5ec2b7169444daba8a5ce56944910304af6fe7236a0a8a9ebc0d866664137c",
+        "wrapped_sha256": "f6af32c6152731b308aeccf6f9e79c68a2cf52f4dcc31639fe16f8905511ce0e",
+        "lines": 19
+      },
+      {
+        "id": 17,
+        "source_text_sha256": "b8ad4f05d04d9e19745cc44b436398217d078811fe8c76d33917e36ffab2b26f",
+        "wrapped_sha256": "b2d2c3f5cd5c0e35ded06f7853b50a9930f180789d470e42aa1007b0d4077f9b",
+        "lines": 19
+      },
+      {
+        "id": 18,
+        "source_text_sha256": "746f2d6a7126c43130d34dfb0cf274a4c71cbde7661cfa7e28b89487ffc483dc",
+        "wrapped_sha256": "73634cf5e08225025dc59950609140a8d385630d5a363215cb27b8be3f608bc9",
+        "lines": 8
+      },
+      {
+        "id": 19,
+        "source_text_sha256": "020b7147e0f0bc784bdb91ca1eedbf369e050029448dbd5e830666bd60bd2eb4",
+        "wrapped_sha256": "4959d6cf7dbf6006698ca183c5d59ad0f17fc064214fa6d0971f68fc665fc7bc",
+        "lines": 13
+      },
+      {
+        "id": 20,
+        "source_text_sha256": "cb6dd2a9fe0b3e0c56594623e3b65c8b230951f32722c3ef0c1a54910f587a83",
+        "wrapped_sha256": "1b31afd73c5e271b27a856dff3a823e0a6a5f698609a986eb2a2ccfda1c2355d",
+        "lines": 4
+      },
+      {
+        "id": 21,
+        "source_text_sha256": "db14815be32330f26c975af17841a26e717d9312eec01efca0da851baeeb0944",
+        "wrapped_sha256": "4b47863d8895e439b763302bc7c729b179c615c3809ba75fdf3b7b41ae87c55b",
+        "lines": 13
+      },
+      {
+        "id": 22,
+        "source_text_sha256": "8563559d84f5c0f9b2a28b17bd52ef63020d8247b0c2e99a92f75d9d3b9f9adf",
+        "wrapped_sha256": "c31b4c39884a81c92d3a1f2a1284233cf6758fad1743eff83b7c5e9f7ca347c3",
+        "lines": 9
+      },
+      {
+        "id": 23,
+        "source_text_sha256": "a3ecda36a9dab7ae480829577af00708305a1200f89b98e8c242cd14d4fc3eae",
+        "wrapped_sha256": "fc160fd870b290c7cfe7e90f82a6f44ee4af86f04bd73177f5d2f0f8487210c0",
+        "lines": 12
+      },
+      {
+        "id": 24,
+        "source_text_sha256": "f2983dfcc15303fff656db710802f6ba0354c9a65e4d5da3488ba2c52ba779ae",
+        "wrapped_sha256": "929d0ef521481c3fd6bf90a9e972fc9fbb262e36d50c3a71ae46fa94a4459180",
+        "lines": 8
+      },
+      {
+        "id": 25,
+        "source_text_sha256": "2548ac4c247fc3789e903da7e4bd122b7242745db4869d8137c769ed35d8a247",
+        "wrapped_sha256": "936c1ffe4253b26512280925fcd8b2f7971dee200f1562ab2831442ce8b3a21f",
+        "lines": 5
+      },
+      {
+        "id": 26,
+        "source_text_sha256": "9865ce8223af18b2fea631ea26a2109eaa80cec488043c02e4535e00ef4ebd6b",
+        "wrapped_sha256": "4d979f24d1f01e8bff1d30adaa0c59dbf552a4003a58a877dcfa274f78d44be2",
+        "lines": 7
+      },
+      {
+        "id": 27,
+        "source_text_sha256": "dbd8ee85dc6fd6a11eec71a834a325bdaa4b964e021b60c6d77517fa62d5587d",
+        "wrapped_sha256": "856f842cd649d91d85a275e59ffd0383ae51e43e2013e9f4723f2f2794787552",
+        "lines": 7
+      },
+      {
+        "id": 28,
+        "source_text_sha256": "a5af13c2911efba840521fe8eab640871ded519fa666b801dec57e7da0531c9d",
+        "wrapped_sha256": "16147a086843acc7efbdbeb177b0960282254f5eebb6312a20f1f090ab5812e9",
+        "lines": 5
+      },
+      {
+        "id": 29,
+        "source_text_sha256": "8e929d5302cc7dfb75b2259c820592a617812cb9db55f1397dbe30c805c2c7c9",
+        "wrapped_sha256": "820a1e066df166aef244aadf84bdd5271a69aeece5f34c417eabcf483059b32f",
+        "lines": 8
+      },
+      {
+        "id": 30,
+        "source_text_sha256": "b2629ef1efb3c7903c3c5e61b7f1f9cfab3c1b629cb9bbd812bf623db4b46ff1",
+        "wrapped_sha256": "21b5dcb311b25b0d616083082ee94735cdf4c279d90b09c936f455c0b955b858",
+        "lines": 8
+      },
+      {
+        "id": 31,
+        "source_text_sha256": "e2b7032a91a6151327534736526aab068fe645251804dc00b9fcd150732a0719",
+        "wrapped_sha256": "c9c7d92f7d1b030959c1cf7f6a0cea3efc97e58b211572ee453745211ca70c1f",
+        "lines": 18
+      },
+      {
+        "id": 32,
+        "source_text_sha256": "f9f9e03288e35d3681a5cd8eadbe30a78b4fc1ec55feffd9ed026498fa3c183b",
+        "wrapped_sha256": "8ab77a299befc331ac25c9ef418a2b987ee2b31a3428bd01501d78f02d316b28",
+        "lines": 17
+      },
+      {
+        "id": 33,
+        "source_text_sha256": "2073cc16488a4cad04bf8ecf25e87eaf7ae877751cd138fd477e05ad569a0e9c",
+        "wrapped_sha256": "19de2416514f7da4df4012cbd3be3361b440a9f4b6f87218b6db2e5d1b3071d7",
+        "lines": 43
+      },
+      {
+        "id": 34,
+        "source_text_sha256": "f4f90a6873f6f60e64a268a552b5bed709fe2baeddd6401e0070b18fd8219657",
+        "wrapped_sha256": "9c2320a4e4faa8650bc1cb0327a1ab7baeae63058840c64012c4d5d32c1b8d34",
+        "lines": 96
+      },
+      {
+        "id": 35,
+        "source_text_sha256": "f8444a21ccf1c786267cffce1acee4888c17586ea297399d49de2b177cad1916",
+        "wrapped_sha256": "96ddd225ec75bbfe4232ed9a313caaaf1205da209bf9249f9a169a9e8d126376",
+        "lines": 35
+      },
+      {
+        "id": 36,
+        "source_text_sha256": "769332ac2f7dc5eeedd9725478896b74a7383fba6aa3ac1b74d4f545c8852808",
+        "wrapped_sha256": "54e7c43ebaaec95b5a05b50675a248ea53bac36077ae8131f44629a4b0a6853f",
+        "lines": 22
+      },
+      {
+        "id": 37,
+        "source_text_sha256": "100a88e554cab8d43709a7c9ee9d6a43739609dbb1e7b346ebc0f7dce7343d91",
+        "wrapped_sha256": "10e1ae33fbc91c6fdd2e271d8340344fdc2a33a4c26d60705131faf1fe142a61",
+        "lines": 78
+      },
+      {
+        "id": 38,
+        "source_text_sha256": "3cbe4af9314f489d273de0fef22a54d9cc2d6e09d1e735a120a7118ecfb56f99",
+        "wrapped_sha256": "5bf2da814c47c6edc0be6ae32a2b24a87feda4285dc82a631a0872e013ef4fbc",
+        "lines": 15
+      },
+      {
+        "id": 39,
+        "source_text_sha256": "1215575372bd0b7075a95744ae6cf3f14665839ba65f72bafdbe5dc803e348f4",
+        "wrapped_sha256": "73c0a06b7e5a80d8d09ca2a5716999f9df0eb9d33f5f43633cb984f7d4c4d4a8",
+        "lines": 14
+      },
+      {
+        "id": 40,
+        "source_text_sha256": "03fd270142d25c4bb2b2ec33ae553def2040647dcfff6f1cf9e11251a5d08c4d",
+        "wrapped_sha256": "b4c21f7dedceecb4804241caa82de2a239e260bfeb72213bb081fac072bca4ca",
+        "lines": 36
+      },
+      {
+        "id": 41,
+        "source_text_sha256": "1b4697a2030207a5cd1618bf08530ba86e2d835b0ee9e00b3b2c11efadaaa058",
+        "wrapped_sha256": "827d9c82ac43fe0ff80b70217ffc8f5c5d81099bd401907ab57256dac73786fe",
+        "lines": 11
+      },
+      {
+        "id": 42,
+        "source_text_sha256": "12f2512148bf4261574de6591d63ff90ceeb3ec9288473029d88dba75001762a",
+        "wrapped_sha256": "e4655f8db868731505baeb7ad9445961e718cff7d4142c2621bacff641321567",
+        "lines": 20
+      },
+      {
+        "id": 43,
+        "source_text_sha256": "3ce1777af14966b0d2aea23274e9fe6f8c8ed65dcec1c84ed75ce81478287bda",
+        "wrapped_sha256": "b0af31b7e6db1c1b364f21371e4f9d9853beb29360132961d038bc421cb3e4f1",
+        "lines": 41
+      },
+      {
+        "id": 44,
+        "source_text_sha256": "07fd16e4dca0c92ff5a86fe1c0daec059af24742e35e9171f9469bb10cb73535",
+        "wrapped_sha256": "19ba675fee754003d42a9b242ea146a0c5b027d681921a03f9603ba2f19b408c",
+        "lines": 17
+      },
+      {
+        "id": 45,
+        "source_text_sha256": "d7a393b5055c5da5be0335c797c11b7f3ae35667813a053befe461ec93a7ee16",
+        "wrapped_sha256": "1ff1303772e7ac995d35f8cd3c78bc2067a878fa72e104a47112dade60a9a7e2",
+        "lines": 9
+      },
+      {
+        "id": 46,
+        "source_text_sha256": "bece46ddff38bccd8cf9dfb1eed4346d95528de6d5ef3eb3f922c3c18be5c3a5",
+        "wrapped_sha256": "1ed4d7d33c8194c93779f947b52fa8e6b4a9c0962e621170a2aa1c7c0f10f7b8",
+        "lines": 10
+      },
+      {
+        "id": 47,
+        "source_text_sha256": "668420da84463ba119613e70b41128995f7404844ba15dea96d275d542e43296",
+        "wrapped_sha256": "c0dcd7c006c0703eb6aac0c2621984032cf202e0e53cc4c9934b8df51cba599a",
+        "lines": 18
+      },
+      {
+        "id": 48,
+        "source_text_sha256": "a7ee8036dc6697f0686ffb1e7b97a853736c0c38a369ae8a5b00973eba7446f8",
+        "wrapped_sha256": "990bc6ff928dab60d8e07b28a79a864fe22108ad7786c74ff7cdc8dadf7b996d",
+        "lines": 10
+      },
+      {
+        "id": 49,
+        "source_text_sha256": "4abefb1c9cdbb62dc79acc1eeeb5e5bea400b01905fa1f9ac3d4d8405348c52a",
+        "wrapped_sha256": "8daf6289f8369f2ecee86563c655cd3e6451cf3d63a2710bfd2f9f9f53c25b09",
+        "lines": 9
+      },
+      {
+        "id": 50,
+        "source_text_sha256": "02d395d6a96111040da093233e29bb0cbc5c8059c6449157647f0ab6ff20f811",
+        "wrapped_sha256": "c6fa5aa56a4058fef48621ca3ec3f1132edc6db003bc9a4529475b95414f7ac5",
+        "lines": 9
+      },
+      {
+        "id": 51,
+        "source_text_sha256": "d021a2c216d5f7999f36008c4ee97420a964b328efbb556ca697a908aff9a81e",
+        "wrapped_sha256": "75576609f4ccfc12eed701b315cfd8591c03db8f357d88dc3146e4a3335ccb24",
+        "lines": 3
+      },
+      {
+        "id": 52,
+        "source_text_sha256": "aeb0d761a5d1f7f72f690b1669e4fff783bb7edf9f548406585e6be3db55d70e",
+        "wrapped_sha256": "426edeff65dc1f4f609ed91ec136005ddca0d8db144920254491a0fe8b289265",
+        "lines": 5
+      },
+      {
+        "id": 53,
+        "source_text_sha256": "9f8d9dbdca8252576cefb7e3e7c8e53090d127d3367f3bafa27fef7058bb6022",
+        "wrapped_sha256": "b47bc7383eb531a2d7dd6bc88523b89ca8720319f03acd11a2a63872145ca290",
+        "lines": 4
+      },
+      {
+        "id": 54,
+        "source_text_sha256": "70a8d56202ecbdd0de02a20b5835dec3dad35f035118af7042d5354118ad7663",
+        "wrapped_sha256": "8a5e1745907c054e6448c7c245e66117e26b5f28b7585f7c47dbc197b555d918",
+        "lines": 9
+      },
+      {
+        "id": 55,
+        "source_text_sha256": "d86203a66f910fb80dd2f03d09d08b8ce878741185ec24d486bb1625894f868f",
+        "wrapped_sha256": "f91bfb7c0b18b8e2f77649806f51ccb294ca7ea5f93278f36ee4e1a48b5b34e2",
+        "lines": 3
+      },
+      {
+        "id": 56,
+        "source_text_sha256": "2f87ec82f5663d807b40ce5c886476fc019c6b10b997d96b6dd3acd5c49a74ce",
+        "wrapped_sha256": "075375f5ee319abef9fb3473c4fbdaaf1ed23ad4007c9f207faa0c8066259278",
+        "lines": 6
+      },
+      {
+        "id": 57,
+        "source_text_sha256": "31c0447c5613fb3a21cbb063888ce6fb9dbdc73be35606cb7489ae4fb62982dc",
+        "wrapped_sha256": "b5f63271f89b8a8fc571e0067f29ae7727267d33e2d2e8b93aeb2cc1dd5aec02",
+        "lines": 4
+      }
+    ],
+    "video_geometry_equal": true,
+    "video_intentional_changed_offsets": [
+      0,
+      30,
+      74,
+      76
+    ],
+    "video_difference_reason": "BIOS-declared VGA capabilities and explicit character/cursor metadata",
+    "original_probe_sha256": "5e0ea77e2884da08c4ebd1df0f91c3f9b7350eab5a197643ce537dc156a39a39",
+    "replacement_probe_sha256": "23705bbeb8470f43926928b49a8f1571f52557d5195bae61b78f1eda856a33d7"
+  },
+  "navigation": {
+    "welcome": {
+      "text_equal": true,
+      "cells_equal": true,
+      "original_cells_sha256": "81898d2cb936e56cba4820d518d599f2d8fdb85d320d68f21bd37444553a3645",
+      "replacement_cells_sha256": "81898d2cb936e56cba4820d518d599f2d8fdb85d320d68f21bd37444553a3645"
+    },
+    "introduction": {
+      "text_equal": true,
+      "cells_equal": true,
+      "original_cells_sha256": "749d752e8a801024983546e890a0b804ca9ea3c96240a348a074af1556365348",
+      "replacement_cells_sha256": "749d752e8a801024983546e890a0b804ca9ea3c96240a348a074af1556365348"
+    },
+    "workspace": {
+      "text_equal": true,
+      "cells_equal": true,
+      "original_cells_sha256": "cc977bab17415e9ffc8b203f6d69ef12719fbba192c81e50a0c0c97aba79e8a6",
+      "replacement_cells_sha256": "cc977bab17415e9ffc8b203f6d69ef12719fbba192c81e50a0c0c97aba79e8a6"
+    },
+    "workspace-down": {
+      "text_equal": true,
+      "cells_equal": true,
+      "original_cells_sha256": "1f86d170173b0afc6f0e64b062891bb4028fa2a1cc9b9563be417e69927d4136",
+      "replacement_cells_sha256": "1f86d170173b0afc6f0e64b062891bb4028fa2a1cc9b9563be417e69927d4136"
+    },
+    "workspace-wrap-down": {
+      "text_equal": true,
+      "cells_equal": true,
+      "original_cells_sha256": "437a338f675afc55ce4c18b1afab1bc9f1d3f5978f70ee746056aab39b89ded2",
+      "replacement_cells_sha256": "437a338f675afc55ce4c18b1afab1bc9f1d3f5978f70ee746056aab39b89ded2"
+    },
+    "workspace-wrap-up": {
+      "text_equal": true,
+      "cells_equal": true,
+      "original_cells_sha256": "1f86d170173b0afc6f0e64b062891bb4028fa2a1cc9b9563be417e69927d4136",
+      "replacement_cells_sha256": "1f86d170173b0afc6f0e64b062891bb4028fa2a1cc9b9563be417e69927d4136"
+    },
+    "workspace-up": {
+      "text_equal": true,
+      "cells_equal": true,
+      "original_cells_sha256": "cc977bab17415e9ffc8b203f6d69ef12719fbba192c81e50a0c0c97aba79e8a6",
+      "replacement_cells_sha256": "cc977bab17415e9ffc8b203f6d69ef12719fbba192c81e50a0c0c97aba79e8a6"
+    },
+    "help": {
+      "text_equal": true,
+      "cells_equal": true,
+      "original_cells_sha256": "5fe15bab4d50b842dfee4e90e0d7ce9b7ac7f34cf79e09350fd1af2a57456a9e",
+      "replacement_cells_sha256": "5fe15bab4d50b842dfee4e90e0d7ce9b7ac7f34cf79e09350fd1af2a57456a9e"
+    },
+    "help-keys": {
+      "text_equal": true,
+      "cells_equal": true,
+      "original_cells_sha256": "e913fb1531dfff9674e584168aca8f3fcd043872a50ab396185ccd6fb81839ae",
+      "replacement_cells_sha256": "e913fb1531dfff9674e584168aca8f3fcd043872a50ab396185ccd6fb81839ae"
+    },
+    "help-page-down": {
+      "text_equal": true,
+      "cells_equal": true,
+      "original_cells_sha256": "56ce24f081254b217b79a8d210fedc7788fbf8b8ae8f5fec9086675e8e00fa8f",
+      "replacement_cells_sha256": "56ce24f081254b217b79a8d210fedc7788fbf8b8ae8f5fec9086675e8e00fa8f"
+    },
+    "help-page-up": {
+      "text_equal": true,
+      "cells_equal": true,
+      "original_cells_sha256": "e913fb1531dfff9674e584168aca8f3fcd043872a50ab396185ccd6fb81839ae",
+      "replacement_cells_sha256": "e913fb1531dfff9674e584168aca8f3fcd043872a50ab396185ccd6fb81839ae"
+    },
+    "help-return": {
+      "text_equal": true,
+      "cells_equal": true,
+      "original_cells_sha256": "cc977bab17415e9ffc8b203f6d69ef12719fbba192c81e50a0c0c97aba79e8a6",
+      "replacement_cells_sha256": "cc977bab17415e9ffc8b203f6d69ef12719fbba192c81e50a0c0c97aba79e8a6"
+    },
+    "cancel": {
+      "text_equal": true,
+      "cells_equal": true,
+      "original_cells_sha256": "b66968dc8117e63432a9791754314d6185dd20e4b5dd2fee0702786633999f27",
+      "replacement_cells_sha256": "b66968dc8117e63432a9791754314d6185dd20e4b5dd2fee0702786633999f27"
+    }
+  },
+  "parameter_review": {
+    "dos-parameters": {
+      "cells_equal": true,
+      "original_sha256": "4a92f898821e6f375c46fae2896701b658e75b3e3711813c39ecc596ca06c12e",
+      "replacement_sha256": "4a92f898821e6f375c46fae2896701b658e75b3e3711813c39ecc596ca06c12e"
+    },
+    "fastopen": {
+      "cells_equal": true,
+      "original_sha256": "367f54d229d2aed64f1017f3f74884df128df870a3b0b1bd4ebf78e5667c7057",
+      "replacement_sha256": "367f54d229d2aed64f1017f3f74884df128df870a3b0b1bd4ebf78e5667c7057"
+    },
+    "configuration": {
+      "cells_equal": true,
+      "original_sha256": "e709549373a67794168671f3270640a6832ab007441edcdfc99b93a6493993c3",
+      "replacement_sha256": "e709549373a67794168671f3270640a6832ab007441edcdfc99b93a6493993c3"
+    }
+  },
+  "missing_help_error": {
+    "cells_equal": true,
+    "original_sha256": "9045ee5277d230cd1ab27d0152a2d8ea0446f7ce461fc89e45bacdc09695e034",
+    "replacement_sha256": "9045ee5277d230cd1ab27d0152a2d8ea0446f7ce461fc89e45bacdc09695e034"
+  },
+  "installation_original": {
+    "passed": true,
+    "installer_announced_complete": true,
+    "disk_swaps": [
+      "copy.ima",
+      "source.ima",
+      "copy.ima",
+      "source.ima",
+      "copy.ima",
+      "source.ima",
+      "copy.ima",
+      "source.ima"
+    ],
+    "typed_directory": "C:\\P86TEST",
+    "invalid_path_character_rejected": true,
+    "unrelated_file_preserved": true,
+    "installed_files": {
+      "IO.SYS": {
+        "sha256": "755c79c16d3db5280b5286f1032a4f77bb8556b79f0c22f9c9f85556c7b69e39",
+        "bytes": 33321
+      },
+      "MSDOS.SYS": {
+        "sha256": "573626782a3c45f0d9e5f00af1bd0f52a7de44bea96d2a2d3d660e9ae06158d5",
+        "bytes": 37376
+      },
+      "AUTOEXEC.BAT": {
+        "sha256": "e7efc9cde33b841b0ff452926e601e6e88bc3e4197bd9608b8e7b0fa116067c0",
+        "bytes": 105
+      },
+      "COMMAND.COM": {
+        "sha256": "9904496029b00fd976deab83704e792e9af0a5ebf0d9cb9403d1b25d78c19497",
+        "bytes": 37588
+      },
+      "P86TEST/DOSSHELL.BAT": {
+        "sha256": "ab19b05c4a400520d80858230d5ceb75fcfbd525c8dc11a305010ab66eb859bf",
+        "bytes": 200
+      },
+      "P86TEST/4201.CPI": {
+        "sha256": "e46d224fc096d3e2903ca58d7356bb37b16fd1d9ffda439903f386860a664e88",
+        "bytes": 6404
+      },
+      "P86TEST/4208.CPI": {
+        "sha256": "1f4a05e6ccf80d187702f6abaecb9966d120cf9a336d30cc2390692ba2a2fa22",
+        "bytes": 720
+      },
+      "P86TEST/5202.CPI": {
+        "sha256": "3f503e60c30e60f6833755fd9284d84afc7125bacce16ee83a42c596c2143f4b",
+        "bytes": 370
+      },
+      "P86TEST/ANSI.SYS": {
+        "sha256": "c6d23b1ecaa670f6de83c1e003bec50967962e0fcca2e96737bba38057e27581",
+        "bytes": 9105
+      },
+      "P86TEST/APPEND.EXE": {
+        "sha256": "2b166b708e0d1b50719ac50ce32bc0e7d04ce76e6c28850d8d0ce2bd5502578b",
+        "bytes": 11154
+      },
+      "P86TEST/ASSIGN.COM": {
+        "sha256": "edf9bb8136b4a89d06f801a1e620b7107842e06fbca1c83643ca256f74437bd2",
+        "bytes": 5753
+      },
+      "P86TEST/ATTRIB.EXE": {
+        "sha256": "e66d22f2873bfa59a9d6908f85fc43c9c2b52cc62ab63ebc13b98e900aecabf7",
+        "bytes": 18263
+      },
+      "P86TEST/BACKUP.COM": {
+        "sha256": "077522ca89bcd3aa1f4b8c0c4945713d95888dfe812e995b9a44285d485e8323",
+        "bytes": 36608
+      },
+      "P86TEST/CHKDSK.COM": {
+        "sha256": "02a683582160a16638098d9055b14d0d3e66d4ccea27a82435bebbac7f733ad3",
+        "bytes": 17787
+      },
+      "P86TEST/COMMAND.COM": {
+        "sha256": "9904496029b00fd976deab83704e792e9af0a5ebf0d9cb9403d1b25d78c19497",
+        "bytes": 37588
+      },
+      "P86TEST/COMP.COM": {
+        "sha256": "a4478bbb749c518d8ab514e42901de86c6c7bf44c0cbba585a9f4ab39017c662",
+        "bytes": 9459
+      },
+      "P86TEST/COUNTRY.SYS": {
+        "sha256": "cd1abba25c110531d4ce0588eae9c1353214d4e322cd4c7989b8b51fea170bb3",
+        "bytes": 12806
+      },
+      "P86TEST/DEBUG.COM": {
+        "sha256": "f688545d0839f07be5aa96ef43e6afc055cca25324607af65b22a713d6eb6f83",
+        "bytes": 21574
+      },
+      "P86TEST/DISKCOMP.COM": {
+        "sha256": "55b54c43100b366931a3ed462d26697a43b86718f91cf7e9282205a5c0384d7f",
+        "bytes": 9857
+      },
+      "P86TEST/DISKCOPY.COM": {
+        "sha256": "9bda2fd91ac1088d75d6acd4688165689f8c5c75a2ef60705df0c43c922b1358",
+        "bytes": 10396
+      },
+      "P86TEST/DISPLAY.SYS": {
+        "sha256": "3de3e2951122ead73f57d39889fb15afee0bf8a7f82e9557ddfd513cb42f97b2",
+        "bytes": 15692
+      },
+      "P86TEST/DRIVER.SYS": {
+        "sha256": "6a3ae37bcfde3dfda435e285a547d38f86dc3c91eb9fc2ad7123e3e72c2c7a46",
+        "bytes": 5241
+      },
+      "P86TEST/EDLIN.COM": {
+        "sha256": "cd22745bd242ac3229f28301a5ce1d19c0e7b8faf3ba66d4391e3d489e277902",
+        "bytes": 14069
+      },
+      "P86TEST/EGA.CPI": {
+        "sha256": "154e76387efde2950e6372a6c60fe591a0a598104b25c90545f0f75158af52a5",
+        "bytes": 49068
+      },
+      "P86TEST/EMM386.SYS": {
+        "sha256": "03434e799e5ea72c2f27a2e79014a4e9f519322d6acfe7a2ae25aa9675111f55",
+        "bytes": 87776
+      },
+      "P86TEST/EXE2BIN.EXE": {
+        "sha256": "4b3d197ddbfb2f98250553bcce677358ea925a1feb2850addf5c8ac288a8088c",
+        "bytes": 7963
+      },
+      "P86TEST/FASTOPEN.EXE": {
+        "sha256": "14d619e40476e18b5c9429cfd159646797e8233d1fb150961b5243403e9160b8",
+        "bytes": 16702
+      },
+      "P86TEST/FC.EXE": {
+        "sha256": "2f4b0ffae400a45f144b4ab9ff6e750589afe23602767f3ea8df0b62741f391e",
+        "bytes": 15807
+      },
+      "P86TEST/FDISK.EXE": {
+        "sha256": "ea6ce9926199117edc55d7fe61369c628add43c15cd627fd7abcfbc63b55bf65",
+        "bytes": 60935
+      },
+      "P86TEST/FILESYS.EXE": {
+        "sha256": "4cae8b7bab236e1a246a064b14b404fed754b0e3b7610e80ddce0f76f194587a",
+        "bytes": 11129
+      },
+      "P86TEST/FIND.EXE": {
+        "sha256": "2d6c67ab0d1a15beaa18590b9ca6d4c618ff2f6af625f7bc8e2ac6a2155731e6",
+        "bytes": 5941
+      },
+      "P86TEST/FORMAT.COM": {
+        "sha256": "f44685e84b092a17603704ed5023aaff360bba414843076306fd7693d477696c",
+        "bytes": 22859
+      },
+      "P86TEST/GRAFTABL.COM": {
+        "sha256": "2e65cc87908390e8e476bf577de705948f532c1e3d5b94aeeb00048f044b32e3",
+        "bytes": 10239
+      },
+      "P86TEST/GRAPHICS.COM": {
+        "sha256": "b7abce9f4119662fc2546b00c62230ab300ff2512f4000ad3e4c81142a01e2c7",
+        "bytes": 16693
+      },
+      "P86TEST/GRAPHICS.PRO": {
+        "sha256": "c8d534ec76423fd10acc27db9507255a3db9d3aa37fb5c11153c2f2c411da6b4",
+        "bytes": 9397
+      },
+      "P86TEST/IFSFUNC.EXE": {
+        "sha256": "86c8861f82bdcffa50f08590f00b317d3fb7ce262c951963e26a7ed783042e15",
+        "bytes": 21739
+      },
+      "P86TEST/JOIN.EXE": {
+        "sha256": "1d5e47957d04a852ebd8e99d5c79fd98302b6512e7d1b9460e3bd44af91c72fc",
+        "bytes": 17733
+      },
+      "P86TEST/KEYB.COM": {
+        "sha256": "6a66e27fe7865243bb631fe247701a93956caa641af4926811280ebd7a2d061c",
+        "bytes": 14727
+      },
+      "P86TEST/KEYBOARD.SYS": {
+        "sha256": "0a3e9ce32f0426c43e163b5dd9832bf5f78626426ab6143c3a3c96c673a91a89",
+        "bytes": 23328
+      },
+      "P86TEST/LABEL.COM": {
+        "sha256": "a8fce248d06392d9e0adc7ed557aa63cffdade89878825c689b2b84e8ccf8d44",
+        "bytes": 4458
+      },
+      "P86TEST/LCD.CPI": {
+        "sha256": "2f62b85f088c4e4143a35642086f23f735bdd082c2905f1092a9657d06755034",
+        "bytes": 10703
+      },
+      "P86TEST/MEM.EXE": {
+        "sha256": "b3678169c59d359fdef9e21cd616a8d7ce2f81caabd9006de5e68a6caa744b91",
+        "bytes": 20005
+      },
+      "P86TEST/MODE.COM": {
+        "sha256": "50fe27e2f2f437b7ce268d89ad4c763c8048669fa38aab17dd584f198f7c46f8",
+        "bytes": 22960
+      },
+      "P86TEST/MORE.COM": {
+        "sha256": "d36f092cb61d8ef2e25b66b6dfea70c08290ec958d325b8ec798b62a2ef14864",
+        "bytes": 2134
+      },
+      "P86TEST/NLSFUNC.EXE": {
+        "sha256": "8851cacdc3260f38cbce388edd1821e08563d35ec9208be95b75ba910f57446b",
+        "bytes": 6878
+      },
+      "P86TEST/PRINT.COM": {
+        "sha256": "7236ffee35ebe46ae1e7895245c83bea4fbd71b684220d5f71ec1140a529a0c8",
+        "bytes": 14131
+      },
+      "P86TEST/PRINTER.SYS": {
+        "sha256": "b15bf75a8d4ee8b517fc6014e35ef04d3051b1e28bb29afced89fbcb9ab23855",
+        "bytes": 18914
+      },
+      "P86TEST/RAMDRIVE.SYS": {
+        "sha256": "34b8b368b2835b8a572bb21ae015336c5af8e62c84d29209c726e18ee56b60e2",
+        "bytes": 8235
+      },
+      "P86TEST/RECOVER.COM": {
+        "sha256": "46bb0d3e730a7302247dbf6b1a418ec4d371d0a947ce6bbe7a7153cd4f6f7dca",
+        "bytes": 10588
+      },
+      "P86TEST/REPLACE.EXE": {
+        "sha256": "35af261f612e1b564cb30203b75d6b46d490746ea751ed2ea619d4e59683e780",
+        "bytes": 18535
+      },
+      "P86TEST/RESTORE.COM": {
+        "sha256": "8ea06271301887372752fe769a338f7290b0572f35ca4697577ff743cc16f86a",
+        "bytes": 36996
+      },
+      "P86TEST/SELECT.COM": {
+        "sha256": "bdbf51f86a171f633020fe74d007a28020c189e9cd9c52fb12e2a54f0cbddae0",
+        "bytes": 3642
+      },
+      "P86TEST/SHARE.EXE": {
+        "sha256": "e30e3f392da0be3f64feda5f678b69e4043a58bf4defb723d6807f38eceaec81",
+        "bytes": 13424
+      },
+      "P86TEST/SMARTDRV.SYS": {
+        "sha256": "c9895111576d6d898dcffe4b4efbe746169b81e22cf9fc51b49ef10c46e2436f",
+        "bytes": 10224
+      },
+      "P86TEST/SORT.EXE": {
+        "sha256": "1de1a1457a242a19448871152b91afb57650a2fd68c211e217d11f38f4cb59fd",
+        "bytes": 5882
+      },
+      "P86TEST/SUBST.EXE": {
+        "sha256": "7973abff543c0c32daa01f40f01f61c8c179d5deb596770edccb1bc6c25ec0ad",
+        "bytes": 18403
+      },
+      "P86TEST/SYS.COM": {
+        "sha256": "1083138f28a35a16985f8d6c3b8afb276649d3bdb35a4444cccb22a1f7149e4c",
+        "bytes": 11456
+      },
+      "P86TEST/TREE.COM": {
+        "sha256": "a830b50b7304bebda3d82e98e13f758b1ede9a90bcb6917ea8f62aab6b01a0d5",
+        "bytes": 6302
+      },
+      "P86TEST/XCOPY.EXE": {
+        "sha256": "7f1b05b60767d9ec9bbd8730bcb91491e970687d351268e607917e91dbc145ea",
+        "bytes": 17055
+      },
+      "P86TEST/XMA2EMS.SYS": {
+        "sha256": "f6ffe886e4e2be63a0de05075daaf3812fecaf34e30173439de4a81368495172",
+        "bytes": 29211
+      },
+      "P86TEST/XMAEM.SYS": {
+        "sha256": "5ea3e0d5cf4ff17126cdcc79abc77f7ee5f67b8ba4868a1c8dfd8540c3edd498",
+        "bytes": 19264
+      },
+      "P86TEST/AUTOEXEC.BAT": {
+        "sha256": "c134b2f85415ba5cfce3e3fe4745688335745a9bb22152ac8f5c77f190d8aee3",
+        "bytes": 11
+      },
+      "P86TEST/CONFIG.SYS": {
+        "sha256": "7407f72af1b4a04d6c0d75c9ae63fc5ac9ee18bbb25a6dc495c704136247086a",
+        "bytes": 35
+      },
+      "P86TEST/SELECT.DAT": {
+        "sha256": "d9bced9807446d012e042d048f26fd7aac808fd63ae9403bb19fcde888c2254d",
+        "bytes": 22999
+      },
+      "P86TEST/SELECT.EXE": {
+        "sha256": "f61c9640004b6417f3667240b98851a1e6d470369416abf23972cc353365c8d0",
+        "bytes": 95107
+      },
+      "P86TEST/SELECT.HLP": {
+        "sha256": "b2e15f740c133427af7f5a295cb780b3a028bd8429c7a483fd98af97a2ba62a5",
+        "bytes": 28695
+      },
+      "P86TEST/SELECT.PRT": {
+        "sha256": "ff73db5a8318cd83430e926cd046a4c3d21dab857a00dc234c305141facbea39",
+        "bytes": 1329
+      },
+      "KEEP.TXT": {
+        "sha256": "6fcdb64cb2718769e9ba47dff5ce651beda51fc258d79a01908c5faca7c1812e",
+        "bytes": 38
+      },
+      "CONFIG.SYS": {
+        "sha256": "407bd4a722c0cd07cb62e63b852a299a58dcd4ebcdea40f93612e101d90083f6",
+        "bytes": 72
+      }
+    },
+    "config_sha256": "407bd4a722c0cd07cb62e63b852a299a58dcd4ebcdea40f93612e101d90083f6",
+    "autoexec_sha256": "e7efc9cde33b841b0ff452926e601e6e88bc3e4197bd9608b8e7b0fa116067c0",
+    "installed_command_executed_after_restart": true
+  },
+  "installation_replacement": {
+    "passed": true,
+    "installer_announced_complete": true,
+    "disk_swaps": [
+      "copy.ima",
+      "source.ima",
+      "copy.ima",
+      "source.ima",
+      "copy.ima",
+      "source.ima",
+      "copy.ima",
+      "source.ima"
+    ],
+    "typed_directory": "C:\\P86TEST",
+    "invalid_path_character_rejected": true,
+    "unrelated_file_preserved": true,
+    "installed_files": {
+      "IO.SYS": {
+        "sha256": "755c79c16d3db5280b5286f1032a4f77bb8556b79f0c22f9c9f85556c7b69e39",
+        "bytes": 33321
+      },
+      "MSDOS.SYS": {
+        "sha256": "573626782a3c45f0d9e5f00af1bd0f52a7de44bea96d2a2d3d660e9ae06158d5",
+        "bytes": 37376
+      },
+      "AUTOEXEC.BAT": {
+        "sha256": "e7efc9cde33b841b0ff452926e601e6e88bc3e4197bd9608b8e7b0fa116067c0",
+        "bytes": 105
+      },
+      "COMMAND.COM": {
+        "sha256": "9904496029b00fd976deab83704e792e9af0a5ebf0d9cb9403d1b25d78c19497",
+        "bytes": 37588
+      },
+      "P86TEST/DOSSHELL.BAT": {
+        "sha256": "ab19b05c4a400520d80858230d5ceb75fcfbd525c8dc11a305010ab66eb859bf",
+        "bytes": 200
+      },
+      "P86TEST/4201.CPI": {
+        "sha256": "e46d224fc096d3e2903ca58d7356bb37b16fd1d9ffda439903f386860a664e88",
+        "bytes": 6404
+      },
+      "P86TEST/4208.CPI": {
+        "sha256": "1f4a05e6ccf80d187702f6abaecb9966d120cf9a336d30cc2390692ba2a2fa22",
+        "bytes": 720
+      },
+      "P86TEST/5202.CPI": {
+        "sha256": "3f503e60c30e60f6833755fd9284d84afc7125bacce16ee83a42c596c2143f4b",
+        "bytes": 370
+      },
+      "P86TEST/ANSI.SYS": {
+        "sha256": "c6d23b1ecaa670f6de83c1e003bec50967962e0fcca2e96737bba38057e27581",
+        "bytes": 9105
+      },
+      "P86TEST/APPEND.EXE": {
+        "sha256": "2b166b708e0d1b50719ac50ce32bc0e7d04ce76e6c28850d8d0ce2bd5502578b",
+        "bytes": 11154
+      },
+      "P86TEST/ASSIGN.COM": {
+        "sha256": "edf9bb8136b4a89d06f801a1e620b7107842e06fbca1c83643ca256f74437bd2",
+        "bytes": 5753
+      },
+      "P86TEST/ATTRIB.EXE": {
+        "sha256": "e66d22f2873bfa59a9d6908f85fc43c9c2b52cc62ab63ebc13b98e900aecabf7",
+        "bytes": 18263
+      },
+      "P86TEST/BACKUP.COM": {
+        "sha256": "077522ca89bcd3aa1f4b8c0c4945713d95888dfe812e995b9a44285d485e8323",
+        "bytes": 36608
+      },
+      "P86TEST/CHKDSK.COM": {
+        "sha256": "02a683582160a16638098d9055b14d0d3e66d4ccea27a82435bebbac7f733ad3",
+        "bytes": 17787
+      },
+      "P86TEST/COMMAND.COM": {
+        "sha256": "9904496029b00fd976deab83704e792e9af0a5ebf0d9cb9403d1b25d78c19497",
+        "bytes": 37588
+      },
+      "P86TEST/COMP.COM": {
+        "sha256": "a4478bbb749c518d8ab514e42901de86c6c7bf44c0cbba585a9f4ab39017c662",
+        "bytes": 9459
+      },
+      "P86TEST/COUNTRY.SYS": {
+        "sha256": "cd1abba25c110531d4ce0588eae9c1353214d4e322cd4c7989b8b51fea170bb3",
+        "bytes": 12806
+      },
+      "P86TEST/DEBUG.COM": {
+        "sha256": "f688545d0839f07be5aa96ef43e6afc055cca25324607af65b22a713d6eb6f83",
+        "bytes": 21574
+      },
+      "P86TEST/DISKCOMP.COM": {
+        "sha256": "55b54c43100b366931a3ed462d26697a43b86718f91cf7e9282205a5c0384d7f",
+        "bytes": 9857
+      },
+      "P86TEST/DISKCOPY.COM": {
+        "sha256": "9bda2fd91ac1088d75d6acd4688165689f8c5c75a2ef60705df0c43c922b1358",
+        "bytes": 10396
+      },
+      "P86TEST/DISPLAY.SYS": {
+        "sha256": "3de3e2951122ead73f57d39889fb15afee0bf8a7f82e9557ddfd513cb42f97b2",
+        "bytes": 15692
+      },
+      "P86TEST/DRIVER.SYS": {
+        "sha256": "6a3ae37bcfde3dfda435e285a547d38f86dc3c91eb9fc2ad7123e3e72c2c7a46",
+        "bytes": 5241
+      },
+      "P86TEST/EDLIN.COM": {
+        "sha256": "cd22745bd242ac3229f28301a5ce1d19c0e7b8faf3ba66d4391e3d489e277902",
+        "bytes": 14069
+      },
+      "P86TEST/EGA.CPI": {
+        "sha256": "154e76387efde2950e6372a6c60fe591a0a598104b25c90545f0f75158af52a5",
+        "bytes": 49068
+      },
+      "P86TEST/EMM386.SYS": {
+        "sha256": "03434e799e5ea72c2f27a2e79014a4e9f519322d6acfe7a2ae25aa9675111f55",
+        "bytes": 87776
+      },
+      "P86TEST/EXE2BIN.EXE": {
+        "sha256": "4b3d197ddbfb2f98250553bcce677358ea925a1feb2850addf5c8ac288a8088c",
+        "bytes": 7963
+      },
+      "P86TEST/FASTOPEN.EXE": {
+        "sha256": "14d619e40476e18b5c9429cfd159646797e8233d1fb150961b5243403e9160b8",
+        "bytes": 16702
+      },
+      "P86TEST/FC.EXE": {
+        "sha256": "2f4b0ffae400a45f144b4ab9ff6e750589afe23602767f3ea8df0b62741f391e",
+        "bytes": 15807
+      },
+      "P86TEST/FDISK.EXE": {
+        "sha256": "ea6ce9926199117edc55d7fe61369c628add43c15cd627fd7abcfbc63b55bf65",
+        "bytes": 60935
+      },
+      "P86TEST/FILESYS.EXE": {
+        "sha256": "4cae8b7bab236e1a246a064b14b404fed754b0e3b7610e80ddce0f76f194587a",
+        "bytes": 11129
+      },
+      "P86TEST/FIND.EXE": {
+        "sha256": "2d6c67ab0d1a15beaa18590b9ca6d4c618ff2f6af625f7bc8e2ac6a2155731e6",
+        "bytes": 5941
+      },
+      "P86TEST/FORMAT.COM": {
+        "sha256": "f44685e84b092a17603704ed5023aaff360bba414843076306fd7693d477696c",
+        "bytes": 22859
+      },
+      "P86TEST/GRAFTABL.COM": {
+        "sha256": "2e65cc87908390e8e476bf577de705948f532c1e3d5b94aeeb00048f044b32e3",
+        "bytes": 10239
+      },
+      "P86TEST/GRAPHICS.COM": {
+        "sha256": "b7abce9f4119662fc2546b00c62230ab300ff2512f4000ad3e4c81142a01e2c7",
+        "bytes": 16693
+      },
+      "P86TEST/GRAPHICS.PRO": {
+        "sha256": "c8d534ec76423fd10acc27db9507255a3db9d3aa37fb5c11153c2f2c411da6b4",
+        "bytes": 9397
+      },
+      "P86TEST/IFSFUNC.EXE": {
+        "sha256": "86c8861f82bdcffa50f08590f00b317d3fb7ce262c951963e26a7ed783042e15",
+        "bytes": 21739
+      },
+      "P86TEST/JOIN.EXE": {
+        "sha256": "1d5e47957d04a852ebd8e99d5c79fd98302b6512e7d1b9460e3bd44af91c72fc",
+        "bytes": 17733
+      },
+      "P86TEST/KEYB.COM": {
+        "sha256": "6a66e27fe7865243bb631fe247701a93956caa641af4926811280ebd7a2d061c",
+        "bytes": 14727
+      },
+      "P86TEST/KEYBOARD.SYS": {
+        "sha256": "0a3e9ce32f0426c43e163b5dd9832bf5f78626426ab6143c3a3c96c673a91a89",
+        "bytes": 23328
+      },
+      "P86TEST/LABEL.COM": {
+        "sha256": "a8fce248d06392d9e0adc7ed557aa63cffdade89878825c689b2b84e8ccf8d44",
+        "bytes": 4458
+      },
+      "P86TEST/LCD.CPI": {
+        "sha256": "2f62b85f088c4e4143a35642086f23f735bdd082c2905f1092a9657d06755034",
+        "bytes": 10703
+      },
+      "P86TEST/MEM.EXE": {
+        "sha256": "b3678169c59d359fdef9e21cd616a8d7ce2f81caabd9006de5e68a6caa744b91",
+        "bytes": 20005
+      },
+      "P86TEST/MODE.COM": {
+        "sha256": "50fe27e2f2f437b7ce268d89ad4c763c8048669fa38aab17dd584f198f7c46f8",
+        "bytes": 22960
+      },
+      "P86TEST/MORE.COM": {
+        "sha256": "d36f092cb61d8ef2e25b66b6dfea70c08290ec958d325b8ec798b62a2ef14864",
+        "bytes": 2134
+      },
+      "P86TEST/NLSFUNC.EXE": {
+        "sha256": "8851cacdc3260f38cbce388edd1821e08563d35ec9208be95b75ba910f57446b",
+        "bytes": 6878
+      },
+      "P86TEST/PRINT.COM": {
+        "sha256": "7236ffee35ebe46ae1e7895245c83bea4fbd71b684220d5f71ec1140a529a0c8",
+        "bytes": 14131
+      },
+      "P86TEST/PRINTER.SYS": {
+        "sha256": "b15bf75a8d4ee8b517fc6014e35ef04d3051b1e28bb29afced89fbcb9ab23855",
+        "bytes": 18914
+      },
+      "P86TEST/RAMDRIVE.SYS": {
+        "sha256": "34b8b368b2835b8a572bb21ae015336c5af8e62c84d29209c726e18ee56b60e2",
+        "bytes": 8235
+      },
+      "P86TEST/RECOVER.COM": {
+        "sha256": "46bb0d3e730a7302247dbf6b1a418ec4d371d0a947ce6bbe7a7153cd4f6f7dca",
+        "bytes": 10588
+      },
+      "P86TEST/REPLACE.EXE": {
+        "sha256": "35af261f612e1b564cb30203b75d6b46d490746ea751ed2ea619d4e59683e780",
+        "bytes": 18535
+      },
+      "P86TEST/RESTORE.COM": {
+        "sha256": "8ea06271301887372752fe769a338f7290b0572f35ca4697577ff743cc16f86a",
+        "bytes": 36996
+      },
+      "P86TEST/SELECT.COM": {
+        "sha256": "bdbf51f86a171f633020fe74d007a28020c189e9cd9c52fb12e2a54f0cbddae0",
+        "bytes": 3642
+      },
+      "P86TEST/SHARE.EXE": {
+        "sha256": "e30e3f392da0be3f64feda5f678b69e4043a58bf4defb723d6807f38eceaec81",
+        "bytes": 13424
+      },
+      "P86TEST/SMARTDRV.SYS": {
+        "sha256": "c9895111576d6d898dcffe4b4efbe746169b81e22cf9fc51b49ef10c46e2436f",
+        "bytes": 10224
+      },
+      "P86TEST/SORT.EXE": {
+        "sha256": "1de1a1457a242a19448871152b91afb57650a2fd68c211e217d11f38f4cb59fd",
+        "bytes": 5882
+      },
+      "P86TEST/SUBST.EXE": {
+        "sha256": "7973abff543c0c32daa01f40f01f61c8c179d5deb596770edccb1bc6c25ec0ad",
+        "bytes": 18403
+      },
+      "P86TEST/SYS.COM": {
+        "sha256": "1083138f28a35a16985f8d6c3b8afb276649d3bdb35a4444cccb22a1f7149e4c",
+        "bytes": 11456
+      },
+      "P86TEST/TREE.COM": {
+        "sha256": "a830b50b7304bebda3d82e98e13f758b1ede9a90bcb6917ea8f62aab6b01a0d5",
+        "bytes": 6302
+      },
+      "P86TEST/XCOPY.EXE": {
+        "sha256": "7f1b05b60767d9ec9bbd8730bcb91491e970687d351268e607917e91dbc145ea",
+        "bytes": 17055
+      },
+      "P86TEST/XMA2EMS.SYS": {
+        "sha256": "f6ffe886e4e2be63a0de05075daaf3812fecaf34e30173439de4a81368495172",
+        "bytes": 29211
+      },
+      "P86TEST/XMAEM.SYS": {
+        "sha256": "5ea3e0d5cf4ff17126cdcc79abc77f7ee5f67b8ba4868a1c8dfd8540c3edd498",
+        "bytes": 19264
+      },
+      "P86TEST/AUTOEXEC.BAT": {
+        "sha256": "c134b2f85415ba5cfce3e3fe4745688335745a9bb22152ac8f5c77f190d8aee3",
+        "bytes": 11
+      },
+      "P86TEST/CONFIG.SYS": {
+        "sha256": "7407f72af1b4a04d6c0d75c9ae63fc5ac9ee18bbb25a6dc495c704136247086a",
+        "bytes": 35
+      },
+      "P86TEST/SELECT.DAT": {
+        "sha256": "d9bced9807446d012e042d048f26fd7aac808fd63ae9403bb19fcde888c2254d",
+        "bytes": 22999
+      },
+      "P86TEST/SELECT.EXE": {
+        "sha256": "38ea3503698e318a340635615b7d96c85801c81a9ce5c0e7d6a0742bb47d848b",
+        "bytes": 77171
+      },
+      "P86TEST/SELECT.HLP": {
+        "sha256": "b2e15f740c133427af7f5a295cb780b3a028bd8429c7a483fd98af97a2ba62a5",
+        "bytes": 28695
+      },
+      "P86TEST/SELECT.PRT": {
+        "sha256": "ff73db5a8318cd83430e926cd046a4c3d21dab857a00dc234c305141facbea39",
+        "bytes": 1329
+      },
+      "KEEP.TXT": {
+        "sha256": "6fcdb64cb2718769e9ba47dff5ce651beda51fc258d79a01908c5faca7c1812e",
+        "bytes": 38
+      },
+      "CONFIG.SYS": {
+        "sha256": "407bd4a722c0cd07cb62e63b852a299a58dcd4ebcdea40f93612e101d90083f6",
+        "bytes": 72
+      }
+    },
+    "config_sha256": "407bd4a722c0cd07cb62e63b852a299a58dcd4ebcdea40f93612e101d90083f6",
+    "autoexec_sha256": "e7efc9cde33b841b0ff452926e601e6e88bc3e4197bd9608b8e7b0fa116067c0",
+    "installed_command_executed_after_restart": true
+  },
+  "installation_comparison": {
+    "changed_files": [
+      "P86TEST/SELECT.EXE"
+    ],
+    "identical_files": 68,
+    "installed_select_matches_each_build": true
+  }
+}

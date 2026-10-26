@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "version": "2.1 beta4",
+  "source": {
+    "url": "https://cutemouse.sourceforge.net/download/cutemouse21b4.zip",
+    "sha256": "1d7f04687bafe20d9313db56d15c9df870c055dc63548aa91488e13dd741d50e"
+  },
+  "assembler": {
+    "repository": "https://github.com/Baron-von-Riedesel/JWasm",
+    "commit": "7f6f32e78b79565d40bcce496756aadd1ff66900",
+    "url": "https://codeload.github.com/Baron-von-Riedesel/JWasm/zip/7f6f32e78b79565d40bcce496756aadd1ff66900",
+    "sha256": "5fb4935e8bfb66038558b6a536847ee666c875d530a12725f626173799cbed48"
+  }
+}

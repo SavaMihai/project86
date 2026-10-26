@@ -1,0 +1,260 @@
+{
+  "schema": 1,
+  "description": "Complete DOS file inventory for the Project86 MS-DOS 4.00 boot floppy; BOOT.BIN is installed as sector zero.",
+  "files": {
+    "IO.SYS": {
+      "guest_output": "SRC/BIOS/IO.SYS",
+      "kind": "compiled"
+    },
+    "MSDOS.SYS": {
+      "guest_output": "SRC/DOS/MSDOS.SYS",
+      "kind": "compiled"
+    },
+    "4201.CPI": {
+      "guest_output": "SRC/DEV/PRINTER/4201/4201.CPI",
+      "kind": "assembled-data"
+    },
+    "4208.CPI": {
+      "guest_output": "SRC/DEV/PRINTER/4208/4208.CPI",
+      "kind": "assembled-data"
+    },
+    "5202.CPI": {
+      "guest_output": "SRC/DEV/PRINTER/5202/5202.CPI",
+      "kind": "compiled"
+    },
+    "ANSI.SYS": {
+      "guest_output": "SRC/DEV/ANSI/ANSI.SYS",
+      "kind": "compiled"
+    },
+    "APPEND.EXE": {
+      "guest_output": "SRC/CMD/APPEND/APPEND.EXE",
+      "kind": "compiled"
+    },
+    "ASSIGN.COM": {
+      "guest_output": "SRC/CMD/ASSIGN/ASSIGN.COM",
+      "kind": "compiled"
+    },
+    "ATTRIB.EXE": {
+      "guest_output": "SRC/CMD/ATTRIB/ATTRIB.EXE",
+      "kind": "compiled"
+    },
+    "BACKUP.COM": {
+      "guest_output": "SRC/CMD/BACKUP/BACKUP.COM",
+      "kind": "compiled"
+    },
+    "CHKDSK.COM": {
+      "guest_output": "SRC/CMD/CHKDSK/CHKDSK.COM",
+      "kind": "compiled"
+    },
+    "COMMAND.COM": {
+      "guest_output": "SRC/CMD/COMMAND/COMMAND.COM",
+      "kind": "compiled"
+    },
+    "COMP.COM": {
+      "guest_output": "SRC/CMD/COMP/COMP.COM",
+      "kind": "compiled"
+    },
+    "COUNTRY.SYS": {
+      "guest_output": "SRC/DEV/COUNTRY/COUNTRY.SYS",
+      "kind": "compiled"
+    },
+    "DEBUG.COM": {
+      "guest_output": "SRC/CMD/DEBUG/DEBUG.COM",
+      "kind": "compiled"
+    },
+    "DISKCOMP.COM": {
+      "guest_output": "SRC/CMD/DISKCOMP/DISKCOMP.COM",
+      "kind": "compiled"
+    },
+    "DISKCOPY.COM": {
+      "guest_output": "SRC/CMD/DISKCOPY/DISKCOPY.COM",
+      "kind": "compiled"
+    },
+    "DISPLAY.SYS": {
+      "guest_output": "SRC/DEV/DISPLAY/DISPLAY.SYS",
+      "kind": "compiled"
+    },
+    "DRIVER.SYS": {
+      "guest_output": "SRC/DEV/DRIVER/DRIVER.SYS",
+      "kind": "compiled"
+    },
+    "EDLIN.COM": {
+      "guest_output": "SRC/CMD/EDLIN/EDLIN.COM",
+      "kind": "compiled"
+    },
+    "EGA.CPI": {
+      "guest_output": "SRC/DEV/DISPLAY/EGA/EGA.CPI",
+      "kind": "compiled"
+    },
+    "EMM386.SYS": {
+      "guest_output": "SRC/MEMM/MEMM/EMM386.SYS",
+      "kind": "compiled"
+    },
+    "EXE2BIN.EXE": {
+      "guest_output": "SRC/CMD/EXE2BIN/EXE2BIN.EXE",
+      "kind": "compiled"
+    },
+    "FASTOPEN.EXE": {
+      "guest_output": "SRC/CMD/FASTOPEN/FASTOPEN.EXE",
+      "kind": "compiled"
+    },
+    "FC.EXE": {
+      "guest_output": "SRC/CMD/FC/FC.EXE",
+      "kind": "compiled"
+    },
+    "FDISK.EXE": {
+      "guest_output": "SRC/CMD/FDISK/FDISK.EXE",
+      "kind": "compiled"
+    },
+    "FILESYS.EXE": {
+      "guest_output": "SRC/CMD/FILESYS/FILESYS.EXE",
+      "kind": "compiled"
+    },
+    "FIND.EXE": {
+      "guest_output": "SRC/CMD/FIND/FIND.EXE",
+      "kind": "compiled"
+    },
+    "FORMAT.COM": {
+      "guest_output": "SRC/CMD/FORMAT/FORMAT.COM",
+      "kind": "compiled"
+    },
+    "GRAFTABL.COM": {
+      "guest_output": "SRC/CMD/GRAFTABL/GRAFTABL.COM",
+      "kind": "compiled"
+    },
+    "GRAPHICS.COM": {
+      "guest_output": "SRC/CMD/GRAPHICS/GRAPHICS.COM",
+      "kind": "compiled"
+    },
+    "GRAPHICS.PRO": {
+      "guest_output": "SRC/CMD/GRAPHICS/GRAPHICS.PRO",
+      "kind": "source-text"
+    },
+    "IFSFUNC.EXE": {
+      "guest_output": "SRC/CMD/IFSFUNC/IFSFUNC.EXE",
+      "kind": "compiled"
+    },
+    "JOIN.EXE": {
+      "guest_output": "SRC/CMD/JOIN/JOIN.EXE",
+      "kind": "compiled"
+    },
+    "KEYB.COM": {
+      "guest_output": "SRC/CMD/KEYB/KEYB.COM",
+      "kind": "compiled"
+    },
+    "KEYBOARD.SYS": {
+      "guest_output": "SRC/DEV/KEYBOARD/KEYBOARD.SYS",
+      "kind": "compiled"
+    },
+    "LABEL.COM": {
+      "guest_output": "SRC/CMD/LABEL/LABEL.COM",
+      "kind": "compiled"
+    },
+    "LCD.CPI": {
+      "guest_output": "SRC/DEV/DISPLAY/LCD/LCD.CPI",
+      "kind": "compiled"
+    },
+    "MEM.EXE": {
+      "guest_output": "SRC/CMD/MEM/MEM.EXE",
+      "kind": "compiled"
+    },
+    "MODE.COM": {
+      "guest_output": "SRC/CMD/MODE/MODE.COM",
+      "kind": "compiled"
+    },
+    "MORE.COM": {
+      "guest_output": "SRC/CMD/MORE/MORE.COM",
+      "kind": "compiled"
+    },
+    "NLSFUNC.EXE": {
+      "guest_output": "SRC/CMD/NLSFUNC/NLSFUNC.EXE",
+      "kind": "compiled"
+    },
+    "PRINT.COM": {
+      "guest_output": "SRC/CMD/PRINT/PRINT.COM",
+      "kind": "compiled"
+    },
+    "PRINTER.SYS": {
+      "guest_output": "SRC/DEV/PRINTER/PRINTER.SYS",
+      "kind": "compiled"
+    },
+    "RAMDRIVE.SYS": {
+      "guest_output": "SRC/DEV/RAMDRIVE/RAMDRIVE.SYS",
+      "kind": "compiled"
+    },
+    "RECOVER.COM": {
+      "guest_output": "SRC/CMD/RECOVER/RECOVER.COM",
+      "kind": "compiled"
+    },
+    "REPLACE.EXE": {
+      "guest_output": "SRC/CMD/REPLACE/REPLACE.EXE",
+      "kind": "compiled"
+    },
+    "RESTORE.COM": {
+      "guest_output": "SRC/CMD/RESTORE/RESTORE.COM",
+      "kind": "compiled"
+    },
+    "SELECT.COM": {
+      "guest_output": "SRC/SELECT/SELECT.COM",
+      "kind": "compiled"
+    },
+    "SELECT.DAT": {
+      "guest_output": "SRC/SELECT/SELECT.DAT",
+      "kind": "compiled"
+    },
+    "SELECT.EXE": {
+      "guest_output": "SRC/SELECT/SELECT.EXE",
+      "kind": "compiled"
+    },
+    "SELECT.HLP": {
+      "guest_output": "SRC/SELECT/SELECT.HLP",
+      "kind": "compiled"
+    },
+    "SELECT.PRT": {
+      "guest_output": "SRC/SELECT/SELECT.PRT",
+      "kind": "source-text"
+    },
+    "SHARE.EXE": {
+      "guest_output": "SRC/CMD/SHARE/SHARE.EXE",
+      "kind": "compiled"
+    },
+    "SMARTDRV.SYS": {
+      "guest_output": "SRC/DEV/SMARTDRV/SMARTDRV.SYS",
+      "kind": "compiled"
+    },
+    "SORT.EXE": {
+      "guest_output": "SRC/CMD/SORT/SORT.EXE",
+      "kind": "compiled"
+    },
+    "SUBST.EXE": {
+      "guest_output": "SRC/CMD/SUBST/SUBST.EXE",
+      "kind": "compiled"
+    },
+    "SYS.COM": {
+      "guest_output": "SRC/CMD/SYS/SYS.COM",
+      "kind": "compiled"
+    },
+    "TREE.COM": {
+      "guest_output": "SRC/CMD/TREE/TREE.COM",
+      "kind": "compiled"
+    },
+    "XCOPY.EXE": {
+      "guest_output": "SRC/CMD/XCOPY/XCOPY.EXE",
+      "kind": "compiled"
+    },
+    "XMA2EMS.SYS": {
+      "guest_output": "SRC/DEV/XMA2EMS/XMA2EMS.SYS",
+      "kind": "compiled"
+    },
+    "XMAEM.SYS": {
+      "guest_output": "SRC/DEV/XMAEM/XMAEM.SYS",
+      "kind": "compiled"
+    },
+    "BOOT.BIN": {
+      "guest_output": "SRC/BOOT/MSBOOT.BIN",
+      "kind": "compiled-boot-sector",
+      "offset": 31744,
+      "length": 512
+    }
+  }
+}

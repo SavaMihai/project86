@@ -1,0 +1,36 @@
+{
+  "version": "Wolfenstein 3D DOS shareware v1.4 (verify input hashes)",
+  "execution": "Project86 headless native ARM interpreter; no reference emulator",
+  "actions": [
+    "new Episode 1 game",
+    "walk",
+    "fire",
+    "save p86",
+    "destroy machine",
+    "boot DOS again",
+    "load p86",
+    "turn",
+    "serial mouse movement"
+  ],
+  "save_bytes": 19273,
+  "save_sha256": "a60f06c4aa9b6affca6a152124afa1e1a58ce47f5c65a61c936a388833a8ed6c",
+  "audio_samples": 48000,
+  "audio_peak": 0.18142057955265045,
+  "visual_review": "Review title, gameplay and load-menu captures; image change alone is not a compatibility oracle.",
+  "limitations": [
+    "No physical iPad test",
+    "No end-to-end macOS UI automation",
+    "Approximate timing and FM synthesis",
+    "Short gameplay sample only"
+  ],
+  "boot_image_sha256": "8edadbed0644a09532e3629da755d80e0dadd87fd88b684b5eac5d21fb3080f8",
+  "mouse_build": {
+    "report_sha256": "9a4f9bfd81a8e9920e93f4bc605b7befe1e681a739d4bf27aa4f52bd919cf39f",
+    "version": "2.1 beta4",
+    "source_archive_sha256": "1d7f04687bafe20d9313db56d15c9df870c055dc63548aa91488e13dd741d50e",
+    "corresponding_source_sha256": "c6a9b477ffee0fa6c45108252cb599c941e5ff486a07265290c7838410a4c05b",
+    "license_sha256": "19404e184cf45ec991b54e1e6f05f847ad8f13fee2a51f3a2d9a960c8f7cb26b",
+    "driver_sha256": "74200ce10a70d3e33cfc65dcb988998e643aac637e0419151c54a8649a87e140",
+    "recipe_sha256": "2993a452881ff2a8bdeff6afbccfc43c7c1c39292c620ebedb3fae26bb84fd2d"
+  }
+}

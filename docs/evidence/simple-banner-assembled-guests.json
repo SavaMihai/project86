@@ -1,0 +1,13 @@
+{
+  "cpu_program": "NASM-built COM passed inside MS-DOS 4.00",
+  "mouse_driver": "Source-built CuteMouse 2.1 beta4, COM1/IRQ4 Microsoft protocol",
+  "motion_note": "CuteMouse 2.1 default sensitivity produces 12,-3 mickeys for this 7,-3 serial packet",
+  "mouse_report": {
+    "buttons": 1,
+    "x": 328,
+    "y": 96,
+    "dx": 12,
+    "dy": -3
+  },
+  "ctmouse_sha256": "74200ce10a70d3e33cfc65dcb988998e643aac637e0419151c54a8649a87e140"
+}

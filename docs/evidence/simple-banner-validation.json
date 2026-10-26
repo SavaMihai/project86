@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "screens": {
+    "normal": "\nMS-DOS 4.0 (Project86)\nA:\\>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "missing-mouse": "Mouse driver unavailable.\n\nMS-DOS 4.0 (Project86)\nA:\\>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  "changed_image_files": [
+    "AUTOEXEC.BAT"
+  ],
+  "driver_failure_visible": true,
+  "date": "2026-10-26",
+  "image_sha256": "273a9ac86fc1e9a1f9ff4d16062fea4b95aa53e128b225fcaa5a94d4f33f6e3c",
+  "mouse_boot_reboot_cases": 12,
+  "production_nul_driver_test_passed": true,
+  "packaging_tests": 37,
+  "mac_build_passed": true,
+  "mac_bundle_verified": true,
+  "command_and_driver_binaries_unchanged": true,
+  "manual_ver_output_unchanged": true,
+  "managed_disks_changed": false,
+  "log_sha256": {
+    ".build/simple-banner-packaging-tests.log": "4da2f0bc91b8396c65c160673e8a4b055ada838cbb1f44b6cde5ae7ff63270aa",
+    ".build/simple-banner-mouse-tests.log": "f43eeb5a3002743e4f01b971c5a962222ee564ee6ddfc00f5c595cebe5f9495f",
+    ".build/simple-banner-guests.log": "8fcd73831cffc8f28d7aef9ee9a5a61774a90755de05d8f0150f9b52ce9d2598",
+    ".build/simple-banner-mac-build.log": "7a3dda2426d7129f67d7e818bf25efe2c1944449ca2bdc1485315fb2b03efe16"
+  }
+}

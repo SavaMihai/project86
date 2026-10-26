@@ -1,0 +1,17 @@
+{
+  "msdos400.ima": {
+    "url": "https://felsqualle.com/posts/2024/05/the-broken-source-code-for-ms-dos-4-has-been-restored/msdos400_1440.ima",
+    "sha256": "b5b2664c21ba7f2b4557564376c0cc47a7ae0c9c6bf0703de4660529f4f1e0b2",
+    "bytes": 1474560
+  },
+  "restored-source.zip": {
+    "url": "https://felsqualle.com/posts/2024/05/the-broken-source-code-for-ms-dos-4-has-been-restored/v400_src_plain.zip",
+    "sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+    "bytes": 5768609
+  },
+  "MICROSOFT-LICENSE.txt": {
+    "url": "https://raw.githubusercontent.com/microsoft/MS-DOS/main/LICENSE",
+    "sha256": "b5179f780ec212a434efcc989a2295a140deb0bdb17182d2bf9c5f6f1f1a01c4",
+    "bytes": 1074
+  }
+}

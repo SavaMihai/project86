@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-26",
+  "passed": true,
+  "cause": "Host mouse events were queued while DTR/RTS were deasserted, ahead of identification",
+  "fix": [
+    "Gate mouse events on DTR/RTS and loopback state",
+    "Send identification followed by neutral reset state before later motion",
+    "Suppress unchanged idle notifications"
+  ],
+  "guest_cases": 12,
+  "input_profiles": [
+    "quiet",
+    "idle-events",
+    "motion",
+    "large-motion",
+    "right-drag",
+    "clicks"
+  ],
+  "guest_driver_result": "Real CuteMouse detection and INT 33h output on private disks",
+  "core_device_tests_passed": true,
+  "packaging_tests": {
+    "run": 37,
+    "skipped_classes": 2,
+    "passed": true
+  },
+  "mac_build_passed": true,
+  "mac_bundle_verified": true,
+  "image_sha256": "71c961a65a06add61adde4511c12e7b2c240485cf0e24b24475b6368421de69a",
+  "ctmouse_sha256": "74200ce10a70d3e33cfc65dcb988998e643aac637e0419151c54a8649a87e140",
+  "dos_and_mouse_binaries_changed": false,
+  "managed_user_disks_changed": false,
+  "app_relaunched": false,
+  "previous_app": ".build/Project86-before-mouse-startup.app",
+  "cli_sha256": "7e19f66ccdb48bc0386f37972d7a71d3fcbc1b33168d654e11a4cee756c5284f",
+  "core_library_sha256": "90f04de83c8acded488dbcf46aac48f6b9ec70752c7aaf3e192f8333d711a126",
+  "mac_executable_sha256": "a3c2e37e011ce4120ba3c3adce481693431ef49356cb9ffc0d900247b9f3c948",
+  "limitations": [
+    "Post-fix native-window interaction and physical devices have not been tested",
+    "Serial buffering and startup timing remain functional approximations",
+    "Initial neutral reset sample is a model choice, not a hardware-timing certification",
+    "CPU instruction semantics unchanged; physical fixtures not rerun"
+  ],
+  "log_sha256": {
+    ".build/mouse-startup-core-tests-verified.log": "6aec8a4da26853949f597d07123e598ffe1061083faf4ac48f465c857b035ee7",
+    ".build/mouse-startup-guest-tests-final.log": "fb8c92bbe79b0c118578bf142f252722d3d56ee196bf596168d9b96cf597c9d0",
+    ".build/mouse-startup-packaging-tests.log": "ee8a9617850a5f79a2c602c99e625fdb8c7fa4514571e176a77d850c0d786371",
+    ".build/mouse-startup-mac-build.log": "0d75239dd2abf249deba82f77358c5d1fdc0ef3c0ea3854ea4f4c72a406983eb"
+  }
+}

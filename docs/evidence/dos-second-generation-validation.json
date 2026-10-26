@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-25",
+  "scope": "Full second-generation DOS build using a verified rebuilt boot floppy; packaging, regression and Mac build checks",
+  "build_directory": ".build/dos-second-generation",
+  "seed_directory": ".build/dos-seed-first-generation",
+  "seed_build_directory": ".build/dos-full-build",
+  "build_report_sha256": "8d67abd17a0411ef621fdf7ef6e746ac51d0648e05c4cdffaf91a882860662cf",
+  "seed_image_sha256": "bd13775e9e09fee63eaed521031610839644aeffb5634938d4496a0ba3f29f0f",
+  "seed_receipt_sha256": "0b9c9a1130e1c44101ea435036bb01c2b8d9644320ca7d5492dd51a1f326449f",
+  "parent_build_report_sha256": "723adbb9255d2513c7564afbc4da17b20c788389724534fe2e01d976cf9b6d13",
+  "compiler_boot_image_sha256": "e0f500b6db37809606f5c0047e4d9cc5b123d7b9def8db00aee58153463000e4",
+  "built_artifacts": 63,
+  "distribution_files": 62,
+  "assembled_boot_sectors": 1,
+  "all_artifacts_byte_identical": true,
+  "output_archives_byte_identical": true,
+  "outputs_archive_sha256": "02f941ee19010f7307ee8fdb3d56c3e5e289fce3675ff9cbec95cc1866c21a44",
+  "app_floppy_sha256": "bd13775e9e09fee63eaed521031610839644aeffb5634938d4496a0ba3f29f0f",
+  "app_floppy_bytes_identical_to_first_generation": true,
+  "guarded_run": {
+    "downloaded_floppy_access_blocked": true,
+    "network_access_blocked": true,
+    "completed_successfully": true,
+    "elapsed_seconds": 123.9,
+    "method": "Run rebuild_dos.main with unittest.mock guards: Path.open rejects assets/bootstrap/msdos400.ima; urllib.request.urlopen rejects every request. Original files remain in place. These are Python access guards, not an OS sandbox.",
+    "argv": [
+      "rebuild_dos.py",
+      "--fetch",
+      "--seed",
+      ".build/dos-seed-first-generation",
+      "--seed-build",
+      ".build/dos-full-build",
+      "--output",
+      ".build/dos-second-generation"
+    ]
+  },
+  "guest_instructions": 8878533227,
+  "unsupported_io_accesses": 11,
+  "last_unsupported_io_port": "06F7h",
+  "packaging_and_seed_regressions": {
+    "passed": 25,
+    "failed": 0,
+    "skipped": 0,
+    "command": "P86_DOS_BUILD_DIR=\"$PWD/.build/dos-second-generation\" python3 -m unittest discover -s tests -p \"test_*.py\" -v"
+  },
+  "mac_build_succeeded": true,
+  "mac_build_command": "make mac DOS_BUILD=.build/dos-second-generation DOS_SEED=.build/dos-seed-first-generation",
+  "mac_script_sandbox_enabled": true,
+  "mac_bundle_verified_against_second_generation": true,
+  "initial_mac_build_failure": "Seed evidence files were undeclared script sandbox inputs; generated dos-build-inputs.xcfilelist fixed the retry.",
+  "first_generation_build_and_seed_verified_unchanged": true,
+  "pinned_restoration_originals_verified_unchanged": true,
+  "app_relaunched_or_managed_disks_switched": false,
+  "logs": {
+    ".build/dos-second-generation/BUILD.LOG": {
+      "sha256": "7d1e1f46790bf4da773fb3b56a111d2324153dc77a0007cfcdea13833c56a5ec",
+      "bytes": 169700
+    },
+    ".build/dos-second-generation/screen.txt": {
+      "sha256": "060058e1d4248bdf129e1696ec5a10391947e8c93bfd9a4dcef29591e4b671a8",
+      "bytes": 815
+    },
+    ".build/dos-second-generation/progress.log": {
+      "sha256": "0f153789f4f59944d5b110d1942b17dc8d47f24be6c06bd1112fa918e168cf56",
+      "bytes": 1235
+    },
+    ".build/dos-second-generation-tests-final.log": {
+      "sha256": "e1f5378540a1883a283eda71ef97e9bd8c916617ba4060257eb95145130357bb",
+      "bytes": 2420
+    },
+    ".build/dos-second-generation-mac-build-retry.log": {
+      "sha256": "cb59a0c1880b1010841141054799c5e37fb5b5dff3e98e319187191ed47b0228",
+      "bytes": 68287
+    }
+  },
+  "limitations": [
+    "Original compiler tools and four linked binary libraries remain required.",
+    "Initial builds without an explicitly selected rebuilt seed still use the pinned restoration floppy.",
+    "CPU hardware fixtures were not rerun; no CPU or device semantics changed.",
+    "Native gameplay/input/audio acceptance not exercised.",
+    "Physical iPad validation remains deferred."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-26",
+  "implemented": true,
+  "reason": "Owner confirmed the previous observation-isolation change did not resolve CPU submenu access",
+  "change": "Remove the nested CPU menu; expose four persistent speed segments in the bottom toolbar",
+  "mac_control": "AppKit NSSegmentedControl wrapped in NSViewRepresentable",
+  "ios_control": "SwiftUI segmented Picker",
+  "choices": [
+    1,
+    4,
+    8,
+    16
+  ],
+  "default_choice": 8,
+  "native_component_action_bindings_verified": [
+    1,
+    4,
+    16,
+    8
+  ],
+  "frame_control_isolation_test_passed": true,
+  "mac_release_build_passed": true,
+  "ios_simulator_release_build_passed": true,
+  "bundled_resources_verified": true,
+  "actual_full_window_click_retested": false,
+  "managed_disks_changed": false,
+  "app_relaunched": false,
+  "app": ".build/apple-speed-control/Build/Products/Release/Project86.app",
+  "app_executable_sha256": "b8a506fef3a65a84b1934f55f78804de4519a73cf0a8ad9f925859a5a0c252cd",
+  "image_sha256": "273a9ac86fc1e9a1f9ff4d16062fea4b95aa53e128b225fcaa5a94d4f33f6e3c",
+  "test_scope": "Isolated hidden AppKit component construction and native target/action-to-binding checks; no user app or saved disks opened",
+  "log_sha256": {
+    ".build/cpu-speed-control-ui-tests.log": "5b0ad5928de758a54dc1431e3fb1da0dd66e94feba949998ccdc37303a0bd9a9",
+    ".build/cpu-speed-control-mac-final.log": "150961def3b7417b0098875fbf97ca5e72e9eee22d6dad9d5e23a5e0f08dee4a",
+    ".build/cpu-speed-control-ios-final.log": "9715f22b88571c481ef3b0a22a66d9a7b8daa63328373c856e5144ef71c56be8"
+  }
+}

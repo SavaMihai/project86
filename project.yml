@@ -1,0 +1,167 @@
+name: Project86
+options:
+  bundleIdPrefix: dev.project86
+  deploymentTarget:
+    macOS: "14.0"
+    iOS: "17.0"
+settings:
+  configs:
+    Release:
+      GCC_OPTIMIZATION_LEVEL: "2"
+      SWIFT_OPTIMIZATION_LEVEL: "-O"
+      SWIFT_COMPILATION_MODE: wholemodule
+  base:
+    CLANG_CXX_LANGUAGE_STANDARD: c++20
+    CLANG_CXX_LIBRARY: libc++
+    SWIFT_VERSION: "5.0"
+    HEADER_SEARCH_PATHS: "$(SRCROOT)/core/include $(SRCROOT)/core/src"
+    SWIFT_OBJC_BRIDGING_HEADER: core/include/project86.h
+    GENERATE_INFOPLIST_FILE: YES
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    CODE_SIGN_STYLE: Automatic
+    P86_DOS_BUILD_DIR: "$(SRCROOT)/.build/dos-command-editor-v2"
+    P86_MOUSE_BUILD_DIR: "$(SRCROOT)/.build/cutemouse-build"
+targets:
+  Project86Mac:
+    type: application
+    platform: macOS
+    sources:
+      - path: core
+      - path: apple/Project86
+      - path: .build/guest-boot/project86.ima
+        buildPhase: resources
+      - path: .build/guest-boot/project86-boot.json
+        buildPhase: resources
+      - path: .build/guest-boot/cutemouse-source.zip
+        buildPhase: resources
+      - path: .build/guest-boot/dos-project-sources.zip
+        buildPhase: resources
+      - path: .build/guest-boot/CUTEMOUSE-COPYING.txt
+        buildPhase: resources
+      - path: assets/bootstrap/MICROSOFT-LICENSE.txt
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.project86.mac
+        PRODUCT_NAME: Project86
+        INFOPLIST_KEY_CFBundleDisplayName: Project86
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.developer-tools
+        ENABLE_HARDENED_RUNTIME: YES
+        ENABLE_APP_SANDBOX: YES
+        CODE_SIGN_ENTITLEMENTS: apple/mac.entitlements
+    dependencies:
+      - sdk: Metal.framework
+      - sdk: MetalKit.framework
+      - sdk: AVFoundation.framework
+    preBuildScripts:
+      - name: Verify rebuilt DOS boot image
+        script: /usr/bin/python3 -B "$SRCROOT/scripts/prepare_guests.py" --verify "$SRCROOT/.build/guest-boot" --check-build --dos-build "$P86_DOS_BUILD_DIR" --mouse-build "$P86_MOUSE_BUILD_DIR"
+        basedOnDependencyAnalysis: false
+        inputFileLists:
+          - "$(SRCROOT)/.build/guest-boot/dos-build-inputs.xcfilelist"
+        inputFiles:
+          - "$(SRCROOT)/scripts/prepare_guests.py"
+          - "$(SRCROOT)/scripts/dos_artifacts.py"
+          - "$(SRCROOT)/scripts/command_source.py"
+          - "$(SRCROOT)/scripts/disk_image.py"
+          - "$(SRCROOT)/.build/guest-boot/project86.ima"
+          - "$(SRCROOT)/.build/guest-boot/project86-boot.json"
+          - "$(SRCROOT)/.build/guest-boot/cutemouse-source.zip"
+          - "$(SRCROOT)/.build/guest-boot/dos-project-sources.zip"
+          - "$(SRCROOT)/.build/guest-boot/CUTEMOUSE-COPYING.txt"
+          - "$(P86_DOS_BUILD_DIR)/report.json"
+          - "$(P86_DOS_BUILD_DIR)/source.img"
+          - "$(P86_DOS_BUILD_DIR)/dos-files.zip"
+          - "$(SRCROOT)/assets/bootstrap-manifest.json"
+          - "$(SRCROOT)/assets/dos-files.json"
+          - "$(SRCROOT)/scripts/cutemouse_artifacts.py"
+          - "$(SRCROOT)/scripts/rebuild_cutemouse.py"
+          - "$(SRCROOT)/assets/cutemouse-manifest.json"
+          - "$(P86_MOUSE_BUILD_DIR)/report.json"
+          - "$(P86_MOUSE_BUILD_DIR)/CTMOUSE.EXE"
+          - "$(P86_MOUSE_BUILD_DIR)/cutemouse-source.zip"
+          - "$(P86_MOUSE_BUILD_DIR)/CUTEMOUSE-COPYING.txt"
+  Project86iPad:
+    type: application
+    platform: iOS
+    sources:
+      - path: core
+      - path: apple/Project86
+      - path: .build/guest-boot/project86.ima
+        buildPhase: resources
+      - path: .build/guest-boot/project86-boot.json
+        buildPhase: resources
+      - path: .build/guest-boot/cutemouse-source.zip
+        buildPhase: resources
+      - path: .build/guest-boot/dos-project-sources.zip
+        buildPhase: resources
+      - path: .build/guest-boot/CUTEMOUSE-COPYING.txt
+        buildPhase: resources
+      - path: assets/bootstrap/MICROSOFT-LICENSE.txt
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.project86.ipad
+        PRODUCT_NAME: Project86
+        TARGETED_DEVICE_FAMILY: "2"
+        INFOPLIST_KEY_CFBundleDisplayName: Project86
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown"
+    dependencies:
+      - sdk: Metal.framework
+      - sdk: MetalKit.framework
+      - sdk: AVFoundation.framework
+    preBuildScripts:
+      - name: Verify rebuilt DOS boot image
+        script: /usr/bin/python3 -B "$SRCROOT/scripts/prepare_guests.py" --verify "$SRCROOT/.build/guest-boot" --check-build --dos-build "$P86_DOS_BUILD_DIR" --mouse-build "$P86_MOUSE_BUILD_DIR"
+        basedOnDependencyAnalysis: false
+        inputFileLists:
+          - "$(SRCROOT)/.build/guest-boot/dos-build-inputs.xcfilelist"
+        inputFiles:
+          - "$(SRCROOT)/scripts/prepare_guests.py"
+          - "$(SRCROOT)/scripts/dos_artifacts.py"
+          - "$(SRCROOT)/scripts/command_source.py"
+          - "$(SRCROOT)/scripts/disk_image.py"
+          - "$(SRCROOT)/.build/guest-boot/project86.ima"
+          - "$(SRCROOT)/.build/guest-boot/project86-boot.json"
+          - "$(SRCROOT)/.build/guest-boot/cutemouse-source.zip"
+          - "$(SRCROOT)/.build/guest-boot/dos-project-sources.zip"
+          - "$(SRCROOT)/.build/guest-boot/CUTEMOUSE-COPYING.txt"
+          - "$(P86_DOS_BUILD_DIR)/report.json"
+          - "$(P86_DOS_BUILD_DIR)/source.img"
+          - "$(P86_DOS_BUILD_DIR)/dos-files.zip"
+          - "$(SRCROOT)/assets/bootstrap-manifest.json"
+          - "$(SRCROOT)/assets/dos-files.json"
+          - "$(SRCROOT)/scripts/cutemouse_artifacts.py"
+          - "$(SRCROOT)/scripts/rebuild_cutemouse.py"
+          - "$(SRCROOT)/assets/cutemouse-manifest.json"
+          - "$(P86_MOUSE_BUILD_DIR)/report.json"
+          - "$(P86_MOUSE_BUILD_DIR)/CTMOUSE.EXE"
+          - "$(P86_MOUSE_BUILD_DIR)/cutemouse-source.zip"
+          - "$(P86_MOUSE_BUILD_DIR)/CUTEMOUSE-COPYING.txt"
+  Project86MacUITests:
+    type: bundle.ui-testing
+    platform: macOS
+    sources:
+      - path: apple/UITests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.project86.mac.uitests
+        TEST_TARGET_NAME: Project86Mac
+    dependencies:
+      - target: Project86Mac
+schemes:
+  Project86Mac:
+    build:
+      targets:
+        Project86Mac: all
+    test:
+      targets:
+        - Project86MacUITests
+  Project86iPad:
+    build:
+      targets:
+        Project86iPad: all

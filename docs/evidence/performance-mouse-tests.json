@@ -1,0 +1,121 @@
+{
+  "passed": true,
+  "cpu_speed": 8,
+  "frame_hz": 60,
+  "image_sha256": "273a9ac86fc1e9a1f9ff4d16062fea4b95aa53e128b225fcaa5a94d4f33f6e3c",
+  "ctmouse_sha256": "74200ce10a70d3e33cfc65dcb988998e643aac637e0419151c54a8649a87e140",
+  "cases": {
+    "quiet": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "idle-events": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "motion": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "large-motion": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "right-drag": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "clicks": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    }
+  },
+  "reboot_cases": {
+    "quiet": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "idle-events": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "motion": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "large-motion": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "right-drag": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "clicks": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    }
+  },
+  "private_hard_disk_preserved": true,
+  "startup_diagnostics_in_private_log": true
+}

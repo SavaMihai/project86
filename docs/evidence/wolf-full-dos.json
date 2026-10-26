@@ -1,0 +1,27 @@
+{
+  "version": "Wolfenstein 3D DOS shareware v1.4 (verify input hashes)",
+  "execution": "Project86 headless native ARM interpreter; no reference emulator",
+  "actions": [
+    "new Episode 1 game",
+    "walk",
+    "fire",
+    "save p86",
+    "destroy machine",
+    "boot DOS again",
+    "load p86",
+    "turn",
+    "serial mouse movement"
+  ],
+  "save_bytes": 19273,
+  "save_sha256": "402f1fe70f0069d7140a72dd1bd5e1b9446b4f0b88db92dc08b6ab17d5050ab9",
+  "audio_samples": 48000,
+  "audio_peak": 0.25775405764579773,
+  "visual_review": "Review title, gameplay and load-menu captures; image change alone is not a compatibility oracle.",
+  "limitations": [
+    "No physical iPad test",
+    "No end-to-end macOS UI automation",
+    "Approximate timing and FM synthesis",
+    "Short gameplay sample only"
+  ],
+  "boot_image_sha256": "800fe53b5df8cab7720a6e84db2b905916481dae4db4dda7570fd847a392d20f"
+}

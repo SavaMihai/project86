@@ -1,0 +1,6 @@
+{
+  "completed_input": "cd SUBDIR\\",
+  "screen_after_completed_cd": "P86>c:\n\nP86>cd SUBDIR\\\nInvalid directory\n\nP86>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "cwd_after_completion": "C:\\\r\n",
+  "cwd_without_trailing_separator": "C:\\SUBDIR\r\n"
+}

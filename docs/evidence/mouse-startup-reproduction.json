@@ -1,0 +1,14 @@
+{
+  "quiet": {
+    "device_not_found": false,
+    "screen": "\nCuteMouse v2.1 beta4 [FreeDOS]\nInstalled at COM1 (03F8h/IRQ4) in Microsoft mode\n\n\nMS-DOS Version 4.00 (Project86 - built from source)\nA:\\>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  "motion": {
+    "device_not_found": true,
+    "screen": "\nCuteMouse v2.1 beta4 [FreeDOS]\nError: device not found\n\n\nMS-DOS Version 4.00 (Project86 - built from source)\nA:\\>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  "button-release": {
+    "device_not_found": true,
+    "screen": "\nCuteMouse v2.1 beta4 [FreeDOS]\nError: device not found\n\n\nMS-DOS Version 4.00 (Project86 - built from source)\nA:\\>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  }
+}

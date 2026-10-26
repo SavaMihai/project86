@@ -1,0 +1,25 @@
+.build/
+.cache/
+.tools/
+assets/bootstrap/
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+.DS_Store
+*.dSYM/
+
+__pycache__/
+assets/guests/
+
+# Local promotional material
+/output/
+
+# Local environment and signing credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.mobileprovision

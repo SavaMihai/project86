@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-25",
+  "official_repository": "https://github.com/microsoft/MS-DOS",
+  "official_commit": "2d04cacc5322951f187bb17e017c12920ac8ebe2",
+  "complete_tree": true,
+  "library_related_paths": [
+    "v4.0/src/H/COMSUB.H",
+    "v4.0/src/INC/COMSUBS.LIB",
+    "v4.0/src/LIB/MEM.LIB",
+    "v4.0/src/SELECT/CASSFAR.LIB",
+    "v4.0/src/TOOLS/BLD/LIB/SLIBCE.LIB",
+    "v4.0/src/TOOLS/BLD/LIB/SLIBCR.LIB",
+    "v4.0/src/TOOLS/BLD/LIB/SLIBFP.LIB"
+  ],
+  "queries": [
+    "\"COMSUBS.LIB\"",
+    "\"CASSFAR\"",
+    "\"CASSFAR.MAK\"",
+    "\"cmsubstr\" \"cmdbcs\"",
+    "\"pcpanel.asm\" \"pcdispq.asm\"",
+    "Microsoft C 5.1 runtime source SLIBCE"
+  ],
+  "findings": [
+    {
+      "component": "COMSUBS / CASSFAR / period C runtime",
+      "result": "No matching, verifiably open-source release located in the official repository or targeted searches. This is a search result, not proof that no copy exists."
+    },
+    {
+      "candidate": "https://github.com/AR1972/astro",
+      "repository_description": "leaked MS-DOS 6.0 beta source",
+      "github_license": null,
+      "result": "Different DOS version; not imported. Repository metadata and directory names were inspected, not source implementation."
+    },
+    {
+      "component": "CuteMouse",
+      "source": "https://cutemouse.sourceforge.net/",
+      "result": "Upstream 2.1 beta4 has complete driver/macro source and documented JWasm build support."
+    }
+  ],
+  "boundary": "Assembler/compiler tools are build-time dependencies. Audit separately measures binary library code linked into shipped guest utilities."
+}

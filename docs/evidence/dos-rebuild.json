@@ -1,0 +1,28 @@
+{
+  "build_succeeded": true,
+  "emulator_exit_code": 0,
+  "source_patch": "SETENV.BAT: BAKROOT drive d: -> c:; original VERSION.INC switches preserved",
+  "guest_configuration": "FILES=64, BUFFERS=20, LASTDRIVE=C, COMMAND.COM /P /E:1024",
+  "comparisons": {
+    "IO.SYS": {
+      "built_sha256": "755c79c16d3db5280b5286f1032a4f77bb8556b79f0c22f9c9f85556c7b69e39",
+      "bootstrap_sha256": "755c79c16d3db5280b5286f1032a4f77bb8556b79f0c22f9c9f85556c7b69e39",
+      "identical": true,
+      "bytes": 33321
+    },
+    "MSDOS.SYS": {
+      "built_sha256": "573626782a3c45f0d9e5f00af1bd0f52a7de44bea96d2a2d3d660e9ae06158d5",
+      "bootstrap_sha256": "573626782a3c45f0d9e5f00af1bd0f52a7de44bea96d2a2d3d660e9ae06158d5",
+      "identical": true,
+      "bytes": 37376
+    },
+    "COMMAND.COM": {
+      "built_sha256": "19ebe2e5a8e18ca5d447a3d1fc42c42e4942ff5f3ef50e39ab01374bb01d8ea9",
+      "bootstrap_sha256": "19ebe2e5a8e18ca5d447a3d1fc42c42e4942ff5f3ef50e39ab01374bb01d8ea9",
+      "identical": true,
+      "bytes": 37556
+    }
+  },
+  "system_binaries_identical": true,
+  "cpu_model": "286 real-mode subset"
+}

@@ -1,0 +1,441 @@
+{
+  "schema": 3,
+  "system_origin": "Project86 complete DOS source rebuild",
+  "build_directory": ".build/dos-full-build",
+  "build": {
+    "report_sha256": "723adbb9255d2513c7564afbc4da17b20c788389724534fe2e01d976cf9b6d13",
+    "guest_disk_sha256": "eb57d824a46784ae8a810e0f391f8fb38b5657dba159dc4fa3b6352b5465877c",
+    "outputs_archive_sha256": "02f941ee19010f7307ee8fdb3d56c3e5e289fce3675ff9cbec95cc1866c21a44",
+    "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+    "build_variant": "project86-ver-v1",
+    "source_patches": [
+      "SETENV.BAT: BAKROOT d: to c:",
+      "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+      "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)"
+    ],
+    "binary_library_boundary": "Original compiler runtime and support libraries retained. COMSUBS.LIB and CASSFAR.LIB are linked by DOS utility targets but have no corresponding source in this archive. This is not a rebuild of every linked library."
+  },
+  "mouse_build": {
+    "report_sha256": "9a4f9bfd81a8e9920e93f4bc605b7befe1e681a739d4bf27aa4f52bd919cf39f",
+    "version": "2.1 beta4",
+    "source_archive_sha256": "1d7f04687bafe20d9313db56d15c9df870c055dc63548aa91488e13dd741d50e",
+    "corresponding_source_sha256": "c6a9b477ffee0fa6c45108252cb599c941e5ff486a07265290c7838410a4c05b",
+    "license_sha256": "19404e184cf45ec991b54e1e6f05f847ad8f13fee2a51f3a2d9a960c8f7cb26b",
+    "driver_sha256": "74200ce10a70d3e33cfc65dcb988998e643aac637e0419151c54a8649a87e140",
+    "recipe_sha256": "2993a452881ff2a8bdeff6afbccfc43c7c1c39292c620ebedb3fae26bb84fd2d"
+  },
+  "retained_from_bootstrap": [],
+  "dos_file_count": 62,
+  "boot_sector": {
+    "source_sha256": "35bcb631947bc43b39d28b89f82f04427a0b2ca61bb4fd1158d5a21862eb562c",
+    "installed_sha256": "46887b73652d99e8b4737a1f425070de19728f6467ad0740816027154802835f",
+    "guest_output": "SRC/BOOT/MSBOOT.BIN",
+    "extraction_offset": 31744,
+    "extraction_bytes": 512,
+    "media_parameter_bytes": [
+      11,
+      62
+    ],
+    "media_configuration": "Generated 1.44 MiB FAT12 BPB/EBPB; all other bytes use assembled boot code"
+  },
+  "files": {
+    "IO.SYS": {
+      "sha256": "755c79c16d3db5280b5286f1032a4f77bb8556b79f0c22f9c9f85556c7b69e39",
+      "bytes": 33321,
+      "origin": "compiled",
+      "guest_output": "SRC/BIOS/IO.SYS"
+    },
+    "MSDOS.SYS": {
+      "sha256": "573626782a3c45f0d9e5f00af1bd0f52a7de44bea96d2a2d3d660e9ae06158d5",
+      "bytes": 37376,
+      "origin": "compiled",
+      "guest_output": "SRC/DOS/MSDOS.SYS"
+    },
+    "4201.CPI": {
+      "sha256": "e46d224fc096d3e2903ca58d7356bb37b16fd1d9ffda439903f386860a664e88",
+      "bytes": 6404,
+      "origin": "assembled-data",
+      "guest_output": "SRC/DEV/PRINTER/4201/4201.CPI"
+    },
+    "4208.CPI": {
+      "sha256": "1f4a05e6ccf80d187702f6abaecb9966d120cf9a336d30cc2390692ba2a2fa22",
+      "bytes": 720,
+      "origin": "assembled-data",
+      "guest_output": "SRC/DEV/PRINTER/4208/4208.CPI"
+    },
+    "5202.CPI": {
+      "sha256": "3f503e60c30e60f6833755fd9284d84afc7125bacce16ee83a42c596c2143f4b",
+      "bytes": 370,
+      "origin": "compiled",
+      "guest_output": "SRC/DEV/PRINTER/5202/5202.CPI"
+    },
+    "ANSI.SYS": {
+      "sha256": "c6d23b1ecaa670f6de83c1e003bec50967962e0fcca2e96737bba38057e27581",
+      "bytes": 9105,
+      "origin": "compiled",
+      "guest_output": "SRC/DEV/ANSI/ANSI.SYS"
+    },
+    "APPEND.EXE": {
+      "sha256": "2b166b708e0d1b50719ac50ce32bc0e7d04ce76e6c28850d8d0ce2bd5502578b",
+      "bytes": 11154,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/APPEND/APPEND.EXE"
+    },
+    "ASSIGN.COM": {
+      "sha256": "edf9bb8136b4a89d06f801a1e620b7107842e06fbca1c83643ca256f74437bd2",
+      "bytes": 5753,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/ASSIGN/ASSIGN.COM"
+    },
+    "ATTRIB.EXE": {
+      "sha256": "e66d22f2873bfa59a9d6908f85fc43c9c2b52cc62ab63ebc13b98e900aecabf7",
+      "bytes": 18263,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/ATTRIB/ATTRIB.EXE"
+    },
+    "BACKUP.COM": {
+      "sha256": "c709fcafb7428a3ce637623a3d32f8d4334231c11fed26ee599e554e1652847e",
+      "bytes": 36880,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/BACKUP/BACKUP.COM"
+    },
+    "CHKDSK.COM": {
+      "sha256": "02a683582160a16638098d9055b14d0d3e66d4ccea27a82435bebbac7f733ad3",
+      "bytes": 17787,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/CHKDSK/CHKDSK.COM"
+    },
+    "COMMAND.COM": {
+      "sha256": "9904496029b00fd976deab83704e792e9af0a5ebf0d9cb9403d1b25d78c19497",
+      "bytes": 37588,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/COMMAND/COMMAND.COM"
+    },
+    "COMP.COM": {
+      "sha256": "a4478bbb749c518d8ab514e42901de86c6c7bf44c0cbba585a9f4ab39017c662",
+      "bytes": 9459,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/COMP/COMP.COM"
+    },
+    "COUNTRY.SYS": {
+      "sha256": "cd1abba25c110531d4ce0588eae9c1353214d4e322cd4c7989b8b51fea170bb3",
+      "bytes": 12806,
+      "origin": "compiled",
+      "guest_output": "SRC/DEV/COUNTRY/COUNTRY.SYS"
+    },
+    "DEBUG.COM": {
+      "sha256": "f688545d0839f07be5aa96ef43e6afc055cca25324607af65b22a713d6eb6f83",
+      "bytes": 21574,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/DEBUG/DEBUG.COM"
+    },
+    "DISKCOMP.COM": {
+      "sha256": "55b54c43100b366931a3ed462d26697a43b86718f91cf7e9282205a5c0384d7f",
+      "bytes": 9857,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/DISKCOMP/DISKCOMP.COM"
+    },
+    "DISKCOPY.COM": {
+      "sha256": "9bda2fd91ac1088d75d6acd4688165689f8c5c75a2ef60705df0c43c922b1358",
+      "bytes": 10396,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/DISKCOPY/DISKCOPY.COM"
+    },
+    "DISPLAY.SYS": {
+      "sha256": "3de3e2951122ead73f57d39889fb15afee0bf8a7f82e9557ddfd513cb42f97b2",
+      "bytes": 15692,
+      "origin": "compiled",
+      "guest_output": "SRC/DEV/DISPLAY/DISPLAY.SYS"
+    },
+    "DRIVER.SYS": {
+      "sha256": "6a3ae37bcfde3dfda435e285a547d38f86dc3c91eb9fc2ad7123e3e72c2c7a46",
+      "bytes": 5241,
+      "origin": "compiled",
+      "guest_output": "SRC/DEV/DRIVER/DRIVER.SYS"
+    },
+    "EDLIN.COM": {
+      "sha256": "cd22745bd242ac3229f28301a5ce1d19c0e7b8faf3ba66d4391e3d489e277902",
+      "bytes": 14069,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/EDLIN/EDLIN.COM"
+    },
+    "EGA.CPI": {
+      "sha256": "154e76387efde2950e6372a6c60fe591a0a598104b25c90545f0f75158af52a5",
+      "bytes": 49068,
+      "origin": "compiled",
+      "guest_output": "SRC/DEV/DISPLAY/EGA/EGA.CPI"
+    },
+    "EMM386.SYS": {
+      "sha256": "03434e799e5ea72c2f27a2e79014a4e9f519322d6acfe7a2ae25aa9675111f55",
+      "bytes": 87776,
+      "origin": "compiled",
+      "guest_output": "SRC/MEMM/MEMM/EMM386.SYS"
+    },
+    "EXE2BIN.EXE": {
+      "sha256": "4b3d197ddbfb2f98250553bcce677358ea925a1feb2850addf5c8ac288a8088c",
+      "bytes": 7963,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/EXE2BIN/EXE2BIN.EXE"
+    },
+    "FASTOPEN.EXE": {
+      "sha256": "14d619e40476e18b5c9429cfd159646797e8233d1fb150961b5243403e9160b8",
+      "bytes": 16702,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/FASTOPEN/FASTOPEN.EXE"
+    },
+    "FC.EXE": {
+      "sha256": "2f4b0ffae400a45f144b4ab9ff6e750589afe23602767f3ea8df0b62741f391e",
+      "bytes": 15807,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/FC/FC.EXE"
+    },
+    "FDISK.EXE": {
+      "sha256": "ea6ce9926199117edc55d7fe61369c628add43c15cd627fd7abcfbc63b55bf65",
+      "bytes": 60935,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/FDISK/FDISK.EXE"
+    },
+    "FILESYS.EXE": {
+      "sha256": "4cae8b7bab236e1a246a064b14b404fed754b0e3b7610e80ddce0f76f194587a",
+      "bytes": 11129,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/FILESYS/FILESYS.EXE"
+    },
+    "FIND.EXE": {
+      "sha256": "2d6c67ab0d1a15beaa18590b9ca6d4c618ff2f6af625f7bc8e2ac6a2155731e6",
+      "bytes": 5941,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/FIND/FIND.EXE"
+    },
+    "FORMAT.COM": {
+      "sha256": "f44685e84b092a17603704ed5023aaff360bba414843076306fd7693d477696c",
+      "bytes": 22859,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/FORMAT/FORMAT.COM"
+    },
+    "GRAFTABL.COM": {
+      "sha256": "2e65cc87908390e8e476bf577de705948f532c1e3d5b94aeeb00048f044b32e3",
+      "bytes": 10239,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/GRAFTABL/GRAFTABL.COM"
+    },
+    "GRAPHICS.COM": {
+      "sha256": "b7abce9f4119662fc2546b00c62230ab300ff2512f4000ad3e4c81142a01e2c7",
+      "bytes": 16693,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/GRAPHICS/GRAPHICS.COM"
+    },
+    "GRAPHICS.PRO": {
+      "sha256": "c8d534ec76423fd10acc27db9507255a3db9d3aa37fb5c11153c2f2c411da6b4",
+      "bytes": 9397,
+      "origin": "source-text",
+      "guest_output": "SRC/CMD/GRAPHICS/GRAPHICS.PRO"
+    },
+    "IFSFUNC.EXE": {
+      "sha256": "86c8861f82bdcffa50f08590f00b317d3fb7ce262c951963e26a7ed783042e15",
+      "bytes": 21739,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/IFSFUNC/IFSFUNC.EXE"
+    },
+    "JOIN.EXE": {
+      "sha256": "a415bf465c21e863d612626d00fedc401dcded2d6041e5ccb4250f2a7cd90aa2",
+      "bytes": 17813,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/JOIN/JOIN.EXE"
+    },
+    "KEYB.COM": {
+      "sha256": "6a66e27fe7865243bb631fe247701a93956caa641af4926811280ebd7a2d061c",
+      "bytes": 14727,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/KEYB/KEYB.COM"
+    },
+    "KEYBOARD.SYS": {
+      "sha256": "0a3e9ce32f0426c43e163b5dd9832bf5f78626426ab6143c3a3c96c673a91a89",
+      "bytes": 23328,
+      "origin": "compiled",
+      "guest_output": "SRC/DEV/KEYBOARD/KEYBOARD.SYS"
+    },
+    "LABEL.COM": {
+      "sha256": "a8fce248d06392d9e0adc7ed557aa63cffdade89878825c689b2b84e8ccf8d44",
+      "bytes": 4458,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/LABEL/LABEL.COM"
+    },
+    "LCD.CPI": {
+      "sha256": "2f62b85f088c4e4143a35642086f23f735bdd082c2905f1092a9657d06755034",
+      "bytes": 10703,
+      "origin": "compiled",
+      "guest_output": "SRC/DEV/DISPLAY/LCD/LCD.CPI"
+    },
+    "MEM.EXE": {
+      "sha256": "b3678169c59d359fdef9e21cd616a8d7ce2f81caabd9006de5e68a6caa744b91",
+      "bytes": 20005,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/MEM/MEM.EXE"
+    },
+    "MODE.COM": {
+      "sha256": "50fe27e2f2f437b7ce268d89ad4c763c8048669fa38aab17dd584f198f7c46f8",
+      "bytes": 22960,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/MODE/MODE.COM"
+    },
+    "MORE.COM": {
+      "sha256": "d36f092cb61d8ef2e25b66b6dfea70c08290ec958d325b8ec798b62a2ef14864",
+      "bytes": 2134,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/MORE/MORE.COM"
+    },
+    "NLSFUNC.EXE": {
+      "sha256": "8851cacdc3260f38cbce388edd1821e08563d35ec9208be95b75ba910f57446b",
+      "bytes": 6878,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/NLSFUNC/NLSFUNC.EXE"
+    },
+    "PRINT.COM": {
+      "sha256": "7236ffee35ebe46ae1e7895245c83bea4fbd71b684220d5f71ec1140a529a0c8",
+      "bytes": 14131,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/PRINT/PRINT.COM"
+    },
+    "PRINTER.SYS": {
+      "sha256": "b15bf75a8d4ee8b517fc6014e35ef04d3051b1e28bb29afced89fbcb9ab23855",
+      "bytes": 18914,
+      "origin": "compiled",
+      "guest_output": "SRC/DEV/PRINTER/PRINTER.SYS"
+    },
+    "RAMDRIVE.SYS": {
+      "sha256": "34b8b368b2835b8a572bb21ae015336c5af8e62c84d29209c726e18ee56b60e2",
+      "bytes": 8235,
+      "origin": "compiled",
+      "guest_output": "SRC/DEV/RAMDRIVE/RAMDRIVE.SYS"
+    },
+    "RECOVER.COM": {
+      "sha256": "46bb0d3e730a7302247dbf6b1a418ec4d371d0a947ce6bbe7a7153cd4f6f7dca",
+      "bytes": 10588,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/RECOVER/RECOVER.COM"
+    },
+    "REPLACE.EXE": {
+      "sha256": "2887db67f7297cfef20254d9c770fab060966d032758563c8063a5a3c51becf4",
+      "bytes": 19415,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/REPLACE/REPLACE.EXE"
+    },
+    "RESTORE.COM": {
+      "sha256": "9c3a711d30fe61f6a3b33133036f71bd229c85dd1e4967d340f1632ca1407b8b",
+      "bytes": 36946,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/RESTORE/RESTORE.COM"
+    },
+    "SELECT.COM": {
+      "sha256": "bdbf51f86a171f633020fe74d007a28020c189e9cd9c52fb12e2a54f0cbddae0",
+      "bytes": 3642,
+      "origin": "compiled",
+      "guest_output": "SRC/SELECT/SELECT.COM"
+    },
+    "SELECT.DAT": {
+      "sha256": "d9bced9807446d012e042d048f26fd7aac808fd63ae9403bb19fcde888c2254d",
+      "bytes": 22999,
+      "origin": "compiled",
+      "guest_output": "SRC/SELECT/SELECT.DAT"
+    },
+    "SELECT.EXE": {
+      "sha256": "f61c9640004b6417f3667240b98851a1e6d470369416abf23972cc353365c8d0",
+      "bytes": 95107,
+      "origin": "compiled",
+      "guest_output": "SRC/SELECT/SELECT.EXE"
+    },
+    "SELECT.HLP": {
+      "sha256": "b2e15f740c133427af7f5a295cb780b3a028bd8429c7a483fd98af97a2ba62a5",
+      "bytes": 28695,
+      "origin": "compiled",
+      "guest_output": "SRC/SELECT/SELECT.HLP"
+    },
+    "SELECT.PRT": {
+      "sha256": "ff73db5a8318cd83430e926cd046a4c3d21dab857a00dc234c305141facbea39",
+      "bytes": 1329,
+      "origin": "source-text",
+      "guest_output": "SRC/SELECT/SELECT.PRT"
+    },
+    "SHARE.EXE": {
+      "sha256": "e30e3f392da0be3f64feda5f678b69e4043a58bf4defb723d6807f38eceaec81",
+      "bytes": 13424,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/SHARE/SHARE.EXE"
+    },
+    "SMARTDRV.SYS": {
+      "sha256": "c9895111576d6d898dcffe4b4efbe746169b81e22cf9fc51b49ef10c46e2436f",
+      "bytes": 10224,
+      "origin": "compiled",
+      "guest_output": "SRC/DEV/SMARTDRV/SMARTDRV.SYS"
+    },
+    "SORT.EXE": {
+      "sha256": "1de1a1457a242a19448871152b91afb57650a2fd68c211e217d11f38f4cb59fd",
+      "bytes": 5882,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/SORT/SORT.EXE"
+    },
+    "SUBST.EXE": {
+      "sha256": "ea91985a23b83a8a26a4e9a4f61e05638d96bb1c0d9ca17ac1e5dd30e19b5268",
+      "bytes": 18467,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/SUBST/SUBST.EXE"
+    },
+    "SYS.COM": {
+      "sha256": "1083138f28a35a16985f8d6c3b8afb276649d3bdb35a4444cccb22a1f7149e4c",
+      "bytes": 11456,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/SYS/SYS.COM"
+    },
+    "TREE.COM": {
+      "sha256": "a830b50b7304bebda3d82e98e13f758b1ede9a90bcb6917ea8f62aab6b01a0d5",
+      "bytes": 6302,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/TREE/TREE.COM"
+    },
+    "XCOPY.EXE": {
+      "sha256": "7f1b05b60767d9ec9bbd8730bcb91491e970687d351268e607917e91dbc145ea",
+      "bytes": 17055,
+      "origin": "compiled",
+      "guest_output": "SRC/CMD/XCOPY/XCOPY.EXE"
+    },
+    "XMA2EMS.SYS": {
+      "sha256": "f6ffe886e4e2be63a0de05075daaf3812fecaf34e30173439de4a81368495172",
+      "bytes": 29211,
+      "origin": "compiled",
+      "guest_output": "SRC/DEV/XMA2EMS/XMA2EMS.SYS"
+    },
+    "XMAEM.SYS": {
+      "sha256": "5ea3e0d5cf4ff17126cdcc79abc77f7ee5f67b8ba4868a1c8dfd8540c3edd498",
+      "bytes": 19264,
+      "origin": "compiled",
+      "guest_output": "SRC/DEV/XMAEM/XMAEM.SYS"
+    },
+    "CTMOUSE.EXE": {
+      "sha256": "74200ce10a70d3e33cfc65dcb988998e643aac637e0419151c54a8649a87e140",
+      "bytes": 5829,
+      "origin": "source-built-driver"
+    },
+    "CONFIG.SYS": {
+      "sha256": "7407f72af1b4a04d6c0d75c9ae63fc5ac9ee18bbb25a6dc495c704136247086a",
+      "bytes": 35,
+      "origin": "project-configuration"
+    },
+    "AUTOEXEC.BAT": {
+      "sha256": "9f460ace84500f7966bbd68bf4bcfdb1eeaa90b27ecdeae13c348f5cc5dbff7b",
+      "bytes": 69,
+      "origin": "project-configuration"
+    },
+    "P86BUILD.TXT": {
+      "sha256": "7a04b367c373d04ce7be9aeaecfda59baf99912ed92f84b2ee4a7c5be59f9266",
+      "bytes": 873,
+      "origin": "project-configuration"
+    },
+    "P86FILES.TXT": {
+      "sha256": "489a9db8fa9019d4484da6e62d1448885cef7cbcf63daf486bf635a6e3d1d399",
+      "bytes": 5056,
+      "origin": "project-configuration"
+    }
+  },
+  "image_sha256": "bd13775e9e09fee63eaed521031610839644aeffb5634938d4496a0ba3f29f0f"
+}

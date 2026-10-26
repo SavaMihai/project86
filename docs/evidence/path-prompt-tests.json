@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "changed_image_files": [
+    "AUTOEXEC.BAT"
+  ],
+  "prompt_command": "PROMPT $P$G",
+  "states": {
+    "boot": "A:\\>",
+    "drive": "C:\\>",
+    "folder": "C:\\WOLF>",
+    "nested": "C:\\WOLF\\DATA>",
+    "parent": "C:\\WOLF>",
+    "switch-away": "A:\\>",
+    "switch-back": "C:\\WOLF>",
+    "editor": "Tab, history and Escape preserve the longer prompt"
+  },
+  "image_sha256": "71c961a65a06add61adde4511c12e7b2c240485cf0e24b24475b6368421de69a",
+  "command_sha256": "2f4aa05f10a69c728567389cdbc941296e1bfd5b0096b164735e122e8215c034",
+  "managed_disks_changed": false,
+  "packaging_tests_passed": 37,
+  "skipped_test_classes": 2,
+  "mac_build_passed": true,
+  "mac_bundle_verified": true,
+  "app_relaunched": false,
+  "log_sha256": {
+    ".build/path-prompt-packaging-tests.log": "8475d5b761494d6df3b29313d684e1f4a2acb34328237600422aa2df13c33818",
+    ".build/path-prompt-mac-build.log": "b8f7a07ebe60aec158b38b100a9a5feb144bfa25afce43876fe6cd4bd33715c7"
+  }
+}

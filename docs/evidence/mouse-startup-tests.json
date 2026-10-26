@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "image_sha256": "71c961a65a06add61adde4511c12e7b2c240485cf0e24b24475b6368421de69a",
+  "ctmouse_sha256": "74200ce10a70d3e33cfc65dcb988998e643aac637e0419151c54a8649a87e140",
+  "cases": {
+    "quiet": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "idle-events": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "motion": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "large-motion": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "right-drag": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "clicks": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    }
+  },
+  "reboot_cases": {
+    "quiet": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "idle-events": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "motion": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "large-motion": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "right-drag": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    },
+    "clicks": {
+      "installed": true,
+      "mode": "Microsoft, no wheel",
+      "buttons": 1,
+      "x": 328,
+      "y": 96,
+      "dx": 12,
+      "dy": -3
+    }
+  },
+  "private_hard_disk_preserved": true
+}

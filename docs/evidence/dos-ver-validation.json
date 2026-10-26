@@ -1,0 +1,20 @@
+{
+  "ver_output": "MS-DOS Version 4.00 (Project86 - built from source)",
+  "build_variant": "project86-ver-v1",
+  "boot_image_sha256": "bd13775e9e09fee63eaed521031610839644aeffb5634938d4496a0ba3f29f0f",
+  "command_com_sha256": "9904496029b00fd976deab83704e792e9af0a5ebf0d9cb9403d1b25d78c19497",
+  "only_changed_distribution_file": "COMMAND.COM",
+  "unchanged_distribution_files": 61,
+  "boot_code_matches_outside_media_parameters": true,
+  "packaging_and_dos_integration_tests_passed": 16,
+  "ver_at_prompt_after_cls": true,
+  "command_c_ver_redirected_to_file": true,
+  "mac_build_succeeded": true,
+  "mac_bundle_verified_against_build": true,
+  "app_relaunched_on_new_managed_floppy": true,
+  "previous_working_floppy_preserved": true,
+  "earlier_previous_floppy_preserved": true,
+  "hard_disk_preserved_and_selected": true,
+  "native_ui_interaction": "Not automated; app process, selected disk and on-disk contents verified",
+  "physical_ipad": "Deferred by owner"
+}

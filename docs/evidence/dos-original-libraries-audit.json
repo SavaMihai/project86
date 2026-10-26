@@ -1,0 +1,1431 @@
+{
+  "schema": 1,
+  "build": {
+    "report_sha256": "0a22b6093f475942c743ed0d5f1c7eca102c0d2acce0e46cdb2f35bd976d8d26",
+    "guest_disk_sha256": "58f8f58f8b4b13fc1164a7d5cd90863c8e6ffee9fb46f03d1a3870c29e166400",
+    "outputs_archive_sha256": "02f941ee19010f7307ee8fdb3d56c3e5e289fce3675ff9cbec95cc1866c21a44",
+    "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+    "build_variant": "project86-original-libraries-v1",
+    "source_patches": [
+      "SETENV.BAT: BAKROOT d: to c:",
+      "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+      "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)"
+    ],
+    "binary_library_boundary": "Original compiler tools and COMSUBS.LIB, CASSFAR.LIB, SLIBCE.LIB and MEM.LIB remain binary dependencies. DOS executables are rebuilt; these four libraries and the toolchain are not rebuilt from source.",
+    "seed": {
+      "kind": "rebuilt-dos",
+      "image_sha256": "96e79ed40671a7a7ae60d2cc5794098cf4a47ab7b93cceabab9af3b7517113bd",
+      "receipt_sha256": "5a6e0ac15b645700273e4dbebf4cc2f8ff57376cae2939db7cfd7a5860cf8ef1",
+      "build": {
+        "report_sha256": "6bf50497141e1baae27f9e36e8c8ebb7ed81ef36cc38228783225961b1dfeab9",
+        "guest_disk_sha256": "990fb3a2f48456076aa1a218b18b81c67cd348e2f95a52485086edbe2716d310",
+        "outputs_archive_sha256": "9b763ae283b76782b03e04b4d54a7673ee3c1ecef6eeb994dfcee77cd3a25e76",
+        "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+        "build_variant": "project86-cassfar-v1",
+        "source_patches": [
+          "SETENV.BAT: BAKROOT d: to c:",
+          "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+          "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)",
+          "Remove original INC/COMSUBS.LIB; compile and archive Project86 COMSUBS.C and DBCSTAB.ASM before NMAKE",
+          "Remove original SELECT/CASSFAR.LIB; compile Project86 CASSFAR.C/CBRIDGE.ASM with layout offsets from pinned SELECT declarations"
+        ],
+        "binary_library_boundary": "COMSUBS and CASSFAR use Project86 source. Original compiler tools, SLIBCE.LIB and MEM.LIB remain binary dependencies. This is not a rebuild of every linked library.",
+        "seed": {
+          "kind": "rebuilt-dos",
+          "image_sha256": "727134003a48282f826274128d2345ac50504d1c519b26d70b714d52c2d09172",
+          "receipt_sha256": "abc8f28b424e75ff763dd18428ac9c24741ff1ed47dff68b150250d5ef40ee14",
+          "build": {
+            "report_sha256": "50867ec5f19f27f097c0b713ddf61b3b07904669eaf8373f77ec966a680d6006",
+            "guest_disk_sha256": "b118205fb9f5018c67724b0aff0a3207b2c06d47cd6b58d8656a2beee77f8e29",
+            "outputs_archive_sha256": "873cd07e920191504823552eaed718062a7a52ac7406e815efe7713176036ae9",
+            "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+            "build_variant": "project86-comsubs-v1",
+            "source_patches": [
+              "SETENV.BAT: BAKROOT d: to c:",
+              "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+              "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)",
+              "Remove original INC/COMSUBS.LIB; compile and archive Project86 COMSUBS.C and DBCSTAB.ASM before NMAKE"
+            ],
+            "binary_library_boundary": "COMSUBS is built from Project86 source. Original compiler tools and CASSFAR.LIB, SLIBCE.LIB and MEM.LIB remain binary dependencies. This is not a rebuild of every linked library.",
+            "seed": {
+              "kind": "rebuilt-dos",
+              "image_sha256": "bd13775e9e09fee63eaed521031610839644aeffb5634938d4496a0ba3f29f0f",
+              "receipt_sha256": "0df0e585c0eac62291dafc498fe1d53faf2b623682e3d7e7647fcd0febc9e416",
+              "build": {
+                "report_sha256": "8d67abd17a0411ef621fdf7ef6e746ac51d0648e05c4cdffaf91a882860662cf",
+                "guest_disk_sha256": "30ae8504e326b0186811518d8b1605cf9adada8064a4e0f814db2146648182c3",
+                "outputs_archive_sha256": "02f941ee19010f7307ee8fdb3d56c3e5e289fce3675ff9cbec95cc1866c21a44",
+                "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+                "build_variant": "project86-ver-v1",
+                "source_patches": [
+                  "SETENV.BAT: BAKROOT d: to c:",
+                  "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+                  "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)"
+                ],
+                "binary_library_boundary": "Original compiler runtime and support libraries retained. COMSUBS.LIB and CASSFAR.LIB are linked by DOS utility targets but have no corresponding source in this archive. This is not a rebuild of every linked library.",
+                "seed": {
+                  "kind": "rebuilt-dos",
+                  "image_sha256": "bd13775e9e09fee63eaed521031610839644aeffb5634938d4496a0ba3f29f0f",
+                  "receipt_sha256": "0b9c9a1130e1c44101ea435036bb01c2b8d9644320ca7d5492dd51a1f326449f",
+                  "build": {
+                    "report_sha256": "723adbb9255d2513c7564afbc4da17b20c788389724534fe2e01d976cf9b6d13",
+                    "guest_disk_sha256": "eb57d824a46784ae8a810e0f391f8fb38b5657dba159dc4fa3b6352b5465877c",
+                    "outputs_archive_sha256": "02f941ee19010f7307ee8fdb3d56c3e5e289fce3675ff9cbec95cc1866c21a44",
+                    "source_archive_sha256": "7edcb0c8cb6079cc596abb6031d93c8e2a6ffe7500ecf12612b54755f411d4a6",
+                    "build_variant": "project86-ver-v1",
+                    "source_patches": [
+                      "SETENV.BAT: BAKROOT d: to c:",
+                      "Assemble published 4201.INC/4208.INC using P86CPI.ASM wrappers, LINK and EXE2BIN",
+                      "SRC/MESSAGES/USA-MS.MSG: message 1040 appends (Project86 - built from source)"
+                    ],
+                    "binary_library_boundary": "Original compiler runtime and support libraries retained. COMSUBS.LIB and CASSFAR.LIB are linked by DOS utility targets but have no corresponding source in this archive. This is not a rebuild of every linked library."
+                  }
+                },
+                "compiler_boot_image_sha256": "e0f500b6db37809606f5c0047e4d9cc5b123d7b9def8db00aee58153463000e4"
+              }
+            },
+            "compiler_boot_image_sha256": "e0f500b6db37809606f5c0047e4d9cc5b123d7b9def8db00aee58153463000e4",
+            "rebuilt_libraries": {
+              "SRC/INC/COMSUBS.LIB": {
+                "sha256": "289fa53f8c4cee0848c2ee4f743a9306cfd70c207200a89a6300be98f5e7f974",
+                "bytes": 2071,
+                "original_sha256": "3a2dd4aa684508037cf552692690943e9b0f8acf44e6ddb3ef43b631940789b1",
+                "source_files": {
+                  "COMSUBS.C": "43fa98e73226c1bd73b6cbaa2e4d84f8e77cb54f8002df80b0218f69395de8b9",
+                  "DBCSTAB.ASM": "5a590cfe2a3bad6e99f0aec4bb3d7617f1ea1486a0ceda6d55f51565b26390c7",
+                  "COMSUBS.LBR": "07cc9d59476533854197f7f84310c8896231740a398e5c01d40d1cc71b5b3003"
+                },
+                "source_archive_sha256": "a63b9e84d3c66089947bb7bb51cb877d44e0dc7cb984f37a55f65f6b1d2e882c"
+              }
+            }
+          }
+        },
+        "compiler_boot_image_sha256": "278c3a14125860dedc0111e8dc3bdc60a289deae9465e861e8f4b043ccf636fe",
+        "rebuilt_libraries": {
+          "SRC/INC/COMSUBS.LIB": {
+            "sha256": "289fa53f8c4cee0848c2ee4f743a9306cfd70c207200a89a6300be98f5e7f974",
+            "bytes": 2071,
+            "original_sha256": "3a2dd4aa684508037cf552692690943e9b0f8acf44e6ddb3ef43b631940789b1",
+            "source_files": {
+              "COMSUBS.C": "43fa98e73226c1bd73b6cbaa2e4d84f8e77cb54f8002df80b0218f69395de8b9",
+              "DBCSTAB.ASM": "5a590cfe2a3bad6e99f0aec4bb3d7617f1ea1486a0ceda6d55f51565b26390c7",
+              "COMSUBS.LBR": "07cc9d59476533854197f7f84310c8896231740a398e5c01d40d1cc71b5b3003"
+            },
+            "source_archive_sha256": "a63b9e84d3c66089947bb7bb51cb877d44e0dc7cb984f37a55f65f6b1d2e882c"
+          },
+          "SRC/SELECT/CASSFAR.LIB": {
+            "sha256": "7164f8d418d55a04e5ae81af3fb4a98f41809519848b202f0de98fb29cb1e396",
+            "bytes": 13337,
+            "original_sha256": "39bbbb38f58483c3bacd366a899a90b7b8764b6431032ac7f7367212d6409f3e",
+            "source_files": {
+              "CASSFAR.C": "71e66144bd4fb3b1d2f1a132d8489797c324e4edb9747de0ee60d7f0cc87983c",
+              "CBRIDGE.ASM": "baf8414e20f09b1b3446bc02a0e2877aa399b7bb8f95e8b39f0c8c2b8f91b3fb",
+              "LAYOUT.H": "45371b1035a6bf2938ab679498ea95e3e749e384da158a96f0116e10696adef7",
+              "CASSFAR.LBR": "863f0b88f2fce31fb95d15af64809aac66a6dbcab69b1473ab19583dc6be770f"
+            },
+            "source_archive_sha256": "5c2cf94df56b4c0b271f15fa4ed0dd70b7ab709da02b36e68bacd26922ecc105",
+            "layout_generator_sha256": "2f04f25a89ca54b50958be9a8e8f67decaa6a44a9932fcdc3a295ee60811c04c"
+          }
+        }
+      }
+    },
+    "compiler_boot_image_sha256": "86b93d9e80b06b14891c4b59a09050689be0cd2f14d52eb3f4c4609a72239223"
+  },
+  "method": "Original LINK 3.65 /INFORMATION in Project86; private copy of completed build disk",
+  "link_steps": [
+    {
+      "directory": "SRC/BOOT",
+      "command": "link msboot;",
+      "log": "L000.TXT",
+      "log_sha256": "f1c3450a1dfee81f0239b0203d5db8b1b0ff9630a74ea5af3bf249bfac9554ea",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/BIOS",
+      "command": "link msload.obj,msload,,;",
+      "log": "L001.TXT",
+      "log_sha256": "3ca081c9fe68ff72263f1b8656c6518756962f43f3be58e005d7f600f19c7cd5",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/BIOS",
+      "command": "link @msbio.lnk",
+      "log": "L002.TXT",
+      "log_sha256": "c41709c1419a4735883f32a437d865ccf7014ecbca1170ecab44fb49e46f958f",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DOS",
+      "command": "link @msdos.lnk",
+      "log": "L003.TXT",
+      "log_sha256": "2b2c155eed06fcfcac594d9fd6ca45e10e9974109d4192760ed63e2c908a18af",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/COMMAND",
+      "command": "link @command.lnk",
+      "log": "L004.TXT",
+      "log_sha256": "2829fce6a08e3cf1c7a21692121c09c994a81c6f691086ca20e1f8a80dc5a081",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/ATTRIB",
+      "command": "link @attrib.lnk",
+      "log": "L005.TXT",
+      "log_sha256": "f7c54b195b0015a7094ea65c7f8cac09890c2757b3d97cfa80f1e4f9754d7ad5",
+      "libraries": {
+        "SRC/TOOLS/BLD/LIB/SLIBCE.LIB": [
+          "dos\\crt0.asm",
+          "dos\\crt0dat.asm",
+          "dos\\crt0msg.asm",
+          "crt0fp.asm",
+          "chkstk.asm",
+          "chksum.asm",
+          "dos\\stdargv.asm",
+          "dos\\stdenvp.asm",
+          "dos\\nmsghdr.asm",
+          "dos\\stdalloc.asm",
+          "dos\\dosret.asm",
+          "dos\\close.asm",
+          "dos\\lseek.asm",
+          "strcat.asm",
+          "strcpy.asm",
+          "strcmp.asm",
+          "strlen.asm",
+          "dos\\int86.asm",
+          "flength.c",
+          "dos\\intdos.asm",
+          "dos\\intdosx.asm",
+          "segread.asm"
+        ]
+      }
+    },
+    {
+      "directory": "SRC/CMD/ASSIGN",
+      "command": "link assgmain.obj+assgparm.obj,assign,,;",
+      "log": "L006.TXT",
+      "log_sha256": "58d433c1c0ec61fc2b573ac577b7714b76cac16eac28f85ebd68967292944415",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/CHKDSK",
+      "command": "link @chkdsk.lnk",
+      "log": "L007.TXT",
+      "log_sha256": "377f53cac7ca423c245c21784ae684203c1362ec3accf79e57f5e74c61ad7e53",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/DEBUG",
+      "command": "link @debug.lnk",
+      "log": "L008.TXT",
+      "log_sha256": "541051e1d6b42242e2bef9dc9d751e6eb3a7e2933568bf3c06bfe3e46620ba4a",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/EDLIN",
+      "command": "link @edlin.lnk",
+      "log": "L009.TXT",
+      "log_sha256": "5c4442a653fb6a1929f391e7a7506d033a97b2db7c999e5704b828b32cb1addc",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/EXE2BIN",
+      "command": "link @exe2bin.lnk",
+      "log": "L010.TXT",
+      "log_sha256": "a00941c712d74603a9b550eb3eb634fa6d61a75c583df1f491d2dbffd1c3d486",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/FIND",
+      "command": "link find+findmes,find.exe/ex;",
+      "log": "L011.TXT",
+      "log_sha256": "ca77def9ec6c6b15be5797d9ce03209b5f293915c1a6636e5d47a29ce233a446",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/FC",
+      "command": "link @fc.lnk;",
+      "log": "L012.TXT",
+      "log_sha256": "d6bcc390a22641b396591019e68498e6679aaf1e73082b52c751325232e7fe09",
+      "libraries": {
+        "SRC/TOOLS/BLD/LIB/SLIBCE.LIB": [
+          "dos\\crt0.asm",
+          "dos\\crt0dat.asm",
+          "dos\\crt0msg.asm",
+          "crt0fp.asm",
+          "chkstk.asm",
+          "chksum.asm",
+          "dos\\stdargv.asm",
+          "dos\\stdenvp.asm",
+          "dos\\nmsghdr.asm",
+          "dos\\stdalloc.asm",
+          "dos\\dosret.asm",
+          "flushall.c",
+          "fopen.c",
+          "fwrite.c",
+          "printf.c",
+          "_cflush.asm",
+          "_file.c",
+          "_filbuf.c",
+          "_flsbuf.c",
+          "_getbuf.c",
+          "_open.c",
+          "_sftbuf.c",
+          "fflush.c",
+          "output.c",
+          "stream.c",
+          "dos\\lseek.asm",
+          "dos\\open.asm",
+          "dos\\read.asm",
+          "write.asm",
+          "stackava.asm",
+          "txtmode.asm",
+          "nmalloc.asm",
+          "amalloc.asm",
+          "dos\\brkctl.asm",
+          "strcpy.asm",
+          "strcmp.asm",
+          "strlen.asm",
+          "ultoa.asm",
+          "cmiscdat.asm",
+          "ctype.asm",
+          "isatty.asm",
+          "fgets.c",
+          "fputs.c",
+          "sprintf.c",
+          "dos\\intdos.asm",
+          "memcpy.asm",
+          "xtoa.asm",
+          "syserr.c"
+        ]
+      }
+    },
+    {
+      "directory": "SRC/CMD/FORMAT",
+      "command": "link  @format.lnk",
+      "log": "L013.TXT",
+      "log_sha256": "75e71397a17b0f6da6f4676bfeca077a17144cb2f7dec79eb5e895e02a8e8ae7",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/JOIN",
+      "command": "link @join.lnk",
+      "log": "L014.TXT",
+      "log_sha256": "eac12b83ce076a32cd15a0d14e4470bf43bdb8bf48d1b9ba343726b9ba4abaf4",
+      "libraries": {
+        "SRC/INC/COMSUBS.LIB": [
+          "cmsubstr",
+          "cmdbcs"
+        ],
+        "SRC/MAPPER/MAPPER.LIB": [
+          "casemap.asm",
+          "dbcs.asm"
+        ],
+        "SRC/TOOLS/BLD/LIB/SLIBCE.LIB": [
+          "dos\\crt0.asm",
+          "dos\\crt0dat.asm",
+          "dos\\crt0msg.asm",
+          "crt0fp.asm",
+          "chkstk.asm",
+          "chksum.asm",
+          "dos\\stdargv.asm",
+          "dos\\stdenvp.asm",
+          "dos\\nmsghdr.asm",
+          "dos\\stdalloc.asm",
+          "dos\\dosret.asm",
+          "flushall.c",
+          "printf.c",
+          "_cflush.asm",
+          "_file.c",
+          "_flsbuf.c",
+          "_getbuf.c",
+          "_sftbuf.c",
+          "fflush.c",
+          "output.c",
+          "dos\\lseek.asm",
+          "write.asm",
+          "stackava.asm",
+          "nmalloc.asm",
+          "amalloc.asm",
+          "dos\\brkctl.asm",
+          "strcat.asm",
+          "strcpy.asm",
+          "strcmp.asm",
+          "strlen.asm",
+          "strncmp.asm",
+          "ultoa.asm",
+          "cmiscdat.asm",
+          "isatty.asm",
+          "dos\\intdos.asm",
+          "dos\\intdosx.asm",
+          "xtoa.asm",
+          "dos\\dir.asm"
+        ]
+      }
+    },
+    {
+      "directory": "SRC/CMD/MORE",
+      "command": "link @more.lnk",
+      "log": "L015.TXT",
+      "log_sha256": "6e6449b9f5a1fc373a11c109b6e8217c97d2fa8ddb9edf001d7c7cfeddebad77",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/PRINT",
+      "command": "link @print.lnk",
+      "log": "L016.TXT",
+      "log_sha256": "89a4666f585b61972f5f4d777b8dcf8e66cb6312d970c71460ecda45d6775fdc",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/RECOVER",
+      "command": "link @recover.lnk",
+      "log": "L017.TXT",
+      "log_sha256": "cf284416757d3e506582598636ea2de2069cbea144370bc2007205f09b0fa07e",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/SORT",
+      "command": "link sort+sortmes,sort.exe;",
+      "log": "L018.TXT",
+      "log_sha256": "102ca19a63cd9bca82289718e9bfbfbb40dcf4b71eb481255afab565ab73c225",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/SUBST",
+      "command": "link @subst.lnk",
+      "log": "L019.TXT",
+      "log_sha256": "446c7149da5b2281ecb2428d79a04ba9bb5d70e968bf3f2b8bf524518f52a8ec",
+      "libraries": {
+        "SRC/INC/COMSUBS.LIB": [
+          "cmsubstr",
+          "cmdbcs"
+        ],
+        "SRC/MAPPER/MAPPER.LIB": [
+          "casemap.asm",
+          "dbcs.asm"
+        ],
+        "SRC/TOOLS/BLD/LIB/SLIBCE.LIB": [
+          "dos\\crt0.asm",
+          "dos\\crt0dat.asm",
+          "dos\\crt0msg.asm",
+          "crt0fp.asm",
+          "chkstk.asm",
+          "chksum.asm",
+          "dos\\stdargv.asm",
+          "dos\\stdenvp.asm",
+          "dos\\nmsghdr.asm",
+          "dos\\stdalloc.asm",
+          "dos\\dosret.asm",
+          "flushall.c",
+          "printf.c",
+          "_cflush.asm",
+          "_file.c",
+          "_flsbuf.c",
+          "_getbuf.c",
+          "_sftbuf.c",
+          "fflush.c",
+          "output.c",
+          "dos\\lseek.asm",
+          "dos\\open.asm",
+          "write.asm",
+          "stackava.asm",
+          "txtmode.asm",
+          "nmalloc.asm",
+          "amalloc.asm",
+          "dos\\brkctl.asm",
+          "strcat.asm",
+          "strcpy.asm",
+          "strcmp.asm",
+          "strlen.asm",
+          "strncmp.asm",
+          "ultoa.asm",
+          "cmiscdat.asm",
+          "isatty.asm",
+          "dos\\intdos.asm",
+          "dos\\intdosx.asm",
+          "xtoa.asm",
+          "dos\\access.asm"
+        ]
+      }
+    },
+    {
+      "directory": "SRC/CMD/SYS",
+      "command": "link @sys.lnk",
+      "log": "L020.TXT",
+      "log_sha256": "437a9d3361c35783991f808af4cf0146aa6d3acfc4228e3bbdd0cfc90e22c310",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/SHARE",
+      "command": "link @share.lnk",
+      "log": "L021.TXT",
+      "log_sha256": "cbf4b8f8b264807656bbd3473cd4ea4b52e98d7ed990431159fb6fc2e0556047",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/NLSFUNC",
+      "command": "link nlsfunc+nlsparm;",
+      "log": "L022.TXT",
+      "log_sha256": "3ee62d8c0a5898f9b740abbab2cbb7221d2b08ebe4ad6e52675ed15980407b77",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/IFSFUNC",
+      "command": "link @ifsfunc.lnk",
+      "log": "L023.TXT",
+      "log_sha256": "63ec952224203f304048c3824e62db14cd734d54031951f3bf70bb4a1690cff6",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/MEM",
+      "command": "link mem+_msgret+_parse,,,..\\..\\lib\\mem;",
+      "log": "L024.TXT",
+      "log_sha256": "d4630ddc0bd7dafda148a46e03a86705acfc5e6091e6dab035ecbb4d6dbe7058",
+      "libraries": {
+        "SRC/LIB/MEM.LIB": [
+          "dos\\crt0dat.asm",
+          "dos\\crt0msg.asm",
+          "crt0fp.asm",
+          "chkstk.asm",
+          "chksum.asm",
+          "dos\\stdargv.asm",
+          "dos\\stdenvp.asm",
+          "dos\\nmsghdr.asm",
+          "dos\\stdalloc.asm",
+          "dos\\dosret.asm",
+          "flushall.c",
+          "_cflush.asm",
+          "_file.c",
+          "_flsbuf.c",
+          "_getbuf.c",
+          "fflush.c",
+          "output.c",
+          "dos\\lseek.asm",
+          "write.asm",
+          "stackava.asm",
+          "nmalloc.asm",
+          "amalloc.asm",
+          "dos\\brkctl.asm",
+          "strcpy.asm",
+          "strlen.asm",
+          "ultoa.asm",
+          "cmiscdat.asm",
+          "isatty.asm",
+          "dos\\kbhit.asm",
+          "dos\\getch.asm",
+          "dos\\int86.asm",
+          "sprintf.c",
+          "dos\\int86x.asm",
+          "dos\\intdos.asm",
+          "dos\\intdosx.asm",
+          "segread.asm",
+          "xtoa.asm",
+          "lshl.asm",
+          "alshl.asm",
+          "crt0"
+        ]
+      }
+    },
+    {
+      "directory": "SRC/CMD/FILESYS",
+      "command": "link filesys+ _parse+ _msgret; /NOI",
+      "log": "L025.TXT",
+      "log_sha256": "1bd391b092815ddd0fc311a5ba986d637dcc19a8fe89d1b13359e01b6e9adab2",
+      "libraries": {
+        "SRC/TOOLS/BLD/LIB/SLIBCE.LIB": [
+          "dos\\crt0.asm",
+          "dos\\crt0dat.asm",
+          "dos\\crt0msg.asm",
+          "crt0fp.asm",
+          "chkstk.asm",
+          "chksum.asm",
+          "dos\\stdargv.asm",
+          "dos\\stdenvp.asm",
+          "dos\\nmsghdr.asm",
+          "dos\\stdalloc.asm",
+          "dos\\dosret.asm",
+          "strcpy.asm",
+          "strncat.asm",
+          "dos\\intdos.asm",
+          "dos\\intdosx.asm",
+          "strchr.asm",
+          "stricmp.asm"
+        ]
+      }
+    },
+    {
+      "directory": "SRC/CMD/BACKUP",
+      "command": "link /NOE backup + _parse + _msgret,,,..\\..\\mapper\\mapper + ..\\..\\inc\\comsubs;",
+      "log": "L026.TXT",
+      "log_sha256": "06d1cfb965abab6e1e0ca6460cef39f77522039878fd1340954a3f0c58c6dd8a",
+      "libraries": {
+        "SRC/MAPPER/MAPPER.LIB": [
+          "f_first.asm",
+          "write.asm",
+          "delete.asm",
+          "getcntry.asm",
+          "f_close.asm",
+          "open.asm",
+          "read.asm",
+          "qcurdir.asm",
+          "qcurdsk.asm",
+          "qfilemod.asm",
+          "sfilemod.asm",
+          "lseek.asm",
+          "close.asm",
+          "allocseg.asm",
+          "freeseg.asm",
+          "sel_disk.asm",
+          "qfsinfo.asm",
+          "f_next.asm",
+          "get_tod.asm",
+          "ioctl.asm",
+          "sighand.asm",
+          "error.asm",
+          "setint24.asm",
+          "setfsinf.asm",
+          "devconfg.asm",
+          "casemap.asm",
+          "dbcs.asm"
+        ],
+        "SRC/INC/COMSUBS.LIB": [
+          "cmrrchr",
+          "cmstrchr",
+          "cmupper",
+          "cmdbcs"
+        ],
+        "SRC/TOOLS/BLD/LIB/SLIBCE.LIB": [
+          "dos\\crt0.asm",
+          "dos\\crt0dat.asm",
+          "chkstk.asm",
+          "nmalloc.asm",
+          "strcat.asm",
+          "strcpy.asm",
+          "strcmp.asm",
+          "strlen.asm",
+          "dos\\int86.asm",
+          "sprintf.c",
+          "dos\\intdos.asm",
+          "strchr.asm",
+          "spawnlp.c",
+          "dos\\dir.asm",
+          "lmul.asm",
+          "dos\\crt0msg.asm",
+          "crt0fp.asm",
+          "chksum.asm",
+          "dos\\stdargv.asm",
+          "dos\\stdenvp.asm",
+          "dos\\nmsghdr.asm",
+          "dos\\dosret.asm",
+          "_flsbuf.c",
+          "output.c",
+          "amalloc.asm",
+          "spawnvp.c",
+          "dos\\stdalloc.asm",
+          "_cflush.asm",
+          "_file.c",
+          "_getbuf.c",
+          "write.asm",
+          "dos\\brkctl.asm",
+          "ultoa.asm",
+          "cmiscdat.asm",
+          "isatty.asm",
+          "spawnvpe.c",
+          "flushall.c",
+          "stackava.asm",
+          "strncpy.asm",
+          "getenv.c",
+          "xtoa.asm",
+          "dos\\spawnve.c",
+          "fflush.c",
+          "strncmp.asm",
+          "strrchr.asm",
+          "dos\\cenvarg.c",
+          "dos\\dospawn.asm",
+          "dos\\execload.asm"
+        ]
+      }
+    },
+    {
+      "directory": "SRC/CMD/COMP",
+      "command": "link @comp.lnk",
+      "log": "L027.TXT",
+      "log_sha256": "dfccce63fa89e4dbb99f4c2287024688c0000bf797812c949087f120ccb6bcf5",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/DISKCOMP",
+      "command": "link @diskcomp.lnk",
+      "log": "L028.TXT",
+      "log_sha256": "6e3c76945d138a69963b29b473aa687042e7bb701a68b8ddd85dbecd132200df",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/DISKCOPY",
+      "command": "link @diskcopy.lnk",
+      "log": "L029.TXT",
+      "log_sha256": "909d798413e0b567e2051da9f4d7458a348817125706efb48f01f02d958ae9ae",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/FDISK",
+      "command": "link fdboot;",
+      "log": "L030.TXT",
+      "log_sha256": "28122bd6e400a094c60ce9c4bbdfb09b8cdc9d35d86af815a896610347977268",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/FDISK",
+      "command": "link @fdisk.lnk",
+      "log": "L031.TXT",
+      "log_sha256": "3a94104bd8e04f854f31536be7d536f80b3a5c22cb8fb26ed2c8d6faca757578",
+      "libraries": {
+        "SRC/MAPPER/MAPPER.LIB": [
+          "beep.asm",
+          "exit.asm",
+          "scurpos.asm",
+          "scrollup.asm",
+          "wchstra.asm"
+        ],
+        "SRC/TOOLS/BLD/LIB/SLIBCE.LIB": [
+          "dos\\crt0.asm",
+          "dos\\crt0dat.asm",
+          "dos\\crt0msg.asm",
+          "crt0fp.asm",
+          "chkstk.asm",
+          "chksum.asm",
+          "dos\\stdargv.asm",
+          "dos\\stdenvp.asm",
+          "dos\\nmsghdr.asm",
+          "dos\\stdalloc.asm",
+          "dos\\dosret.asm",
+          "flushall.c",
+          "_cflush.asm",
+          "_file.c",
+          "_flsbuf.c",
+          "_getbuf.c",
+          "fflush.c",
+          "output.c",
+          "dos\\lseek.asm",
+          "write.asm",
+          "stackava.asm",
+          "nmalloc.asm",
+          "amalloc.asm",
+          "dos\\brkctl.asm",
+          "strcat.asm",
+          "strcpy.asm",
+          "strcmp.asm",
+          "strlen.asm",
+          "strncpy.asm",
+          "atof.c",
+          "_fptostr.c",
+          "ultoa.asm",
+          "cmiscdat.asm",
+          "ctype.asm",
+          "isatty.asm",
+          "dos\\apisim.asm",
+          "dos\\getch.asm",
+          "dos\\int86.asm",
+          "sprintf.c",
+          "dos\\int86x.asm",
+          "dos\\intdos.asm",
+          "dos\\intdosx.asm",
+          "segread.asm",
+          "dos\\putch.asm",
+          "strchr.asm",
+          "memcpy.asm",
+          "memset.asm",
+          "xtoa.asm",
+          "dos\\signal.asm",
+          "dos\\wrt2err.asm",
+          "lmul.asm",
+          "lshl.asm",
+          "almul.asm",
+          "uldiv.asm",
+          "ulrem.asm",
+          "ulshr.asm",
+          "emulator.ASM",
+          "emoem.ASM",
+          "..\\fltused.ASM",
+          "fixups.ASM",
+          "..\\cfpsig.ASM",
+          "x8fin.ASM",
+          "x8fout.ASM",
+          "x8tmul.ASM",
+          "..\\cfin.ASM",
+          "..\\cfout.ASM",
+          "..\\87ftol.ASM",
+          "..\\cvt.c"
+        ]
+      }
+    },
+    {
+      "directory": "SRC/CMD/LABEL",
+      "command": "link @label.lnk",
+      "log": "L032.TXT",
+      "log_sha256": "f7d4aa8394a1b24861c3742552863cd8b6c1f21082dcdd7559995c2b54e2456b",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/MODE",
+      "command": "link @mode.lnk",
+      "log": "L033.TXT",
+      "log_sha256": "3a1e6fd1d3e188514dcb5713dd683327ee51670038398cea2d808a7ea0db7ebd",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/RESTORE",
+      "command": "link @restore.lnk",
+      "log": "L034.TXT",
+      "log_sha256": "37b9afea457a2f3a510640f1265dffccd120b291ca23ac91bb134d2a0c137742",
+      "libraries": {
+        "SRC/MAPPER/MAPPER.LIB": [
+          "f_first.asm",
+          "write.asm",
+          "delete.asm",
+          "f_close.asm",
+          "open.asm",
+          "read.asm",
+          "qcurdir.asm",
+          "qcurdsk.asm",
+          "qfilemod.asm",
+          "sfilemod.asm",
+          "lseek.asm",
+          "sfileinf.asm",
+          "close.asm",
+          "allocseg.asm",
+          "qfsinfo.asm",
+          "f_next.asm",
+          "devconfg.asm",
+          "ioctl.asm",
+          "sighand.asm",
+          "setint24.asm",
+          "qfileinf.asm",
+          "casemap.asm",
+          "dbcs.asm"
+        ],
+        "SRC/INC/COMSUBS.LIB": [
+          "rctomid",
+          "cmupper",
+          "cmdbcs"
+        ],
+        "SRC/TOOLS/BLD/LIB/SLIBCE.LIB": [
+          "dos\\crt0.asm",
+          "dos\\crt0dat.asm",
+          "dos\\crt0msg.asm",
+          "crt0fp.asm",
+          "chkstk.asm",
+          "chksum.asm",
+          "dos\\stdargv.asm",
+          "dos\\stdenvp.asm",
+          "dos\\nmsghdr.asm",
+          "dos\\stdalloc.asm",
+          "dos\\dosret.asm",
+          "flushall.c",
+          "printf.c",
+          "_cflush.asm",
+          "_file.c",
+          "_flsbuf.c",
+          "_getbuf.c",
+          "_sftbuf.c",
+          "fflush.c",
+          "output.c",
+          "dos\\lseek.asm",
+          "write.asm",
+          "stackava.asm",
+          "nmalloc.asm",
+          "amalloc.asm",
+          "dos\\brkctl.asm",
+          "strcat.asm",
+          "strcpy.asm",
+          "strcmp.asm",
+          "strlen.asm",
+          "ultoa.asm",
+          "cmiscdat.asm",
+          "isatty.asm",
+          "dos\\int86.asm",
+          "dos\\intdos.asm",
+          "dos\\intdosx.asm",
+          "xtoa.asm",
+          "dos\\dir.asm",
+          "lmul.asm",
+          "lshl.asm",
+          "uldiv.asm",
+          "ulrem.asm"
+        ]
+      }
+    },
+    {
+      "directory": "SRC/CMD/TREE",
+      "command": "link @tree.lnk",
+      "log": "L035.TXT",
+      "log_sha256": "08f14a016868c758d3139acd4232fc19f7efe30656eed58f3cee553b10935370",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/REPLACE",
+      "command": "link @replace.lnk",
+      "log": "L036.TXT",
+      "log_sha256": "770e95e88d87d9e26cff13e8a33b69c773698145b3f55f2c763ae94e0188795f",
+      "libraries": {
+        "SRC/INC/COMSUBS.LIB": [
+          "cmrrchr",
+          "cmstrchr",
+          "cmdbcs"
+        ],
+        "SRC/TOOLS/BLD/LIB/SLIBCE.LIB": [
+          "dos\\crt0.asm",
+          "dos\\crt0dat.asm",
+          "dos\\crt0msg.asm",
+          "crt0fp.asm",
+          "chkstk.asm",
+          "chksum.asm",
+          "dos\\stdargv.asm",
+          "dos\\stdenvp.asm",
+          "dos\\nmsghdr.asm",
+          "dos\\stdalloc.asm",
+          "dos\\dosret.asm",
+          "nmalloc.asm",
+          "amalloc.asm",
+          "dos\\brkctl.asm",
+          "strcat.asm",
+          "strcpy.asm",
+          "strcmp.asm",
+          "strlen.asm",
+          "dos\\int86.asm",
+          "dos\\intdos.asm",
+          "dos\\intdosx.asm",
+          "segread.asm"
+        ],
+        "SRC/MAPPER/MAPPER.LIB": [
+          "casemap.asm",
+          "dbcs.asm"
+        ]
+      }
+    },
+    {
+      "directory": "SRC/CMD/XCOPY",
+      "command": "link @xcopy.lnk",
+      "log": "L037.TXT",
+      "log_sha256": "9d4b3d977c493e386e7284341a5ab5628753a85ad977086b3736da3aea5060a2",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/GRAFTABL",
+      "command": "link @graftabl.lnk",
+      "log": "L038.TXT",
+      "log_sha256": "7fb6c810f78933b7cb0e68fce43d5bf7a86bb6e0443c3c3d24a30df0d8fc0b34",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/FASTOPEN",
+      "command": "link @fastopen.lnk",
+      "log": "L039.TXT",
+      "log_sha256": "a0c8953d23080f2d5296cc1e418db4a98833fccbbd0931d5fb3f8f580a7d9456",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/APPEND",
+      "command": "link append;",
+      "log": "L040.TXT",
+      "log_sha256": "ede31cbb8909a8310fe38beb9df7cadf4ccfb52823f96d26daaf5589d5468487",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/GRAPHICS",
+      "command": "link @graphics.lnk",
+      "log": "L041.TXT",
+      "log_sha256": "aaaebbb2cbcc119c95a565463e4aa7be31f2c5d76592d1d8e5c100da92964889",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/CMD/KEYB",
+      "command": "link @keyb.lnk",
+      "log": "L042.TXT",
+      "log_sha256": "815bd62f13971f79c77ebdcecf53697db2bbb151446a64e3936c96f8773e2adf",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DEV/COUNTRY",
+      "command": "link mkcntry;",
+      "log": "L043.TXT",
+      "log_sha256": "16fc252a1f6681ee3d2ef2e6c81b3fe5b3ac2e6b77d4e5f733b613789b5b8661",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DEV/ANSI",
+      "command": "link    @ansi.lnk",
+      "log": "L044.TXT",
+      "log_sha256": "810623353a372ce622a083d8eb227f89fbbae5f57b52381f6f6bf53843e49be3",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DEV/KEYBOARD",
+      "command": "link @keyboard.lnk",
+      "log": "L045.TXT",
+      "log_sha256": "d4af5da86db4141f7243013e5ed05de63612ab84f9fc1229624a93794d787aa1",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DEV/DISPLAY",
+      "command": "link @display.lnk",
+      "log": "L046.TXT",
+      "log_sha256": "d2a3cfe3ab28e79c218910bd99ca24d519331108f3dd281673d5500e974d85ea",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DEV/DISPLAY/EGA",
+      "command": "link @ega.lnk",
+      "log": "L047.TXT",
+      "log_sha256": "c57f157a574f10238272e4de48782b535dd387563cb0e6e5f302327a5fb02346",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DEV/DISPLAY/LCD",
+      "command": "link @lcd.lnk",
+      "log": "L048.TXT",
+      "log_sha256": "204d54f48323486b3c1cd5caaad27282cbec86ee8ef42d16d44041b4b88c4399",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DEV/PRINTER",
+      "command": "link\t@printer.lnk",
+      "log": "L049.TXT",
+      "log_sha256": "287b2ff4d1e3b210b4f755dd9552d8038a0adeb747034eed4073eadcf4e832b3",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DEV/PRINTER/5202",
+      "command": "link 5202;",
+      "log": "L050.TXT",
+      "log_sha256": "7ce6eeeced3712d5f2239ba87464376c756229b6191915f02477ac2b55e7a1fe",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DEV/DRIVER",
+      "command": "link @driver.lnk",
+      "log": "L051.TXT",
+      "log_sha256": "3b1e2b29026f4124b633646b9b20e8e3c349e1c06a6fdc27c8662ed2e606ef5a",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DEV/RAMDRIVE",
+      "command": "link @ramdrive.lnk",
+      "log": "L052.TXT",
+      "log_sha256": "4f87e5dbb386e5889a0d173b6797f7b8491d0ded0461f31c95e37c2cea636343",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DEV/SMARTDRV",
+      "command": "link smartdrv,,smartdrv/M;",
+      "log": "L053.TXT",
+      "log_sha256": "aa1d8377a26fa0e6cabca9dab95d084f5a49852214a24c6b5c54b80aa31fbcab",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DEV/XMA2EMS",
+      "command": "link xma2ems;",
+      "log": "L054.TXT",
+      "log_sha256": "5a561613c892d3190c8e9e94c4526e53bc2a937e8a858f2dd88f5bc2634f6a36",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DEV/VDISK",
+      "command": "link @vdisk.lnk",
+      "log": "L055.TXT",
+      "log_sha256": "fef751ce0de27c8add1c32e543ee8025606979363b4b3988347106da4c556b56",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/DEV/XMAEM",
+      "command": "link @xmaem.lnk",
+      "log": "L056.TXT",
+      "log_sha256": "9d6d4e8c9abdc68f9e7b48c79e17301d7c13c70adf770b249cf86e47a3edcd47",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/SELECT",
+      "command": "link /noe @select.lnk",
+      "log": "L057.TXT",
+      "log_sha256": "9a68544cb702d987a8248c27acb5658a8d540271bd6030168a415d9248bb908e",
+      "libraries": {
+        "SRC/SELECT/SERVICES.LIB": [
+          "selquit.asm",
+          "selchild.asm",
+          "services.asm",
+          "get_help.asm",
+          "selserv.asm"
+        ],
+        "SRC/SELECT/CASSFAR.LIB": [
+          "pcdispq.asm",
+          "pcgvido.asm",
+          "pcinstr.asm",
+          "pcmbeep.asm",
+          "pcslctp.asm",
+          "pcpanel.asm",
+          "pchlprd.asm",
+          "pcinput.asm",
+          "pcincha.asm",
+          "pcwwrap.asm",
+          "pccolor.asm",
+          "pcrowcl.asm",
+          "pcgequp.asm",
+          "pcin2st.asm",
+          "pcmovem.asm",
+          "pcmovec.asm",
+          "pcmovei.asm",
+          "pcstrst.asm",
+          "pccompe.asm",
+          "pcfmtfd.asm",
+          "pcmoveg.asm",
+          "pcdates.asm",
+          "pctimes.asm",
+          "pccrite.asm"
+        ],
+        "SRC/TOOLS/BLD/LIB/SLIBCE.LIB": [
+          "dos\\crt0.asm",
+          "chkstk.asm",
+          "dos\\int86x.asm",
+          "lmul.asm",
+          "lshl.asm",
+          "ulshr.asm",
+          "dos\\crt0dat.asm",
+          "dos\\crt0msg.asm",
+          "chksum.asm",
+          "dos\\stdargv.asm",
+          "dos\\stdenvp.asm",
+          "dos\\nmsghdr.asm",
+          "dos\\dosret.asm",
+          "crt0fp.asm",
+          "dos\\stdalloc.asm"
+        ]
+      }
+    },
+    {
+      "directory": "SRC/SELECT",
+      "command": "link @sel-pan.lnk",
+      "log": "L058.TXT",
+      "log_sha256": "29a101357803b3135b5423fb411de7a4b863bcaf3b6dd7a2194b06e89503d6df",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/SELECT",
+      "command": "link sstub;",
+      "log": "L059.TXT",
+      "log_sha256": "4c99d881fd544ccfb2d810c93e5924fe78820dc58c6b28e8cf9746269de99c97",
+      "libraries": {}
+    },
+    {
+      "directory": "SRC/MEMM/MEMM",
+      "command": "link /NOI @emm386.lnk",
+      "log": "L060.TXT",
+      "log_sha256": "2ef14d3c59f81064ebe3377e2890741d46f1c8d162daf1cdfa374ae664f339cf",
+      "libraries": {
+        "SRC/MEMM/EMM/EMMLIB.LIB": [
+          "emmfunct.c",
+          "emm40.c",
+          "emmp.asm",
+          "emmsup.asm",
+          "emmdisp.asm",
+          "emmdata.asm"
+        ]
+      }
+    }
+  ],
+  "libraries_actually_loaded": {
+    "SRC/TOOLS/BLD/LIB/SLIBCE.LIB": {
+      "sha256": "d077b91d63d051d3333ca53f81cb15b0597cfdb6ec8a7fadc60f76ab6883e24f",
+      "members": [
+        "dos\\crt0.asm",
+        "dos\\crt0dat.asm",
+        "dos\\crt0msg.asm",
+        "crt0fp.asm",
+        "chkstk.asm",
+        "chksum.asm",
+        "dos\\stdargv.asm",
+        "dos\\stdenvp.asm",
+        "dos\\nmsghdr.asm",
+        "dos\\stdalloc.asm",
+        "dos\\dosret.asm",
+        "dos\\close.asm",
+        "dos\\lseek.asm",
+        "strcat.asm",
+        "strcpy.asm",
+        "strcmp.asm",
+        "strlen.asm",
+        "dos\\int86.asm",
+        "flength.c",
+        "dos\\intdos.asm",
+        "dos\\intdosx.asm",
+        "segread.asm",
+        "flushall.c",
+        "fopen.c",
+        "fwrite.c",
+        "printf.c",
+        "_cflush.asm",
+        "_file.c",
+        "_filbuf.c",
+        "_flsbuf.c",
+        "_getbuf.c",
+        "_open.c",
+        "_sftbuf.c",
+        "fflush.c",
+        "output.c",
+        "stream.c",
+        "dos\\open.asm",
+        "dos\\read.asm",
+        "write.asm",
+        "stackava.asm",
+        "txtmode.asm",
+        "nmalloc.asm",
+        "amalloc.asm",
+        "dos\\brkctl.asm",
+        "ultoa.asm",
+        "cmiscdat.asm",
+        "ctype.asm",
+        "isatty.asm",
+        "fgets.c",
+        "fputs.c",
+        "sprintf.c",
+        "memcpy.asm",
+        "xtoa.asm",
+        "syserr.c",
+        "strncmp.asm",
+        "dos\\dir.asm",
+        "dos\\access.asm",
+        "strncat.asm",
+        "strchr.asm",
+        "stricmp.asm",
+        "spawnlp.c",
+        "lmul.asm",
+        "spawnvp.c",
+        "spawnvpe.c",
+        "strncpy.asm",
+        "getenv.c",
+        "dos\\spawnve.c",
+        "strrchr.asm",
+        "dos\\cenvarg.c",
+        "dos\\dospawn.asm",
+        "dos\\execload.asm",
+        "atof.c",
+        "_fptostr.c",
+        "dos\\apisim.asm",
+        "dos\\getch.asm",
+        "dos\\int86x.asm",
+        "dos\\putch.asm",
+        "memset.asm",
+        "dos\\signal.asm",
+        "dos\\wrt2err.asm",
+        "lshl.asm",
+        "almul.asm",
+        "uldiv.asm",
+        "ulrem.asm",
+        "ulshr.asm",
+        "emulator.ASM",
+        "emoem.ASM",
+        "..\\fltused.ASM",
+        "fixups.ASM",
+        "..\\cfpsig.ASM",
+        "x8fin.ASM",
+        "x8fout.ASM",
+        "x8tmul.ASM",
+        "..\\cfin.ASM",
+        "..\\cfout.ASM",
+        "..\\87ftol.ASM",
+        "..\\cvt.c"
+      ],
+      "link_steps": [
+        "L005.TXT",
+        "L012.TXT",
+        "L014.TXT",
+        "L019.TXT",
+        "L025.TXT",
+        "L026.TXT",
+        "L031.TXT",
+        "L034.TXT",
+        "L036.TXT",
+        "L057.TXT"
+      ],
+      "origin": "supplied binary"
+    },
+    "SRC/INC/COMSUBS.LIB": {
+      "sha256": "3a2dd4aa684508037cf552692690943e9b0f8acf44e6ddb3ef43b631940789b1",
+      "members": [
+        "cmsubstr",
+        "cmdbcs",
+        "cmrrchr",
+        "cmstrchr",
+        "cmupper",
+        "rctomid"
+      ],
+      "link_steps": [
+        "L014.TXT",
+        "L019.TXT",
+        "L026.TXT",
+        "L034.TXT",
+        "L036.TXT"
+      ],
+      "origin": "supplied binary"
+    },
+    "SRC/MAPPER/MAPPER.LIB": {
+      "sha256": "52aba345a7dde2a7e7f1b25607fe18e387e754abffd165e18b41d7803674ba06",
+      "members": [
+        "casemap.asm",
+        "dbcs.asm",
+        "f_first.asm",
+        "write.asm",
+        "delete.asm",
+        "getcntry.asm",
+        "f_close.asm",
+        "open.asm",
+        "read.asm",
+        "qcurdir.asm",
+        "qcurdsk.asm",
+        "qfilemod.asm",
+        "sfilemod.asm",
+        "lseek.asm",
+        "close.asm",
+        "allocseg.asm",
+        "freeseg.asm",
+        "sel_disk.asm",
+        "qfsinfo.asm",
+        "f_next.asm",
+        "get_tod.asm",
+        "ioctl.asm",
+        "sighand.asm",
+        "error.asm",
+        "setint24.asm",
+        "setfsinf.asm",
+        "devconfg.asm",
+        "beep.asm",
+        "exit.asm",
+        "scurpos.asm",
+        "scrollup.asm",
+        "wchstra.asm",
+        "sfileinf.asm",
+        "qfileinf.asm"
+      ],
+      "link_steps": [
+        "L014.TXT",
+        "L019.TXT",
+        "L026.TXT",
+        "L031.TXT",
+        "L034.TXT",
+        "L036.TXT"
+      ],
+      "origin": "rebuilt from source"
+    },
+    "SRC/LIB/MEM.LIB": {
+      "sha256": "74c8e6ddfb52846bf176c2ff35075edeff5de4b64130f1b502d5d9605ea214ff",
+      "members": [
+        "dos\\crt0dat.asm",
+        "dos\\crt0msg.asm",
+        "crt0fp.asm",
+        "chkstk.asm",
+        "chksum.asm",
+        "dos\\stdargv.asm",
+        "dos\\stdenvp.asm",
+        "dos\\nmsghdr.asm",
+        "dos\\stdalloc.asm",
+        "dos\\dosret.asm",
+        "flushall.c",
+        "_cflush.asm",
+        "_file.c",
+        "_flsbuf.c",
+        "_getbuf.c",
+        "fflush.c",
+        "output.c",
+        "dos\\lseek.asm",
+        "write.asm",
+        "stackava.asm",
+        "nmalloc.asm",
+        "amalloc.asm",
+        "dos\\brkctl.asm",
+        "strcpy.asm",
+        "strlen.asm",
+        "ultoa.asm",
+        "cmiscdat.asm",
+        "isatty.asm",
+        "dos\\kbhit.asm",
+        "dos\\getch.asm",
+        "dos\\int86.asm",
+        "sprintf.c",
+        "dos\\int86x.asm",
+        "dos\\intdos.asm",
+        "dos\\intdosx.asm",
+        "segread.asm",
+        "xtoa.asm",
+        "lshl.asm",
+        "alshl.asm",
+        "crt0"
+      ],
+      "link_steps": [
+        "L024.TXT"
+      ],
+      "origin": "supplied binary"
+    },
+    "SRC/SELECT/SERVICES.LIB": {
+      "sha256": "08d52f6c75d3f8b2900bfcb74a0062991af4bf72ad87696eabe630a512c516eb",
+      "members": [
+        "selquit.asm",
+        "selchild.asm",
+        "services.asm",
+        "get_help.asm",
+        "selserv.asm"
+      ],
+      "link_steps": [
+        "L057.TXT"
+      ],
+      "origin": "rebuilt from source"
+    },
+    "SRC/SELECT/CASSFAR.LIB": {
+      "sha256": "39bbbb38f58483c3bacd366a899a90b7b8764b6431032ac7f7367212d6409f3e",
+      "members": [
+        "pcdispq.asm",
+        "pcgvido.asm",
+        "pcinstr.asm",
+        "pcmbeep.asm",
+        "pcslctp.asm",
+        "pcpanel.asm",
+        "pchlprd.asm",
+        "pcinput.asm",
+        "pcincha.asm",
+        "pcwwrap.asm",
+        "pccolor.asm",
+        "pcrowcl.asm",
+        "pcgequp.asm",
+        "pcin2st.asm",
+        "pcmovem.asm",
+        "pcmovec.asm",
+        "pcmovei.asm",
+        "pcstrst.asm",
+        "pccompe.asm",
+        "pcfmtfd.asm",
+        "pcmoveg.asm",
+        "pcdates.asm",
+        "pctimes.asm",
+        "pccrite.asm"
+      ],
+      "link_steps": [
+        "L057.TXT"
+      ],
+      "origin": "supplied binary"
+    },
+    "SRC/MEMM/EMM/EMMLIB.LIB": {
+      "sha256": "08f205699de9a31ddeedf0abfb953bbf273872f96a1e729f7582978774e89d1c",
+      "members": [
+        "emmfunct.c",
+        "emm40.c",
+        "emmp.asm",
+        "emmsup.asm",
+        "emmdisp.asm",
+        "emmdata.asm"
+      ],
+      "link_steps": [
+        "L060.TXT"
+      ],
+      "origin": "rebuilt from source"
+    }
+  }
+}

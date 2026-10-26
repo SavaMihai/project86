@@ -1,0 +1,296 @@
+{
+  "fixture_revision": "e71c68d215a6bb8c356bd4cb3842de3bef345ca9",
+  "passed": 96000,
+  "total": 96000,
+  "scope": "Architectural registers, defined flags and RAM; no bus/prefetch/timing validation",
+  "groups": [
+    {
+      "opcode": "27",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "06f45400ede6fbc25ea3ae874c835ea02ac9e702f8d63fd0e394704757d30461"
+    },
+    {
+      "opcode": "2F",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "372b3167cb2f7a83b4c72808c4724b25bec8b39ce3c7e425164a01d56db27596"
+    },
+    {
+      "opcode": "37",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "a6cb00128b8e85211c0f19c876c25da1894a93aceadfc6d808857dadb25c0ebf"
+    },
+    {
+      "opcode": "3F",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "f03faca0e76f9febb3a32bba04893e02bc026fddc97d34bb4847951ce256043e"
+    },
+    {
+      "opcode": "D4",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "7c8b73923b8fb991386054f10700a8925fabf275f2f249d7f3773440ae721375"
+    },
+    {
+      "opcode": "D5",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "704c6fb1d700e4bbf22f178bff3f43f0954483e4fe8e4887e1b82e5db1e02e3f"
+    },
+    {
+      "opcode": "D0.0",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "28148f9d9d8a1b228a2cd81fd239ceea7b9b4e965bcdc7fba3b4a19b6e3a86e8"
+    },
+    {
+      "opcode": "D0.1",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "893668578b994504977e709ba30fc83671d616972193c6358a60767957784033"
+    },
+    {
+      "opcode": "D0.2",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "2cf2f15d11bc0b0468a80fd2402db44ab4a1312717f541b69355ea86df110109"
+    },
+    {
+      "opcode": "D0.3",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "ef443e076142c23c95283bf35246aa3b83b3adef3a6fcbc6a4db4ee080dd7a9b"
+    },
+    {
+      "opcode": "D0.4",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "f92ac2392710e709d2ca61d585643133a4ea63c07f62a1e8010f78541997c28a"
+    },
+    {
+      "opcode": "D0.5",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "ac2aa47d6982bbd8ed7c74880cce23ddc78b02b6cd49c7875754670dda7edae8"
+    },
+    {
+      "opcode": "D0.7",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "1aaa200a223df5e1f3e1fafce44201265ff916fc40bceb59e69c3d4601258206"
+    },
+    {
+      "opcode": "D1.0",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "cdb3aa93957eff440da5893aecd6eb2faa68eee01ea63029b5c27eff46cf821a"
+    },
+    {
+      "opcode": "D1.1",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "59ca7901bb98fcefc52d76d5e92976d22474d5c3a18856085c001f6dba3d8c8a"
+    },
+    {
+      "opcode": "D1.2",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "ed223eda490dc8f4f1942163dd157d836b2848f7383d11443005d668a5106f06"
+    },
+    {
+      "opcode": "D1.3",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "fe77f3cbcd5b5bfa2ec29591511eba6179f6dc42b5be2a9b6620e0687c918a75"
+    },
+    {
+      "opcode": "D1.4",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "3bb2473dbccdf9472130440f3c48f6d23595676323c8475bbee800a51e2217b0"
+    },
+    {
+      "opcode": "D1.5",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "4f8283aecbb0ae5aa29c15b5116ce90dd92cdc500c933b019a26a3d4358138b3"
+    },
+    {
+      "opcode": "D1.7",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "e4418e2da92b0108781e84fb004c4eb98f73c8884eb194de3fc4db9038f5a614"
+    },
+    {
+      "opcode": "D2.0",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "300ce34b019c71bd9f00eb99d7cbb4105f2f30ebd24454d08587cec6dbe4291f"
+    },
+    {
+      "opcode": "D2.1",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "9734cfb94e3ebf0f146dabfd620c5c05c3382ba42bd0c44437e08cb4e27fd5e2"
+    },
+    {
+      "opcode": "D2.2",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "5035e4d47d7bbb0b663fd318f0f73afd46012541e4cbc5ac0435ed84322d3a2b"
+    },
+    {
+      "opcode": "D2.3",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "55aae4df95dbfbdc0db171177e87c724b9a0b633def52836d92e728646d39e31"
+    },
+    {
+      "opcode": "D2.4",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "c6e78a77070753c7fc4870ff4cd17c2d0bd7cf93b2cd89bd947773728441dda6"
+    },
+    {
+      "opcode": "D2.5",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "9d91142634961778a16736117f692575b76f2083d65c325122415d3be6c3669a"
+    },
+    {
+      "opcode": "D2.7",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "fa2d6cbcc9b317eca5f110109c7b5d19534d71ea61f4165bcc1cacc6e00b3b92"
+    },
+    {
+      "opcode": "D3.0",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "99780024dc3092b377d579d8a7a6366e7a2d446a14bc91f8bf0b9216f6202acc"
+    },
+    {
+      "opcode": "D3.1",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "df1c5dc400449e0a0d108995f104e4190f0de7595f331def3a7b136f5dc3abc9"
+    },
+    {
+      "opcode": "D3.2",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "9447f05906bbe4cca9e55d4025a764133cac897954848e4d8c5f7fa13c02f514"
+    },
+    {
+      "opcode": "D3.3",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "9a54cc6eef63d6bb5e991db1ac659a07be8b1df73e78bc3c517f4dea37cf6f9a"
+    },
+    {
+      "opcode": "D3.4",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "7612f18cb81fba2e0599177b4f62a76d670661de44ccb1ed82b664c3357a866b"
+    },
+    {
+      "opcode": "D3.5",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "b7ed357c46cade46b4dc9b81eb4deb47a99f4a7f32045c82556046795c7edf75"
+    },
+    {
+      "opcode": "D3.7",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "2901578c3133565eaf8ce57966705e2356cdb4d396edb08b556c3cc0eb336b1a"
+    },
+    {
+      "opcode": "F6.0",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "33ded4158cb4b6bbc6598851960ea985abf3b73764e7b9e3f6654e7960a6f655"
+    },
+    {
+      "opcode": "F6.2",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "0bc2e138f108ebfdf361938f18c8688152d018939308f32fe175d2f890b1da8f"
+    },
+    {
+      "opcode": "F6.3",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "2c254c855553b86b9646644ef3bd4e674ecf805a0249dd4ab35a0856bb201e92"
+    },
+    {
+      "opcode": "F6.4",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "24b148647d0f2648aee5de0b465c5f984bd1153a1fd269ec886ae09f5c85d7da"
+    },
+    {
+      "opcode": "F6.5",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "af24125f45080223a961f717583ae2d7c65c038bd79af147879eb342df5a207b"
+    },
+    {
+      "opcode": "F6.6",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "12c7fe49a8b3f1a94debd3b2540ed442f8ef5c35f31587c04897eaa609526dce"
+    },
+    {
+      "opcode": "F6.7",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "9e5a762e4aa89af64451d4dd818f602fc9438dfa807b16ebe742209e595ca275"
+    },
+    {
+      "opcode": "F7.0",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "891febafbb8564c32c7350e4f2e1eec0988432a24ce5853fcf499667a4db3cdc"
+    },
+    {
+      "opcode": "F7.2",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "c8f1908233474e3abf33d6e27313a5633b82c79708b983ceee448b4d0b726888"
+    },
+    {
+      "opcode": "F7.3",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "40490404a3c440b0c141d4de63901dcbb0918c6eee23fa73575881128b4c39bc"
+    },
+    {
+      "opcode": "F7.4",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "21682a793058b64b26d75cc0007103e0f3d1bd0f61c5c1efd7d3ec8ea885f215"
+    },
+    {
+      "opcode": "F7.5",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "0ef489cd791acdcca3836cf0110f5d8ca80a7d3c6bcc37951d18ece3a293130a"
+    },
+    {
+      "opcode": "F7.6",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "71d34900d41844b98127cef4279d854f427a225b542dda6d380554c6f1de57b1"
+    },
+    {
+      "opcode": "F7.7",
+      "tests": 2000,
+      "failed": 0,
+      "sha256": "d537cf45a5b737cb16321212a06fcf799b106b057ea556a95d9abcd6b21cd5f6"
+    }
+  ]
+}
